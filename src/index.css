@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #089473;
+  --color-primary-hover: #116f58;
+  --color-primary-light: #E6F7F1;
+  --color-primary-dark: #1a3c35;
+  --color-primary-dark-hover: #132e29;
+  --color-surface-alt: #Fdfdfd;
+
+  --animate-fade-in-up: fadeInUp 0.8s ease-out forwards;
+  --animate-float-slow: float 4s ease-in-out infinite;
+  --animate-float-delayed: float 4s ease-in-out 2s infinite;
+  --animate-scroll: scroll 15s linear infinite;
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  @keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+}
+
+.mask-right-fade {
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.mask-down-fade {
+    mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+}
+
+.footer-curve-container {
+  border-top-left-radius: 60% 600px;
+  border-top-right-radius: 60% 600px;
+  box-shadow: 0 -20px 80px -10px rgba(8, 148, 115, 0.4);
+}
