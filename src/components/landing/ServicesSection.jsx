@@ -70,23 +70,23 @@ const ServicesSection = () => {
           {services.map((service, index) => (
             <div 
               key={index}
-              className="group bg-white rounded-3xl p-5 shadow-sm hover:shadow-xl transition-all duration-300 border border-transparent hover:border-gray-100"
+              className="group bg-white rounded-3xl p-4 shadow-sm hover:shadow-xl transition-all duration-300 border border-transparent hover:border-gray-100"
             >
               {/* Card Header */}
-              <div className="flex justify-between items-start mb-6 px-4">
+              <div className="flex justify-between items-center mb-6 p-4 rounded-xl bg-primary-light">
                 <div className="flex items-center gap-4">
-                    <div className="w-12 h-12 rounded-2xl bg-primary-light text-primary flex items-center justify-center">
+                    <div className="w-12 h-12 rounded-xl bg-white text-primary flex items-center justify-center">
                         <service.icon className="w-6 h-6" />
                     </div>
                     <div>
                       <h3 className="text-2xl font-bold text-primary-dark group-hover:text-primary transition-colors">
                       {service.title}
                       </h3>
-                      <p className='pt-0.5 leading-relaxed text-gray-400 text-sm'>{service.subtitle}</p>
+                      <p className='pt-1 leading-relaxed text-gray-400 text-sm'>{service.subtitle}</p>
                     </div>
                 </div>
                 
-                <div className="p-2 rounded-full flex items-center justify-center text-gray-400 group-hover:border-primary group-hover:text-primary transition-all transform group-hover:-translate-y-1 group-hover:translate-x-1">
+                <div className="p-2 rounded-full flex items-center justify-center text-gray-400 group-hover:border-primary group-hover:text-primary transition-all transform group-hover:-translate-y-1 group-hover:translate-x-1 bg-white">
                   <ArrowUpRight className="w-8 h-8" />
                 </div>
               </div>
