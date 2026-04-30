@@ -55,7 +55,7 @@ const ServicesSection = () => {
 
   return (
     <section id="services" className="md:py-24 py-10 bg-surface-alt">
-      <div className="container mx-auto">
+      <div className="container mx-auto flex flex-col items-center ">
         
         {/* Section Header */}
         <div className="text-center mb-16">
