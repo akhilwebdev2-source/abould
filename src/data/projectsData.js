@@ -1,3 +1,45 @@
+// Import images for Stage Connect
+import stageConnectSection1 from "../assets/projects/stageconnect/section1.png";
+import stageConnectSection2 from "../assets/projects/stageconnect/section2.png";
+import stageConnectSection3 from "../assets/projects/stageconnect/section3.png";
+import stageConnectSection4 from "../assets/projects/stageconnect/section4.png";
+import stageConnectSection5 from "../assets/projects/stageconnect/section5.png";
+
+// Import images for Swervem
+import swervemSection1 from "../assets/projects/swervem/section1.png";
+import swervemSection2 from "../assets/projects/swervem/section2.png";
+import swervemSection3 from "../assets/projects/swervem/section3.png";
+import swervemSection4 from "../assets/projects/swervem/section4.png";
+import swervemSection5 from "../assets/projects/swervem/section5.png";
+
+// Import images for Linked
+import linkedSection1 from "../assets/projects/linked/section1.png";
+import linkedSection2 from "../assets/projects/linked/section2.png";
+import linkedSection3 from "../assets/projects/linked/section3.png";
+import linkedSection4 from "../assets/projects/linked/section4.png";
+import linkedSection5 from "../assets/projects/linked/section5.png";
+
+// Import images for MasterPCOS
+import masterpcosSection1 from "../assets/projects/masterpcos/section1.png";
+import masterpcosSection2 from "../assets/projects/masterpcos/section2.png";
+import masterpcosSection3 from "../assets/projects/masterpcos/section3.png";
+import masterpcosSection4 from "../assets/projects/masterpcos/section4.png";
+import masterpcosSection5 from "../assets/projects/masterpcos/section5.png";
+
+// Import images for Condition Pro
+import conditionproSection1 from "../assets/projects/conditionpro/section1.png";
+import conditionproSection2 from "../assets/projects/conditionpro/section2.png";
+import conditionproSection3 from "../assets/projects/conditionpro/section3.png";
+import conditionproSection4 from "../assets/projects/conditionpro/section4.png";
+import conditionproSection5 from "../assets/projects/conditionpro/section5.png";
+
+// Import images for AutoPanel Pro
+import autopanelSection1 from "../assets/projects/autopanelpro/section1.png";
+import autopanelSection2 from "../assets/projects/autopanelpro/section2.png";
+import autopanelSection3 from "../assets/projects/autopanelpro/section3.png";
+import autopanelSection4 from "../assets/projects/autopanelpro/section4.png";
+import autopanelSection5 from "../assets/projects/autopanelpro/section5.png";
+
 export const projectsData = {
   "projects": [
     {
@@ -17,7 +59,7 @@ export const projectsData = {
           "id": 1,
           "title": "Booking Agent Home",
           "description": "Agents have a comprehensive dashboard displaying active listings, booking requests, and performance metrics. Designed as a centralized hub for managing artist information and inquiries.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=Booking+Agent+Home",
+          "image": stageConnectSection1,
           "features": [
             "Real-time booking notifications",
             "Artist portfolio management",
@@ -28,7 +70,7 @@ export const projectsData = {
           "id": 2,
           "title": "Artist Availability Calendar",
           "description": "Artists manage their availability through an intuitive calendar interface. Color-coded dates indicate open slots, booked dates, and unavailable periods with a clear visual hierarchy.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=Availability+Calendar",
+          "image": stageConnectSection2,
           "features": [
             "Drag-and-drop scheduling",
             "Automatic conflict detection",
@@ -39,7 +81,7 @@ export const projectsData = {
           "id": 3,
           "title": "Artist Discovery & Booking",
           "description": "Venues browse through a curated collection of artists filtered by genre, price, and availability. The booking interface is streamlined for quick engagement and contract management.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=Discovery+Booking",
+          "image": stageConnectSection3,
           "features": [
             "Advanced filtering options",
             "One-click booking requests",
@@ -50,7 +92,7 @@ export const projectsData = {
           "id": 4,
           "title": "Reviews & Ratings",
           "description": "Transparent review system builds trust between venues and artists. Detailed feedback helps improve service quality and assists future clients in making informed decisions.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=Reviews+Ratings",
+          "image": stageConnectSection4,
           "features": [
             "Comprehensive feedback system",
             "Photo verification",
@@ -61,7 +103,7 @@ export const projectsData = {
           "id": 5,
           "title": "Admin Dashboard",
           "description": "Platform administrators have full visibility into operations, user management, dispute resolution, and performance analytics. Real-time monitoring ensures smooth platform operation.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=Admin+Dashboard",
+          "image": stageConnectSection5,
           "features": [
             "User management system",
             "Dispute resolution tools",
@@ -94,7 +136,7 @@ export const projectsData = {
           "id": 1,
           "title": "Route Planning Engine",
           "description": "Intelligent algorithm calculates optimal routes combining public transit, bikes, and scooters. Real-time updates ensure users always have current information.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=Route+Planning",
+          "image": swervemSection1,
           "features": [
             "Multi-modal routing",
             "Real-time traffic integration",
@@ -105,7 +147,7 @@ export const projectsData = {
           "id": 2,
           "title": "Payment Integration",
           "description": "Unified payment system across all mobility providers eliminates the need for multiple apps. One tap, one payment, multiple options.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=Payment+System",
+          "image": swervemSection2,
           "features": [
             "Wallet integration",
             "Automatic fare splitting",
@@ -116,7 +158,7 @@ export const projectsData = {
           "id": 3,
           "title": "Trip Management",
           "description": "Users track active journeys, review trip history, and manage bookings efficiently. Clear status updates keep users informed throughout their journey.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=Trip+Management",
+          "image": swervemSection3,
           "features": [
             "Live location tracking",
             "Trip receipts and analytics",
@@ -127,11 +169,22 @@ export const projectsData = {
           "id": 4,
           "title": "Driver & Partner Portal",
           "description": "Mobility partners manage their fleet, earnings, and customer relationships through a dedicated dashboard with comprehensive analytics.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=Partner+Portal",
+          "image": swervemSection4,
           "features": [
             "Fleet management",
             "Earnings dashboard",
             "Customer feedback integration"
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Smart Booking & Scheduling",
+          "description": "Intelligent booking system with predictive demand, dynamic pricing, and automated scheduling for optimal fleet utilization.",
+          "image": swervemSection5,
+          "features": [
+            "AI-powered demand prediction",
+            "Dynamic pricing algorithms",
+            "Automated fleet scheduling"
           ]
         }
       ],
@@ -160,7 +213,7 @@ export const projectsData = {
           "id": 1,
           "title": "Personalized Itinerary Builder",
           "description": "AI-powered recommendations suggest activities based on preferences, budget, and travel style. Drag-and-drop interface makes planning intuitive.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=Itinerary+Builder",
+          "image": linkedSection1,
           "features": [
             "AI recommendations engine",
             "Budget tracking",
@@ -171,7 +224,7 @@ export const projectsData = {
           "id": 2,
           "title": "Hotel & Flight Booking",
           "description": "Compare and book accommodations and flights from multiple providers with price guarantees and flexible cancellation policies.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=Booking+System",
+          "image": linkedSection2,
           "features": [
             "Price comparison",
             "Flexible booking options",
@@ -182,7 +235,7 @@ export const projectsData = {
           "id": 3,
           "title": "Local Activity Discovery",
           "description": "Discover hidden gems and popular attractions curated by local experts. Real-time reviews and photos help make informed decisions.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=Activities",
+          "image": linkedSection3,
           "features": [
             "Expert-curated recommendations",
             "Real-time availability",
@@ -193,11 +246,22 @@ export const projectsData = {
           "id": 4,
           "title": "Expense Tracking & Splitting",
           "description": "Automatically categorize expenses and split costs among travel companions. Detailed breakdowns and settlement suggestions.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=Expenses",
+          "image": linkedSection4,
           "features": [
             "Automatic categorization",
             "Cost splitting algorithm",
             "Multi-currency support"
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Travel Companion Sync",
+          "description": "Connect with travel companions in real-time. Share locations, updates, and manage group activities seamlessly.",
+          "image": linkedSection5,
+          "features": [
+            "Real-time location sharing",
+            "Group chat integration",
+            "Activity synchronization"
           ]
         }
       ],
@@ -226,7 +290,7 @@ export const projectsData = {
           "id": 1,
           "title": "Fitness Tracking Dashboard",
           "description": "Monitor workouts, track progress, and visualize improvements with intuitive charts. Integration with popular fitness devices.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=Fitness+Dashboard",
+          "image": masterpcosSection1,
           "features": [
             "Device integration",
             "Progress visualization",
@@ -237,7 +301,7 @@ export const projectsData = {
           "id": 2,
           "title": "Nutrition Planner",
           "description": "AI-powered meal planning based on dietary goals, preferences, and restrictions. Automatic shopping list generation.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=Nutrition+Planner",
+          "image": masterpcosSection2,
           "features": [
             "AI meal recommendations",
             "Macro tracking",
@@ -248,7 +312,7 @@ export const projectsData = {
           "id": 3,
           "title": "Wellness Coaching",
           "description": "Connect with certified coaches for personalized guidance. Real-time support and progress monitoring ensure accountability.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=Coaching",
+          "image": masterpcosSection3,
           "features": [
             "Expert coach matching",
             "Live coaching sessions",
@@ -259,11 +323,22 @@ export const projectsData = {
           "id": 4,
           "title": "Community Challenges",
           "description": "Participate in group challenges for motivation and accountability. Leaderboards and rewards encourage consistency.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=Challenges",
+          "image": masterpcosSection4,
           "features": [
             "Daily and weekly challenges",
             "Social sharing",
             "Achievement rewards"
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Health Analytics & Insights",
+          "description": "Comprehensive health data visualization and personalized insights. Track trends over time and receive actionable recommendations.",
+          "image": masterpcosSection5,
+          "features": [
+            "Detailed health metrics",
+            "Personalized recommendations",
+            "Historical data tracking"
           ]
         }
       ],
@@ -286,13 +361,14 @@ export const projectsData = {
       "roles": ["User", "Admin"],
       "status": "Launched",
       "heroDescription": "A high-performance fitness app designed to help users train smarter using MAS (Max Aerobic Speed), data-driven workouts, and real-time performance tracking.",
-      "projectOverview": "SportConnect builds vibrant athletic communities by connecting athletes, coaches, and sports enthusiasts globally. The platform simplifies game organization with intelligent team formation, tracks performance through comprehensive analytics, and facilitates professional development through coach directory and training resources. Social features enable athletes to celebrate achievements and build networks, while performance insights help players improve their skills and identify strengths.",
+      "projectOverview1": "Condition Pro was designed for users who want measurable performance improvements—not generic workouts. Many fitness apps focus on duration rather than precision, leading to inefficient training and inconsistent results.",
+      "projectOverview2": "The goal of Condition Pro was to create a science-backed training system that adapts to each user’s aerobic capacity, delivers structured sessions, and tracks progress with clarity and confidence.",
       "sections": [
         {
           "id": 1,
           "title": "Game Organization",
           "description": "Create, manage, and join sports events with automated team formation and scheduling. Real-time participant tracking.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=Game+Org",
+          "image": conditionproSection1,
           "features": [
             "Automated team balancing",
             "Venue selection",
@@ -303,7 +379,7 @@ export const projectsData = {
           "id": 2,
           "title": "Performance Analytics",
           "description": "Track individual and team statistics. Detailed performance insights help identify strengths and areas for improvement.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=Analytics",
+          "image": conditionproSection2,
           "features": [
             "Statistical tracking",
             "Player comparison",
@@ -314,7 +390,7 @@ export const projectsData = {
           "id": 3,
           "title": "Coach Directory",
           "description": "Find certified coaches specializing in your sport. Book training sessions and access personalized coaching materials.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=Coach+Directory",
+          "image": conditionproSection3,
           "features": [
             "Coach verification",
             "Session booking",
@@ -325,11 +401,22 @@ export const projectsData = {
           "id": 4,
           "title": "Community Feed",
           "description": "Share achievements, videos, and highlights with the community. Social engagement through likes, comments, and sharing.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=Feed",
+          "image": conditionproSection4,
           "features": [
             "Media sharing",
             "Social interactions",
             "Achievement badges"
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Training Plans & Progress",
+          "description": "Access customized training plans based on your goals and fitness level. Track progress with detailed metrics and achievements.",
+          "image": conditionproSection5,
+          "features": [
+            "AI-generated training plans",
+            "Progress tracking",
+            "Performance milestones"
           ]
         }
       ],
@@ -344,21 +431,22 @@ export const projectsData = {
     },
     {
       "id": 6,
-      "title": "DriveSync",
-      "subtitle": "Connected Vehicle Platform",
-      "category": "Automotive",
-      "industry": "Automotive & IoT",
-      "platform": "Web & Mobile",
-      "roles": ["Full-Stack Developer", "IoT Engineer", "Backend Developer", "Product Manager"],
-      "status": "Live",
-      "heroDescription": "Intelligent automotive platform providing vehicle diagnostics, maintenance tracking, and connected car services for modern drivers.",
-      "projectOverview": "DriveSync brings intelligent vehicle management to modern drivers by providing real-time health monitoring and predictive maintenance alerts. The platform connects vehicle diagnostics with service center networks, tracks driving efficiency and environmental impact, and offers emergency assistance. By preventing breakdowns before they happen and optimizing vehicle performance, DriveSync reduces costs, improves safety, and promotes sustainable driving habits.",
+      "title": "AutoPanel Pro",
+      "subtitle": "Smart Vehicle Damage Evaluation & Repair Assistant",
+      "category": "Mobility",
+      "industry": "Fitness & Sports Performance",
+      "platform": "Mobile App",
+      "roles": ["User", "Admin"],
+      "status": "Launched",
+      "heroDescription": "A mobile app designed to help users scan vehicle damage, evaluate repair costs, and make informed decisions before repair or purchase — powered by guided assessments and expert-backed insights.",
+      "projectOverview1": "AutoPanel Pro was designed to simplify how users understand vehicle damage and repair costs. Most car owners and buyers struggle to identify damage severity, estimate repair expenses, and decide whether a repair is worth it.",
+      "projectOverview2": "The goal was to create a guided, easy-to-use evaluation experience that combines visual damage scanning, structured assessments, and practical repair guidance — all within a single app.",
       "sections": [
         {
           "id": 1,
           "title": "Vehicle Diagnostics",
           "description": "Real-time vehicle health monitoring with detailed diagnostics. Alerts notify drivers of potential issues before they become serious.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=Diagnostics",
+          "image": autopanelSection1,
           "features": [
             "Real-time health monitoring",
             "Predictive maintenance alerts",
@@ -369,7 +457,7 @@ export const projectsData = {
           "id": 2,
           "title": "Maintenance Scheduling",
           "description": "Automated maintenance reminders based on mileage and time. Integration with service centers for easy appointment booking.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=Maintenance",
+          "image": autopanelSection2,
           "features": [
             "Smart reminders",
             "Service center partnerships",
@@ -380,7 +468,7 @@ export const projectsData = {
           "id": 3,
           "title": "Trip Insights",
           "description": "Comprehensive driving analytics including fuel efficiency, driving patterns, and environmental impact tracking.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=Trip+Insights",
+          "image": autopanelSection3,
           "features": [
             "Fuel efficiency tracking",
             "Driving behavior analysis",
@@ -391,11 +479,22 @@ export const projectsData = {
           "id": 4,
           "title": "Emergency Assistance",
           "description": "One-tap emergency support with automatic location sharing and roadside assistance coordination.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=Emergency",
+          "image": autopanelSection4,
           "features": [
             "Automatic distress calling",
             "Real-time location sharing",
             "Partner network access"
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Damage Assessment & Repair Quotes",
+          "description": "Advanced image recognition scans vehicle damage and provides accurate repair cost estimates from certified repair centers.",
+          "image": autopanelSection5,
+          "features": [
+            "AI damage detection",
+            "Automated repair quotes",
+            "Certified repair network"
           ]
         }
       ],

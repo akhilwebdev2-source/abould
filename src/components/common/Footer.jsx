@@ -26,43 +26,25 @@ const Footer = () => {
             <div className="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-4 md:px-28">
                 
                 {/* Left: Logo & Copyright */}
-                <div className="flex flex-col items-center md:items-start gap-6">
-                    <div className="flex items-center gap-2 text-primary-dark font-bold text-xl">
-                      <img src={logo} alt="" className='w-30' />
-                    </div>
+                <div className="flex sm:flex-row flex-col justify-around items-center gap-4 w-full">
                     <p className="text-gray-600 text-sm text-center md:text-left">
                        © Abould Inc. All Rights Reserved.
                     </p>
-                </div>
-
-                {/* Right: Socials & Links */}
-                <div className="flex flex-col items-center md:items-end gap-6">
-                    
-                      {/* Social Icons */}
-                      <div className="flex items-center gap-3">
-                          {['twitter', 'facebook', 'instagram', 'linkedin'].map((social) => (
-                             <a 
-                               key={social} 
-                               href="#" 
-                               className="w-10 h-10 rounded-full border border-gray-100 flex items-center justify-center text-primary-dark hover:bg-primary-dark hover:text-white transition-all shadow-sm hover:shadow-md"
-                             >
-                                {/* Icons */}
-                                {social === 'twitter' && <Twitter className="w-4 h-4" fill='1' />}
-                                {social === 'facebook' && <Facebook className="w-4 h-4" fill='1' />}
-                                {social === 'instagram' && <Instagram className="w-4 h-4" fill='1' />}
-                                {social === 'linkedin' && <Linkedin className="w-4 h-4" fill='1' />}
-                             </a> 
-                          ))}
-                      </div>
-
-                    {/* Links */}
+                    <div className="flex items-center gap-3">
+                      <a 
+                        href="https://www.linkedin.com/company/abould" 
+                        target="_blank"
+                        className="p-4 rounded-full border border-gray-100 flex items-center justify-center text-primary-dark hover:bg-primary-dark hover:text-white transition-all shadow-sm hover:shadow-md"
+                      >
+                        <Linkedin className="w-4 h-4" fill='1' />
+                      </a>
+                    </div>
                     <div className="flex items-center text-center gap-2 text-sm text-gray-600">
                         <a href="#" className="hover:text-primary-hover transition-colors">Privacy Policy</a>
                         <span>•</span>
                         <a href="#" className="hover:text-primary-hover transition-colors">Terms & condition</a>
                     </div>
                 </div>
-
             </div>
 
         </div>

@@ -1,4 +1,6 @@
 import React from 'react';
+import one from "../../assets/home/process/one.png"
+import two from "../../assets/home/process/two.png"
 
 const ProcessSection = () => {
   const steps = [
@@ -38,10 +40,10 @@ const ProcessSection = () => {
              <div className="p-6 rounded-[2.5rem]">
                 <div className="flex gap-4">
                     <div className="w-1/2 aspect-4/7 rounded-2xl overflow-hidden">
-                        <img src="https://placehold.co/400x600/f3f4f6/1a3c35?text=Working+1" alt="Process 1" className="w-full h-full object-cover" />
+                        <img src={one} alt="Process 1" className="w-full h-full object-cover" />
                     </div>
                     <div className="w-1/2 aspect-4/7 rounded-2xl overflow-hidden">
-                        <img src="https://placehold.co/400x600/e5e7eb/1a3c35?text=Working+2" alt="Process 2" className="w-full h-full object-cover" />
+                        <img src={two} alt="Process 2" className="w-full h-full object-cover" />
                     </div>
                 </div>
              </div>

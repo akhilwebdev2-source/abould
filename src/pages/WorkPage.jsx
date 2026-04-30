@@ -1,22 +1,23 @@
 import React, { useState } from 'react';
 import ProjectCard from '../components/common/ProjectCard';
 import ContactSection from '../components/landing/ContactSection';
+import { projectsData } from '../data/projectsData';
 
 const WorkPage = () => {
   const [filter, setFilter] = useState('All');
 
-  const filters = [
-    "All", "Entertainment", "Mobility", "Travel", "Health & Wellness", 
-    "Sports", "Automotive", "Fintech", "EdTech", "Marketplace", "Social"
-  ];
+  // Get unique categories from first 6 projects
+  const firstSixProjects = projectsData.projects.slice(0, 6);
+  const categories = ['All', ...new Set(firstSixProjects.map(p => p.category))];
 
-  // Dummy projects data - generating 30 items
-  const allProjects = Array.from({ length: 30 }).map((_, i) => ({
-    title: `Project ${i + 1}`,
-    category: filters[Math.floor(Math.random() * (filters.length - 1)) + 1], // Random category
-    description: "A digital product designed for impact and usability across industries.",
-    image: `https://placehold.co/600x400/${['f3f4f6','f8fafc','fff7ed','ecfdf5'][i % 4]}/1a3c35?text=Project+${i+1}`,
-    bgColor: `bg-[${['#F3F4F6','#F8FAFC','#FFF7ED','#ECFDF5'][i % 4]}]`
+  // Map real projects to card format (only first 6)
+  const allProjects = firstSixProjects.map((project) => ({
+    id: project.id,
+    title: project.title,
+    category: project.category,
+    description: project.heroDescription,
+    image: `https://placehold.co/600x400/f3f4f6/1a3c35?text=${project.title}`,
+    bgColor: 'bg-gray-100'
   }));
 
   const filteredProjects = filter === 'All' 
@@ -33,17 +34,17 @@ const WorkPage = () => {
             <h1 className="text-3xl md:text-5xl font-bold text-primary mb-10">
             Our Work
             </h1>
-            <p className="text-gray-500 text-sm font-semibold
+            <div className="text-gray-500 text-sm font-semibold
              leading-relaxed mb-12 text-center">
               A selection of digital products we've designed and built across industries — from startups to growing platforms. 
               <div className="hidden md:block h-4"/>
               Each project reflects our focus on clarity, usability, and impact.
-            </p>
+            </div>
           </div>
           
           {/* Filters */}
           <div className="flex flex-wrap justify-center gap-4 mt-20 w-screen px-10">
-             {filters.map(f => (
+             {categories.map(f => (
                <button
                  key={f}
                  onClick={() => setFilter(f)}
@@ -61,8 +62,8 @@ const WorkPage = () => {
 
         {/* Projects Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-16 max-w-7xl mx-auto mb-10">
-          {filteredProjects.map((project, index) => (
-            <ProjectCard key={index} {...project} />
+          {filteredProjects.map((project) => (
+            <ProjectCard key={project.id} {...project} />
           ))}
         </div>
         <ContactSection />
