@@ -6,12 +6,12 @@ const Header = () => {
   const location = useLocation();
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-surface-alt/80 backdrop-blur-md">
-      <div className="container mx-auto px-6 md:px-30 h-20 flex items-center justify-between z-10">
+    <header className="sticky top-0 z-50 w-full flex justify-center bg-surface-alt/80 backdrop-blur-md">
+      <div className="container px-4 h-20 flex items-center justify-around z-10">
         
         {/* Logo */}
         <Link to="/">
-          <img src={logo} alt="" />
+          <img src={logo} alt="" className='md:w-35 w-30' />
         </Link>
 
         {/* Navigation */}

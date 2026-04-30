@@ -41,7 +41,7 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="py-24 bg-surface-alt">
+    <section id="contact" className="md:py-24 py-12 bg-surface-alt">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto flex flex-col lg:flex-row gap-16 lg:gap-24">
           

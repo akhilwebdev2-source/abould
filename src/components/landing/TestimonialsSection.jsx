@@ -47,7 +47,7 @@ const TestimonialsSection = () => {
   ];
 
   return (
-    <section className="py-24 bg-surface-alt">
+    <section className="md:py-24 py-12 bg-surface-alt">
       <div className="container mx-auto px-4">
         
         {/* Header */}

@@ -22,18 +22,18 @@ const ProcessSection = () => {
 
 
   return (
-    <section id="about" className="py-24 bg-white overflow-hidden">
+    <section id="about" className="md:py-24 py-10 bg-white overflow-hidden">
       <div className="container mx-auto px-4">
         
         {/* PART 1: Journey to Success */}
-        <div className="mb-32">
-          <div className="text-center mb-16">
+        <div className="md:mb-32 mb-16">
+          <div className="text-center md:mb-16 mb-6">
             <h2 className="text-3xl md:text-4xl font-bold text-primary-dark">
               The Journey to Success
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center max-w-7xl mx-auto bg-white border rounded-4xl border-gray-100">
+          <div className="grid grid-cols-1 lg:grid-cols-2 md:gap-16 gap-8 items-center max-w-7xl mx-auto bg-white border rounded-4xl border-gray-100">
              {/* Left: Images */}
              <div className="p-6 rounded-[2.5rem]">
                 <div className="flex gap-4">
@@ -50,7 +50,7 @@ const ProcessSection = () => {
              <div className="flex flex-col justify-center">
                 <div className="space-y">
                    {steps.map((step, index) => (
-                     <div key={index} className="py-6 pl-20 mr-10 border-b border-gray-100 last:border-0 group cursor-default">
+                     <div key={index} className="py-6 md:pl-20 px-10 mr-10 border-b border-gray-100 last:border-0 group cursor-default">
                         <h3 className="text-2xl font-bold text-gray-400 group-hover:text-primary transition-colors mb-2">
                            {step.title}
                         </h3>
@@ -66,14 +66,14 @@ const ProcessSection = () => {
 
         {/* PART 2: Core Strengths */}
         <div>
-          <div className="text-center mb-16">
+          <div className="text-center md:mb-16 mb-8">
             <h3 className="text-3xl md:text-4xl font-bold text-primary-dark mb-3">Our Core Strengths</h3>
             <h2 className="text-3xl md:text-4xl font-bold text-primary-dark">
             Designed to Elevate Your Brand
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-7 gap-8 max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-7 md:gap-8 gap-6 max-w-7xl mx-auto">
              <div className="bg-white rounded-[2.5rem] p-4 shadow-sm hover:shadow-xl transition-shadow flex flex-col items-center text-center md:col-span-3">
                 <div className="w-full h-full rounded-3xl overflow-hidden mb-2 bg-gray-100 flex items-center justify-center">
                     <img src="https://placehold.co/450x200/f3f4f6/1a3c35?text=Intelligent+Development" alt="Intelligent Development" className="w-full h-full object-cover opacity-90 mix-blend-multiply" />

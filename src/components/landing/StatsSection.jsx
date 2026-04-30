@@ -44,11 +44,11 @@ const StatsSection = () => {
         </div>
 
         {/* Stats Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-24 mx-24">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-24 lg:mx-20 mx-4">
           {stats.map((stat, index) => (
             <div 
               key={index} 
-              className="group relative bg-surface-alt text-primary rounded-4xl p-8 hover:bg-primary-hover hover:text-white transition-all duration-300 hover:-translate-y-2 shadow-xl hover:shadow-2xl cursor-default h-[340px] flex flex-col justify-between border border-gray-100/50 hover:border-transparent"
+              className="group relative bg-surface-alt text-primary rounded-4xl p-8 hover:bg-primary-hover hover:text-white transition-all duration-300 hover:-translate-y-2 shadow-xl hover:shadow-2xl h-85 flex flex-col justify-between border border-gray-100/50 hover:border-transparent"
             >
               <div>
                 <div className="text-6xl font-bold mb-2 group-hover:text-white transition-colors">{stat.number}</div>
@@ -59,7 +59,7 @@ const StatsSection = () => {
                 <div className="rounded-full text-white transition-colors flex items-center justify-center group-hover:text-primary-hover">
                   {stat.icon}
                 </div>
-                <p className="text-xs text-gray-500 font-medium max-w-[140px] group-hover:text-green-50 transition-colors">
+                <p className="text-xs text-gray-500 font-medium max-w-35 group-hover:text-green-50 transition-colors">
                   {stat.description}
                 </p>
               </div>
@@ -70,7 +70,7 @@ const StatsSection = () => {
       </div>
 
       {/* Scrolling Text Carousel */}
-      <div className="relative w-full overflow-hidden py-20">
+      <div className="relative w-full overflow-hidden md:py-20 py-10">
          <div className="flex w-max animate-scroll">
             {[...Array(8)].map((_, i) => (
                <div key={i} className="flex items-center gap-16 md:gap-32 md:px-16 px-8">

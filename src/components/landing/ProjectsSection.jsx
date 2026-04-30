@@ -36,7 +36,7 @@ const ProjectsSection = () => {
   ];
 
   return (
-    <section className="py-24 bg-white">
+    <section className="md:py-24 py-10 bg-white">
       <div className="container mx-auto px-4">
         
         {/* Header */}
@@ -47,14 +47,14 @@ const ProjectsSection = () => {
         </div>
 
         {/* Projects Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-16 m-28">
+        <div className="grid grid-cols-1 md:grid-cols-2 md:gap-16 gap-6 lg:mx-30 mx-4">
           {projects.map((project, index) => (
             <ProjectCard key={index} {...project} />
           ))}
         </div>
 
         {/* View All Button */}
-        <div className="flex justify-center">
+        <div className="flex justify-center mt-10">
           <Link to="/work">
             <button className="group bg-linear-to-b from-primary-hover to-primary text-white px-8 py-3 rounded-xl text-base font-medium transition-all shadow-md hover:shadow-xl flex items-center gap-2 cursor-pointer">
               View all

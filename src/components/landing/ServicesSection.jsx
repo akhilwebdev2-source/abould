@@ -54,7 +54,7 @@ const ServicesSection = () => {
   ];
 
   return (
-    <section id="services" className="py-24 bg-surface-alt">
+    <section id="services" className="md:py-24 py-10 bg-surface-alt">
       <div className="container mx-auto">
         
         {/* Section Header */}
@@ -66,7 +66,7 @@ const ServicesSection = () => {
         </div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-7xl px-4">
           {services.map((service, index) => (
             <div 
               key={index}
@@ -75,7 +75,7 @@ const ServicesSection = () => {
               {/* Card Header */}
               <div className="flex justify-between items-center mb-6 p-4 rounded-xl bg-primary-light">
                 <div className="flex items-center gap-4">
-                    <div className="w-12 h-12 rounded-xl bg-white text-primary flex items-center justify-center">
+                    <div className="w-12 h-12 rounded-xl bg-white text-primary md:flex hidden items-center justify-center">
                         <service.icon className="w-6 h-6" />
                     </div>
                     <div>
