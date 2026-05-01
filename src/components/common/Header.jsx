@@ -57,7 +57,7 @@ const Header = () => {
                 className={`px-4 py-1.5 rounded-3xl text-md font-medium transition-shadow duration-200 ${
                   isActive
                   ? 'bg-white backdrop-blur-xl border border-neutral-500/40 shadow-[0_1px_2px_0_rgba(0,0,0,0.05),inset_0_2px_4px_0_rgb(115_115_115/0.1)] text-primary-hover' 
-                  : 'bg-linear-to-b from-white/40 via-neutral-100/20 to-white/40 backdrop-blur-xl border hover:border-gray-300 border-gray-100 transition-all'
+                  : 'bg-linear-to-b from-white/40 via-neutral-100/20 to-white/40 backdrop-blur-xl hover:border hover:border-gray-300 transition-all'
                 }`}
               >
                 {item}
