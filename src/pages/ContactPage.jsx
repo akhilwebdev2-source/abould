@@ -3,7 +3,7 @@ import ContactSection from '../components/landing/ContactSection';
 
 const ContactPage = () => {
   return (
-    <div className="pt-20">
+    <div>
       <ContactSection />
     </div>
   );

@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowUpRight, Zap, Code, Smartphone, Palette, Globe, PenTool, Layout, Box } from 'lucide-react';
+import { Globe, Star, MonitorSmartphone, Component } from 'lucide-react';
 
 const ServicesSection = () => {
   const services = [
@@ -8,54 +8,34 @@ const ServicesSection = () => {
       subtitle: "Engaging, high-performance mobile apps",
       description: "Bring your app idea to life — the smart way.",
       subtext: "We build mobile apps that engage, retain, and grow your audience. From prototype to app store launch, we ensure smooth performance, elegant UI, and an experience users keep coming back to.",
-      icon: Smartphone,
-      tags: [
-        { name: "Flutter", icon: "platform" },
-        { name: "iOS", icon: "mobile" },
-        { name: "Android", icon: "android" }
-      ]
+      icon: MonitorSmartphone
     },
     {
       title: "Web Development",
       subtitle: "Modern, fast, and responsive websites",
       description: "Let's turn your idea into a powerful digital presence.",
       subtext: "Your website is your first impression — we make it unforgettable. From landing pages to complex dashboards, we build responsive, SEO-friendly, and lightning-fast experiences that convert visitors into customers.",
-      icon: Code,
-      tags: [
-        { name: "Responsive", icon: "responsive" },
-        { name: "Growth-Driven", icon: "chart" },
-        { name: "SEO-Ready", icon: "search" }
-      ]
+      icon: Globe
     },
     {
       title: "UI/UX Design",
       subtitle: "Crafting delightful user experiences",
       description: "Create experiences that speak to users, not just screens.",
       subtext: "We blend creativity with usability - crafting interfaces that users love to explore. Every pixel, interaction, and flow is designed with empathy to make your product intuitive, accessible, and beautiful.",
-      icon: Palette,
-      tags: [
-        { name: "Wireframing", icon: "pen" },
-        { name: "Prototyping", icon: "play" },
-        { name: "User Research", icon: "users" }
-      ]
+      icon: Component
     },
     {
       title: "Brand & Visual Design",
       subtitle: "Create a brand that people remember",
       description: "Let's design a brand that people can't forget.",
       subtext: "Your brand is more than a logo — it's a feeling. We create cohesive visual identities that make people remember, trust, and choose you. Every color, font, and shape works together to amplify your voice.",
-      icon: PenTool,
-      tags: [
-        { name: "Logo design", icon: "star" },
-        { name: "Brand identity", icon: "badge" },
-        { name: "Style guides", icon: "palette" }
-      ]
+      icon: Star
     }
   ];
 
   return (
-    <section id="services" className="md:py-24 py-10 bg-surface-alt">
-      <div className="container mx-auto flex flex-col items-center ">
+    <section id="services" className="md:py-20 py-10 bg-surface-alt">
+      <div className="container mx-auto flex flex-col items-center md:px-10 px-4">
         
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -66,28 +46,24 @@ const ServicesSection = () => {
         </div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-7xl px-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-7xl">
           {services.map((service, index) => (
             <div 
               key={index}
-              className="group bg-white rounded-3xl p-4 shadow-sm hover:shadow-xl transition-all duration-300 border border-transparent hover:border-gray-100"
+              className="group bg-white rounded-3xl p-4 transition-all duration-300 border hover:border-gray-100 border-white"
             >
               {/* Card Header */}
-              <div className="flex justify-between items-center mb-6 p-4 rounded-xl bg-primary-light">
-                <div className="flex items-center gap-4">
-                    <div className="w-12 h-12 rounded-xl bg-white text-primary md:flex hidden items-center justify-center">
-                        <service.icon className="w-6 h-6" />
-                    </div>
-                    <div>
-                      <h3 className="text-2xl font-bold text-primary-dark group-hover:text-primary transition-colors">
-                      {service.title}
-                      </h3>
-                      <p className='pt-1 leading-relaxed text-gray-400 text-sm'>{service.subtitle}</p>
-                    </div>
+              <div className="flex justify-between items-center mb-6 p-4 rounded-xl">
+                <div>
+                  <h3 className="text-2xl font-bold text-primary-dark group-hover:text-primary transition-colors">
+                    {service.title}
+                  </h3>
+                  <p className='pt-1 leading-relaxed text-gray-400 text-sm'>
+                    {service.subtitle}
+                  </p>
                 </div>
-                
-                <div className="p-2 rounded-full flex items-center justify-center text-gray-400 group-hover:border-primary group-hover:text-primary transition-all transform group-hover:-translate-y-1 group-hover:translate-x-1 bg-white">
-                  <ArrowUpRight className="w-8 h-8" />
+                <div className="w-14 h-14 rounded-full text-primary flex items-center justify-center bg-primary-light">
+                  <service.icon className="w-8 h-8" strokeWidth='1.3px' />
                 </div>
               </div>
 
@@ -98,18 +74,6 @@ const ServicesSection = () => {
               <p className="text-sm text-gray-500 leading-relaxed mb-8">
                 {service.subtext}
               </p>
-
-              {/* Tags / Pills */}
-              <div className="flex flex-wrap gap-3">
-                {service.tags.map((tag, tagIndex) => (
-                  <div key={tagIndex} className="flex text-nowrap items-center gap-2 w-full bg-gray-50 px-4 py-2 rounded-xl text-lg font-medium text-gray-600 group-hover:bg-primary-light group-hover:text-primary transition-colors flex-3">
-                     <span className="w-8 h-8 rounded-full bg-linear-to-r from-primary-hover to-primary-light text-white flex items-center justify-center shadow-sm">
-                       <Zap className="w-4 fill-current" />
-                     </span>
-                     {tag.name}
-                  </div>
-                ))}
-              </div>
 
             </div>
           ))}

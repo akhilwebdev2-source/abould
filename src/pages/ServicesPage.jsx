@@ -3,7 +3,7 @@ import ServicesSection from '../components/landing/ServicesSection';
 
 const ServicesPage = () => {
   return (
-    <div className="pt-20">
+    <div>
       <ServicesSection />
     </div>
   );

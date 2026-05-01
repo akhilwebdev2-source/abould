@@ -37,7 +37,7 @@ const ProcessSection = () => {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 md:gap-16 gap-8 items-center max-w-7xl mx-auto bg-white border rounded-4xl border-gray-100">
              {/* Left: Images */}
-             <div className="p-6 rounded-[2.5rem]">
+             <div className="md:p-6 p-4 rounded-[2.5rem]">
                 <div className="flex gap-4">
                     <div className="w-1/2 aspect-4/7 rounded-2xl overflow-hidden">
                         <img src={one} alt="Process 1" className="w-full h-full object-cover" />

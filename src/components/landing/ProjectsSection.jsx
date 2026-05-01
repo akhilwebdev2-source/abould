@@ -40,14 +40,14 @@ const ProjectsSection = () => {
       <div className="container mx-auto px-4">
         
         {/* Header */}
-        <div className="text-center mb-16">
+        <div className="text-center md:mb-30 mb-15">
           <h2 className="text-3xl md:text-4xl font-bold text-primary-dark">
             Selected Projects
           </h2>
         </div>
 
         {/* Projects Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 md:gap-16 gap-6 lg:mx-30 mx-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 md:gap-16 gap-6 lg:mx-30">
           {projects.map((project, index) => (
             <ProjectCard key={index} {...project} />
           ))}

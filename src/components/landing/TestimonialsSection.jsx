@@ -1,48 +1,54 @@
 import React from 'react';
+import one from "../../assets/home/testimonials/one.png"
+import two from "../../assets/home/testimonials/two.png"
+import three from "../../assets/home/testimonials/three.png"
+import four from "../../assets/home/testimonials/four.png"
+import five from "../../assets/home/testimonials/five.png"
+import six from "../../assets/home/testimonials/six.png"
 
 const TestimonialsSection = () => {
   const testimonials = [
     {
       name: "Mindbullet",
       location: "United States",
-      avatar: "https://placehold.co/100x100/f3f4f6/1a3c35?text=M",
+      avatar: one,
       quote: "Feels like an in-house team, not a freelancer.",
-      review: "Akhil Studios was highly communicative, fast, and deeply invested in quality. They went above and beyond to incorporate feedback and ensure the final app design met every expectation. We would happily work with them again."
+      review: "Abould was highly communicative, fast, and deeply invested in quality. They went above and beyond to incorporate feedback and ensure the final app design met every expectation. We would happily work with them again."
     },
     {
       name: "Think_Digital",
       location: "India",
-      avatar: "https://placehold.co/100x100/e0f2fe/1a3c35?text=T",
+      avatar: two,
       quote: "Excellent attention to detail and professional execution.",
-      review: "Akhil Studios demonstrated strong expertise in FlutterFlow. The app design, API integration, and performance were handled very professionally. Delivery was on time, and communication was clear throughout the project."
+      review: "Abould demonstrated strong expertise in FlutterFlow. The app design, API integration, and performance were handled very professionally. Delivery was on time, and communication was clear throughout the project."
     },
     {
       name: "Favelakid",
       location: "Switzerland",
-      avatar: "https://placehold.co/100x100/f0fdf4/1a3c35?text=F",
+      avatar: three,
       quote: "Clean, smooth, and well-executed product.",
       review: "The platform looks polished and functions smoothly. Feedback was implemented quickly, and communication remained clear throughout the process."
     },
     {
       name: "Palitsaurav",
       location: "United Kingdom",
-      avatar: "https://placehold.co/100x100/fff7ed/1a3c35?text=P",
+      avatar: four,
       quote: "Went above and beyond — even beyond the scope.",
-      review: "Although this was primarily a backend project, Akhil Studios provided valuable UI suggestions that significantly improved the overall product. The extra effort was truly appreciated."
+      review: "Although this was primarily a backend project, Abould provided valuable UI suggestions that significantly improved the overall product. The extra effort was truly appreciated."
     },
     {
       name: "Lesleytork",
       location: "Denmark",
-      avatar: "https://placehold.co/100x100/fae8ff/1a3c35?text=L",
+      avatar: five,
       quote: "Professional, reliable, and easy to collaborate with.",
-      review: "All requested changes were handled quickly and thoughtfully. Akhil Studios communicates clearly, delivers high-quality work, and consistently adds value to the project. Highly recommended."
+      review: "All requested changes were handled quickly and thoughtfully. Abould communicates clearly, delivers high-quality work, and consistently adds value to the project. Highly recommended."
     },
     {
       name: "Leoncamz",
       location: "United Kingdom",
-      avatar: "https://placehold.co/100x100/fef2f2/1a3c35?text=L",
+      avatar: six,
       quote: "Very talented and extremely knowledgeable.",
-      review: "Akhil Studios is a pleasure to work with — skilled, responsive, and professional. The quality of work exceeded expectations, and the overall experience was excellent."
+      review: "Abould is a pleasure to work with — skilled, responsive, and professional. The quality of work exceeded expectations, and the overall experience was excellent."
     }
   ];
 
@@ -62,16 +68,16 @@ const TestimonialsSection = () => {
           {testimonials.map((testimonial, index) => (
             <div 
               key={index} 
-              className="bg-white p-8 rounded-3xl shadow-sm hover:shadow-xl transition-shadow duration-300 border border-transparent hover:border-gray-100 flex flex-col h-full"
+              className="bg-white p-4 rounded-3xl duration-300 border border-transparent hover:border-gray-100 flex flex-col h-full"
               style={{
-                background: 'radial-gradient(circle at top right, #E6F7F1 0%, #ffffff 30%)'
+                background: 'radial-gradient(circle at top right, #E6F7F1 0%, #ffffff 50%)'
               }}
             >
-              <div className="flex items-center gap-4 mb-6">
-                 <div className="w-14 h-14 rounded-2xl overflow-hidden shadow-inner">
-                    <img src={testimonial.avatar} alt={testimonial.name} className="w-full h-full object-cover" />
+              <div className="flex items-center mb-2">
+                 <div className="w-20 overflow-hidden">
+                    <img src={testimonial.avatar} alt={testimonial.name} />
                  </div>
-                 <div>
+                 <div className='mb-4'>
                     <h4 className="font-bold text-primary-dark">{testimonial.name}</h4>
                     <p className="text-xs text-gray-500">{testimonial.location}</p>
                  </div>

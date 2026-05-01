@@ -1,22 +1,52 @@
-import { ArrowRight, ArrowUpRight } from 'lucide-react';
+import { ArrowRight, ArrowUpRight, Menu, X } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+import { createPortal } from 'react-dom';
 import logo from "../../assets/logos/logo.png";
 
 const Header = () => {
   const location = useLocation();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMenuClosing, setIsMenuClosing] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  const closeMenu = () => {
+    setIsMenuClosing(true);
+    setTimeout(() => {
+      setIsMenuOpen(false);
+      setIsMenuClosing(false);
+    }, 300);
+  };
+
+  useEffect(() => {
+    if (isMenuOpen || isMenuClosing) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [isMenuOpen, isMenuClosing]);
+
+  const navItems = ['Home', 'Services', 'Work', 'About', 'Contact'];
 
   return (
-    <header className="sticky top-0 z-50 w-full flex justify-center bg-surface-alt/80 backdrop-blur-md">
-      <div className="container px-4 h-20 flex items-center justify-around z-10">
+    <header className="sticky top-0 z-50 w-full flex justify-center bg-surface-alt/95 backdrop-blur-md">
+      <div className="container md:px-4 px-10 md:h-20 h-14 flex items-center md:justify-around justify-between z-10">
         
         {/* Logo */}
         <Link to="/">
-          <img src={logo} alt="" className='md:w-35 w-30' />
+          <img src={logo} alt="" className='md:w-16 w-10' />
         </Link>
 
-        {/* Navigation */}
-        <nav className="hidden md:flex items-center bg-gray-200 rounded-xl p-1.5 gap-2">
-          {['Home', 'Services', 'Work', 'About', 'Contact'].map((item) => {
+        {/* Navigation - Desktop */}
+        <nav className="hidden md:flex items-center bg-linear-to-b from-neutral-50/40 via-neutral-400/15 to-neutral-50/40 backdrop-blur-xl border border-gray-200 rounded-4xl p-2 gap-2 shadow-[0_1px_2px_0_rgba(0,0,0,0.05),inset_0_2px_4px_0_rgb(115_115_115/0.1)]">
+          {navItems.map((item) => {
             const path = item === 'Home' ? '/' : `/${item.toLowerCase()}`;
             const isActive = location.pathname === path || (path !== '/' && location.pathname.startsWith(path));
             
@@ -24,10 +54,10 @@ const Header = () => {
               <Link
                 key={item}
                 to={path}
-                className={`px-4 py-1.5 rounded-lg text-md font-mediu transition-all duration-200 text-primary-dark ${
+                className={`px-4 py-1.5 rounded-3xl text-md font-medium transition-shadow duration-200 ${
                   isActive
-                  ? 'bg-white font-bold shadow-sm shadow-neutral-400' 
-                  : 'text-gray-500 hover:font-bold hover:bg-white/50'
+                  ? 'bg-white backdrop-blur-xl border border-neutral-500/40 shadow-[0_1px_2px_0_rgba(0,0,0,0.05),inset_0_2px_4px_0_rgb(115_115_115/0.1)] text-primary-hover' 
+                  : 'bg-linear-to-b from-white/40 via-neutral-100/20 to-white/40 backdrop-blur-xl border hover:border-gray-300 border-gray-100 transition-all'
                 }`}
               >
                 {item}
@@ -36,22 +66,66 @@ const Header = () => {
           })}
         </nav>
 
-        {/* Actions */}
-        <div className="flex items-center gap-3">
-            {/* <button
-              className="hidden lg:flex items-center gap-2 px-4 py-2 rounded-xl border border-gray-200 text-gray-600 hover:border-green-500 hover:text-green-600 transition-all text-sm font-medium cursor-pointer group shadow-sm hover:shadow-md bg-white"
-            >
-              <span className="font-bold font-serif bg-primary-hover text-white rounded-full w-5 h-5 flex items-center justify-center text-[10px] pt-0.5">fi</span>
-              <span>Fiverr</span>
-              <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" />
-            </button> */}
-            <button className="group bg-linear-to-b from-primary-hover to-primary text-white py-2 px-5 rounded-xl text-sm font-medium transition-all shadow-md hover:shadow-lg flex items-center gap-2 cursor-pointer">
+        {/* Actions - Desktop */}
+        <div className="hidden md:flex items-center gap-3">
+            <Link to="/contact" className="group bg-linear-to-b from-primary-hover to-primary text-white py-2 px-5 rounded-xl text-sm font-medium transition-all shadow-md hover:shadow-lg flex items-center gap-2 cursor-pointer">
               Let's Talk
               <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
-            </button>
+            </Link>
         </div>
+
+        {/* Hamburger Menu - Mobile */}
+        <button
+          onClick={toggleMenu}
+          className="md:hidden p-2 hover:bg-white/20 rounded-lg transition-colors"
+          aria-label="Toggle menu"
+        >
+          {isMenuOpen ? (
+            <X className="w-6 h-6 text-primary-dark" />
+          ) : (
+            <Menu className="w-6 h-6 text-primary-dark" />
+          )}
+        </button>
       </div>
-      <div className="absolute top-0 left-0 w-full h-full pointer-events-none -z-10 overflow-hidden">
+
+      {/* Mobile Sidebar Menu - Rendered as Portal to cover full screen */}
+      {(isMenuOpen || isMenuClosing) && createPortal(
+        <>
+          {/* Overlay */}
+          <div
+            className={`fixed top-14 left-0 right-0 bottom-0 md:hidden z-40 bg-black/50 backdrop-blur-sm ${isMenuClosing ? 'animate-fade-out' : 'animate-fade-in'}`}
+            onClick={closeMenu}
+          />
+          
+          {/* Sidebar */}
+          <nav className={`fixed right-0 top-14 h-full w-50 bg-surface-alt backdrop-blur-md md:hidden z-60 flex flex-col ${isMenuClosing ? 'animate-slide-out-right' : 'animate-slide-in-right'}`}>
+            <div className="flex flex-col p-2 gap-2">
+              {navItems.map((item) => {
+                const path = item === 'Home' ? '/' : `/${item.toLowerCase()}`;
+                const isActive = location.pathname === path || (path !== '/' && location.pathname.startsWith(path));
+                
+                return (
+                  <Link
+                    key={item}
+                    to={path}
+                    onClick={closeMenu}
+                    className={`px-4 py-3 rounded-lg font-medium transition-all duration-200 ${
+                      isActive
+                        ? 'bg-primary text-white shadow-md'
+                        : 'text-gray-600 hover:bg-white/10'
+                    }`}
+                  >
+                    {item}
+                  </Link>
+                );
+              })}
+            </div>
+          </nav>
+        </>,
+        document.body
+      )}
+
+      <div className={`absolute top-0 left-0 w-full h-full pointer-events-none -z-10 overflow-hidden ${location.pathname=='/' ? "block" : "hidden"} `}>
           <div className="absolute top-[20%] left-1/2 -translate-x-1/2 w-[30%] h-[200%] bg-primary/12 rounded-full blur-[60px]"></div>
       </div>
     </header>

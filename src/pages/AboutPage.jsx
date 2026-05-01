@@ -3,7 +3,7 @@ import ProcessSection from '../components/landing/ProcessSection';
 
 const AboutPage = () => {
   return (
-    <div className="pt-20">
+    <div>
       <ProcessSection />
     </div>
   );
