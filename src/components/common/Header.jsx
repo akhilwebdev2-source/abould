@@ -36,12 +36,12 @@ const Header = () => {
   const navItems = ['Home', 'Services', 'Work', 'About', 'Contact'];
 
   return (
-    <header className="sticky top-0 z-50 w-full flex justify-center bg-surface-alt/95 backdrop-blur-md">
+    <header className="sticky top-0 z-50 w-full flex justify-center bg-linear-to-b from-surface-alt via-surface-alt/70 to-surface-alt/0">
       <div className="container md:px-4 px-10 md:h-20 h-14 flex items-center md:justify-around justify-between z-10">
         
         {/* Logo */}
         <Link to="/">
-          <img src={logo} alt="" className='md:w-16 w-10' />
+          <img src={logo} alt="" className='md:w-16 w-12 md:mx-10' />
         </Link>
 
         {/* Navigation - Desktop */}
@@ -67,8 +67,8 @@ const Header = () => {
         </nav>
 
         {/* Actions - Desktop */}
-        <div className="hidden md:flex items-center gap-3">
-            <Link to="/contact" className="group bg-linear-to-b from-primary-hover to-primary text-white py-2 px-5 rounded-xl text-sm font-medium transition-all shadow-md hover:shadow-lg flex items-center gap-2 cursor-pointer">
+        <div className="hidden md:flex items-center gap-3 ">
+            <Link to="/contact" className="group bg-linear-to-b from-primary-hover to-primary border-2 hover:border-neutral-300 border-primary text-white py-2.5 px-5 rounded-xl text-sm font-medium transition-all flex items-center gap-2 cursor-pointer">
               Let's Talk
               <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
             </Link>

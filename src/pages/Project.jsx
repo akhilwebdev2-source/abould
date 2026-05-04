@@ -1,5 +1,6 @@
 import { useParams, Link } from 'react-router-dom';
 import { projectsData } from '../data/projectsData';
+import ContactSection from '../components/landing/ContactSection';
 
 const Project = () => {
   const { slug } = useParams();
@@ -105,8 +106,7 @@ const Project = () => {
       </section>
 
       {/* Testimonial Section */}
-      {social && (
-        <section className="py-16 md:py-24 px-4 bg-gray-50 mb-16 md:mb-24">
+        <section className="py-16 md:py-24 px-4 mb-16 md:mb-24">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-bold text-primary-dark text-center mb-16">
               What Our Client Says
@@ -116,7 +116,7 @@ const Project = () => {
                 <img
                   src={social.profile}
                   alt={social.name}
-                  className="w-16 h-16 md:w-20 md:h-20 rounded-full object-cover border-4 border-primary shrink-0"
+                  className="w-16 md:w-20 rounded-full object-covershrink-0"
                 />
                 <div>
                   <h4 className="text-lg md:text-xl font-bold text-primary-dark">
@@ -138,22 +138,7 @@ const Project = () => {
             </div>
           </div>
         </section>
-      )}
-
-      {/* CTA Section */}
-      <section className="bg-linear-to-br from-blue-50 to-green-50 py-20 md:py-32 px-4 text-center">
-        <div className="max-w-3xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-primary-dark mb-12">
-            Ready to Build Something Extraordinary?
-          </h2>
-          <Link
-            to="/contact"
-            className="inline-block bg-primary text-white px-10 md:px-16 py-4 rounded-lg font-semibold text-base md:text-lg transition-all duration-300 hover:bg-primary-dark hover:-translate-y-1 hover:shadow-xl"
-          >
-            Get In Touch
-          </Link>
-        </div>
-      </section>
+        <ContactSection />
     </div>
   );
 };

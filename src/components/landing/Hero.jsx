@@ -23,7 +23,7 @@ const Hero = () => {
       <div className="container mx-auto px-4 flex flex-col items-center relative z-10">
         
         {/* Text Content Wrapper */}
-        <div className="relative w-full max-w-350 flex flex-col items-center">
+        <div className="relative w-full flex flex-col items-center">
           
           {/* Trusted Badge */}
           <div className="mb-8 inline-flex items-center gap-2 bg-primary-light text-primary px-3 py-1.5 rounded-xl text-sm animate-fade-in-up border border-white shadow-inner">
@@ -35,20 +35,20 @@ const Hero = () => {
           </div>
 
           {/* Headline */}
-          <h1 className="text-4xl md:text-6xl text-center text-primary-dark leading-[1.1] mb-6 tracking-tight max-w-5xl mx-auto z-10 relative font-heading">
+          <h1 className="text-4xl md:text-6xl text-center text-primary-dark leading-[1.1] mb-6 tracking-tight mx-auto z-10 relative font-heading">
             We Build <span className="text-primary">Digital</span> <br className="hidden md:block"/>
             <span className="text-primary">Experiences</span> That Spark <br className="hidden md:block"/>
             Energy & Impact
           </h1>
 
           {/* Subtext */}
-          <p className="text-base text-gray-500 text-center max-w-3xl mx-auto mb-16 leading-relaxed z-10 relative">
+          <p className="text-base text-gray-500 text-center mx-auto mb-16 leading-relaxed z-10 relative">
             From web to mobile apps, UI/UX design, and branding — we craft experiences that inspire action.
           </p>
 
           {/* Floating Card Left: 5 Star Review */}
-          <div className="hidden lg:block absolute top-[50%] -translate-y-1/2 left-0 xl:left-10 bg-white p-4 rounded-2xl shadow-xl border border-gray-50 max-w-62.5 animate-float-slow z-20 rotate-12">
-              <div className="text-4xl font-bold text-primary-dark mb-1">5</div>
+          <div className="hidden lg:block absolute top-[50%] -translate-y-1/2 left-0 xl:left-10 bg-white p-4 rounded-2xl shadow-sm border border-gray-50 max-w-62.5 animate-float-slow z-20 rotate-12">
+              <div className="text-4xl font-bold text-primary-dark mb-1">5/5</div>
               <div className="flex text-yellow-400 mb-2 text-2xl gap-0.5">
                 {'★'.repeat(5)}
               </div>
@@ -59,7 +59,7 @@ const Hero = () => {
           </div>
 
           {/* Floating Card Right: Happy Clients */}
-          <div className="hidden lg:block absolute top-[40%] -translate-y-1/2 right-0 xl:right-10 bg-white p-4 rounded-2xl shadow-xl border border-gray-50 max-w-55 animate-float-delayed z-20 -rotate-12">
+          <div className="hidden lg:block absolute top-[40%] -translate-y-1/2 right-0 xl:right-10 bg-white p-4 rounded-2xl shadow-sm border border-gray-50 max-w-55 animate-float-delayed z-20 -rotate-12">
               <div className="flex -space-x-3 mb-3">
                  {[1,2,3].map(i => (
                    <div key={i} className="w-10 h-10 rounded-full border-2 border-white bg-gray-200 flex items-center justify-center text-xs overflow-hidden">
@@ -78,12 +78,12 @@ const Hero = () => {
           <div className="flex gap-6 md:gap-8 w-max animate-scroll hover:[animation-play-state:paused] mask-down-fade py-2">
             {/* Double the items to create seamless loop */}
             {cards.map((card, i) => (
-              <div key={i} className="w-56 md:w-72 h-80 md:h-96 shrink-0 bg-white rounded-3xl border-4 border-gray-900/5 shadow-xl overflow-hidden transform transition-all hover:scale-105 duration-300">
+              <div key={i} className="w-56 md:w-80 h-full shrink-0 bg-white rounded-4xl overflow-hidden transform transition-all hover:scale-105 duration-300">
                 <Link to={"/"}>
                   <img 
                     src={card} 
                     alt={`Carousel Item ${i + 1}`}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full"
                   />
                 </Link>
               </div>

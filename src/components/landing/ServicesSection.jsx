@@ -6,28 +6,24 @@ const ServicesSection = () => {
     {
       title: "App Design & Development",
       subtitle: "Engaging, high-performance mobile apps",
-      description: "Bring your app idea to life — the smart way.",
       subtext: "We build mobile apps that engage, retain, and grow your audience. From prototype to app store launch, we ensure smooth performance, elegant UI, and an experience users keep coming back to.",
       icon: MonitorSmartphone
     },
     {
       title: "Web Development",
       subtitle: "Modern, fast, and responsive websites",
-      description: "Let's turn your idea into a powerful digital presence.",
       subtext: "Your website is your first impression — we make it unforgettable. From landing pages to complex dashboards, we build responsive, SEO-friendly, and lightning-fast experiences that convert visitors into customers.",
       icon: Globe
     },
     {
       title: "UI/UX Design",
       subtitle: "Crafting delightful user experiences",
-      description: "Create experiences that speak to users, not just screens.",
       subtext: "We blend creativity with usability - crafting interfaces that users love to explore. Every pixel, interaction, and flow is designed with empathy to make your product intuitive, accessible, and beautiful.",
       icon: Component
     },
     {
       title: "Brand & Visual Design",
       subtitle: "Create a brand that people remember",
-      description: "Let's design a brand that people can't forget.",
       subtext: "Your brand is more than a logo — it's a feeling. We create cohesive visual identities that make people remember, trust, and choose you. Every color, font, and shape works together to amplify your voice.",
       icon: Star
     }
@@ -50,12 +46,12 @@ const ServicesSection = () => {
           {services.map((service, index) => (
             <div 
               key={index}
-              className="group bg-white rounded-3xl p-4 transition-all duration-300 border hover:border-gray-100 border-white"
+              className="group bg-white rounded-3xl p-4 transition-all border hover:border-gray-100 border-white"
             >
               {/* Card Header */}
-              <div className="flex justify-between items-center mb-6 p-4 rounded-xl">
+              <div className="flex justify-between items-center mb-10 rounded-xl">
                 <div>
-                  <h3 className="text-2xl font-bold text-primary-dark group-hover:text-primary transition-colors">
+                  <h3 className="text-2xl font-bold text-primary-dark group-hover:text-primary transition-all duration-500">
                     {service.title}
                   </h3>
                   <p className='pt-1 leading-relaxed text-gray-400 text-sm'>
@@ -63,14 +59,11 @@ const ServicesSection = () => {
                   </p>
                 </div>
                 <div className="w-14 h-14 rounded-full text-primary flex items-center justify-center bg-primary-light">
-                  <service.icon className="w-8 h-8" strokeWidth='1.3px' />
+                  <service.icon className="w-8 h-8" strokeWidth='1.5px' />
                 </div>
               </div>
 
               {/* Descriptions */}
-              <p className="text-lg font-medium text-gray-900 mb-4">
-                {service.description}
-              </p>
               <p className="text-sm text-gray-500 leading-relaxed mb-8">
                 {service.subtext}
               </p>

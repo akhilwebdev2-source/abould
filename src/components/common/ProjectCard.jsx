@@ -5,7 +5,7 @@ const ProjectCard = ({ id, title, category, description, image, bgColor }) => {
   const slug = title.toLowerCase().replace(/\s+/g, '');
   return (
     <Link to={`/work/${slug}`} className="no-underline">
-      <div className="group rounded-3xl transition-all duration-300 hover:shadow-xl border border-gray-100 bg-white hover:scale-[1.02] overflow-hidden cursor-pointer">
+      <div className="group shadow-xs rounded-3xl transition-all duration-300 border border-gray-100/50 hover:border-gray-100 bg-white hover:scale-[1.02] overflow-hidden cursor-pointer">
         {/* Image Container */}
         <div className={`rounded-t-2xl overflow-hidden mb-8 relative aspect-7/4 ${bgColor} flex items-center justify-center transition-transform duration-500 overflow-hidden mask-down-fade`}>
            <img 

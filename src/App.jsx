@@ -14,7 +14,7 @@ export default function App(){
   return(
     <Router>
       <ScrollToAnchor />
-      <div className="flex flex-col min-h-screen">
+      <div className="flex flex-col min-h-screen w-full">
         <Header />
         <main className="grow">
           <Routes>

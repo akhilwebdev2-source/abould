@@ -6,12 +6,11 @@ import { projectsData } from '../data/projectsData';
 const WorkPage = () => {
   const [filter, setFilter] = useState('All');
 
-  // Get unique categories from first 6 projects
-  const firstSixProjects = projectsData.projects.slice(0, 6);
-  const categories = ['All', ...new Set(firstSixProjects.map(p => p.category))];
+  // Get unique categories from all projects
+  const categories = ['All', ...new Set(projectsData.projects.map(p => p.category))];
 
-  // Map real projects to card format (only first 6)
-  const allProjects = firstSixProjects.map((project) => ({
+  // Map real projects to card format (all projects)
+  const allProjects = projectsData.projects.map((project) => ({
     id: project.id,
     title: project.title,
     category: project.category,

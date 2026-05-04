@@ -44,10 +44,10 @@ const ContactSection = () => {
   return (
     <section id="contact" className="md:py-24 py-12 bg-surface-alt">
       <div className="container mx-auto">
-        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-20 lg:gap-30 p-8 bg-primary rounded-3xl">
+        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-20 lg:gap-30 p-8 bg-primary rounded-4xl">
           
           {/* Left Column: Contact Form */}
-          <div className="flex-1 bg-white rounded-[2.5rem] p-8 md:px-12 shadow-sm border border-gray-100 relative overflow-hidden">
+          <div className="flex-1 bg-white rounded-4xl p-8 md:px-12 shadow-sm border border-gray-100 relative overflow-hidden">
             <div className="text-center mb-4">
               <h3 className="text-2xl font-bold text-primary-dark mb-2">Let's Talk About Your Project</h3>
               <p className="text-gray-500 text-sm">Tell us about your idea, and we'll help you shape it into a powerful digital experience.</p>

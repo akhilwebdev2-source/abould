@@ -6,25 +6,25 @@ const StatsSection = () => {
     {
       number: "100+",
       label: "Happy Clients",
-      icon: <Smile className="w-12 h-12 fill-gray-400" strokeWidth={2} />,
+      icon: <Smile className="w-12 h-12 fill-gray-400 group-hover:fill-white group-hover:text-primary-hover" strokeWidth={2} />,
       description: "Trusted by businesses across 20+ countries"
     },
     {
       number: "70+",
       label: "Projects Delivered",
-      icon: <Building2 className="w-12 h-12 text-gray-400" />,
+      icon: <Building2 className="w-12 h-12 text-gray-400 group-hover:text-white" strokeWidth="1.5px" />,
       description: "From start-ups to global brands"
     },
     {
       number: "98%",
       label: "Satisfaction Rate",
-      icon: <Star className="w-12 h-12 fill-gray-400" />,
+      icon: <Star className="w-12 h-12 fill-gray-400 group-hover:fill-white group-hover:text-primary-hover" />,
       description: "Our clients love what we create"
     },
     {
       number: "5+",
       label: "Years of Experience",
-      icon: <CalendarDays className="w-12 h-12 fill-gray-400" />,
+      icon: <CalendarDays className="w-12 h-12 fill-gray-400 group-hover:fill-white group-hover:text-primary-hover" />,
       description: "Designing, building, and growing digital experiences"
     }
   ];
@@ -48,7 +48,7 @@ const StatsSection = () => {
           {stats.map((stat, index) => (
             <div 
               key={index} 
-              className="group relative bg-surface-alt text-primary rounded-4xl p-8 hover:bg-primary-hover hover:text-white transition-all duration-300 hover:-translate-y-2 shadow-xl hover:shadow-2xl h-85 flex flex-col justify-between border border-gray-100/50 hover:border-transparent"
+              className="group relative bg-surface-alt text-primary rounded-4xl p-8 hover:bg-primary-hover hover:text-white transition-all duration-300 hover:-translate-y-2 shadow-xs h-85 flex flex-col justify-between border border-gray-100 hover:border-transparent"
             >
               <div>
                 <div className="text-6xl font-bold mb-2 group-hover:text-white transition-colors">{stat.number}</div>
@@ -56,7 +56,7 @@ const StatsSection = () => {
               </div>
 
               <div className="flex items-center gap-4">
-                <div className="rounded-full text-white transition-colors flex items-center justify-center group-hover:text-primary-hover">
+                <div className="rounded-full text-white transition-all flex items-center justify-center ">
                   {stat.icon}
                 </div>
                 <p className="text-xs text-gray-500 font-medium max-w-35 group-hover:text-green-50 transition-colors">

@@ -4,6 +4,7 @@ import stageConnectSection2 from "../assets/projects/stageconnect/section2.png";
 import stageConnectSection3 from "../assets/projects/stageconnect/section3.png";
 import stageConnectSection4 from "../assets/projects/stageconnect/section4.png";
 import stageConnectSection5 from "../assets/projects/stageconnect/section5.png";
+import stageConnectReview from "../assets/projects/stageconnect/review.png";
 
 // Import images for Swervem
 import swervemSection1 from "../assets/projects/swervem/section1.png";
@@ -11,6 +12,7 @@ import swervemSection2 from "../assets/projects/swervem/section2.png";
 import swervemSection3 from "../assets/projects/swervem/section3.png";
 import swervemSection4 from "../assets/projects/swervem/section4.png";
 import swervemSection5 from "../assets/projects/swervem/section5.png";
+import swervemReview from "../assets/projects/swervem/review.png";
 
 // Import images for Linked
 import linkedSection1 from "../assets/projects/linked/section1.png";
@@ -18,6 +20,7 @@ import linkedSection2 from "../assets/projects/linked/section2.png";
 import linkedSection3 from "../assets/projects/linked/section3.png";
 import linkedSection4 from "../assets/projects/linked/section4.png";
 import linkedSection5 from "../assets/projects/linked/section5.png";
+import linkedReview from "../assets/projects/linked/review.png";
 
 // Import images for MasterPCOS
 import masterpcosSection1 from "../assets/projects/masterpcos/section1.png";
@@ -25,6 +28,7 @@ import masterpcosSection2 from "../assets/projects/masterpcos/section2.png";
 import masterpcosSection3 from "../assets/projects/masterpcos/section3.png";
 import masterpcosSection4 from "../assets/projects/masterpcos/section4.png";
 import masterpcosSection5 from "../assets/projects/masterpcos/section5.png";
+import masterpcosReview from "../assets/projects/masterpcos/review.png";
 
 // Import images for Condition Pro
 import conditionproSection1 from "../assets/projects/conditionpro/section1.png";
@@ -32,6 +36,7 @@ import conditionproSection2 from "../assets/projects/conditionpro/section2.png";
 import conditionproSection3 from "../assets/projects/conditionpro/section3.png";
 import conditionproSection4 from "../assets/projects/conditionpro/section4.png";
 import conditionproSection5 from "../assets/projects/conditionpro/section5.png";
+import conditionproReview from "../assets/projects/conditionpro/review.png";
 
 // Import images for AutoPanel Pro
 import autopanelSection1 from "../assets/projects/autopanelpro/section1.png";
@@ -39,6 +44,143 @@ import autopanelSection2 from "../assets/projects/autopanelpro/section2.png";
 import autopanelSection3 from "../assets/projects/autopanelpro/section3.png";
 import autopanelSection4 from "../assets/projects/autopanelpro/section4.png";
 import autopanelSection5 from "../assets/projects/autopanelpro/section5.png";
+import autopanelReview from "../assets/projects/autopanelpro/review.png";
+
+// Import images for BoulChans
+import boulchansSection1 from "../assets/projects/boulchans/section1.png";
+import boulchansSection2 from "../assets/projects/boulchans/section2.png";
+import boulchansSection3 from "../assets/projects/boulchans/section3.png";
+import boulchansSection4 from "../assets/projects/boulchans/section4.png";
+import boulchansSection5 from "../assets/projects/boulchans/section5.png";
+import boulchansReview from "../assets/projects/boulchans/review.png";
+
+// Import images for Ekwiti
+import ekwitiSection1 from "../assets/projects/ekwiti/section1.png";
+import ekwitiSection2 from "../assets/projects/ekwiti/section2.png";
+import ekwitiSection3 from "../assets/projects/ekwiti/section3.png";
+import ekwitiSection4 from "../assets/projects/ekwiti/section4.png";
+import ekwitiSection5 from "../assets/projects/ekwiti/section5.png";
+import ekwitiReview from "../assets/projects/ekwiti/review.png";
+
+// Import images for Ducklang
+import ducklangSection1 from "../assets/projects/ducklang/section1.png";
+import ducklangSection2 from "../assets/projects/ducklang/section2.png";
+import ducklangSection3 from "../assets/projects/ducklang/section3.png";
+import ducklangSection4 from "../assets/projects/ducklang/section4.png";
+import ducklangSection5 from "../assets/projects/ducklang/section5.png";
+import ducklangReview from "../assets/projects/ducklang/review.png";
+
+// Import images for Ufly
+import uflySection1 from "../assets/projects/ufly/section1.png";
+import uflySection2 from "../assets/projects/ufly/section2.png";
+import uflySection3 from "../assets/projects/ufly/section3.png";
+import uflySection4 from "../assets/projects/ufly/section4.png";
+import uflySection5 from "../assets/projects/ufly/section5.png";
+import uflyReview from "../assets/projects/ufly/review.png";
+
+// Import images for Fuska
+import fuskaSection1 from "../assets/projects/fuska/section1.png";
+import fuskaSection2 from "../assets/projects/fuska/section2.png";
+import fuskaSection3 from "../assets/projects/fuska/section3.png";
+import fuskaSection4 from "../assets/projects/fuska/section4.png";
+import fuskaSection5 from "../assets/projects/fuska/section5.png";
+import fuskaReview from "../assets/projects/fuska/review.png";
+
+// Import images for AllOut
+import alloutSection1 from "../assets/projects/allout/section1.png";
+import alloutSection2 from "../assets/projects/allout/section2.png";
+import alloutSection3 from "../assets/projects/allout/section3.png";
+import alloutSection4 from "../assets/projects/allout/section4.png";
+import alloutSection5 from "../assets/projects/allout/section5.png";
+import alloutReview from "../assets/projects/allout/review.png";
+
+// Import images for Arogyai
+import arogyaiSection1 from "../assets/projects/arogyai/section1.png";
+import arogyaiSection2 from "../assets/projects/arogyai/section2.png";
+import arogyaiSection3 from "../assets/projects/arogyai/section3.png";
+import arogyaiSection4 from "../assets/projects/arogyai/section4.png";
+import arogyaiSection5 from "../assets/projects/arogyai/section5.png";
+import arogyaiReview from "../assets/projects/arogyai/review.png";
+
+// Import images for Airsafe139
+import airsafe139Section1 from "../assets/projects/airsafe139/section1.png";
+import airsafe139Section2 from "../assets/projects/airsafe139/section2.png";
+import airsafe139Section3 from "../assets/projects/airsafe139/section3.png";
+import airsafe139Section4 from "../assets/projects/airsafe139/section4.png";
+import airsafe139Section5 from "../assets/projects/airsafe139/section5.png";
+import airsafe139Review from "../assets/projects/airsafe139/review.png";
+
+// Import images for Yes Gurl
+import yesgUrlSection1 from "../assets/projects/yesgurl/section1.png";
+import yesgUrlSection2 from "../assets/projects/yesgurl/section2.png";
+import yesgUrlSection3 from "../assets/projects/yesgurl/section3.png";
+import yesgUrlSection4 from "../assets/projects/yesgurl/section4.png";
+import yesgUrlSection5 from "../assets/projects/yesgurl/section5.png";
+import yesgUrlReview from "../assets/projects/yesgurl/review.png";
+
+// Import images for EPIFAM
+import epifamSection1 from "../assets/projects/epifam/section1.png";
+import epifamSection2 from "../assets/projects/epifam/section2.png";
+import epifamSection3 from "../assets/projects/epifam/section3.png";
+import epifamSection4 from "../assets/projects/epifam/section4.png";
+import epifamSection5 from "../assets/projects/epifam/section5.png";
+import epifamReview from "../assets/projects/epifam/review.png";
+
+// Import images for Quickmod
+import quickmodSection1 from "../assets/projects/quickmod/section1.png";
+import quickmodSection2 from "../assets/projects/quickmod/section2.png";
+import quickmodSection3 from "../assets/projects/quickmod/section3.png";
+import quickmodSection4 from "../assets/projects/quickmod/section4.png";
+import quickmodSection5 from "../assets/projects/quickmod/section5.png";
+import quickmodReview from "../assets/projects/quickmod/review.png";
+
+// Import images for Elaria
+import elariaSection1 from "../assets/projects/elaria/section1.png";
+import elariaSection2 from "../assets/projects/elaria/section2.png";
+import elariaSection3 from "../assets/projects/elaria/section3.png";
+import elariaSection4 from "../assets/projects/elaria/section4.png";
+import elariaSection5 from "../assets/projects/elaria/section5.png";
+import elariaReview from "../assets/projects/elaria/review.png";
+
+// Import images for WriteOffGenie
+import writeoffgenieSection1 from "../assets/projects/writeoffgenie/section1.png";
+import writeoffgenieSection2 from "../assets/projects/writeoffgenie/section2.png";
+import writeoffgenieSection3 from "../assets/projects/writeoffgenie/section3.png";
+import writeoffgenieSection4 from "../assets/projects/writeoffgenie/section4.png";
+import writeoffgenieSection5 from "../assets/projects/writeoffgenie/section5.png";
+import writeoffgenieReview from "../assets/projects/writeoffgenie/review.png";
+
+// Import images for Tourleader
+import tourleaderSection1 from "../assets/projects/tourleader/section1.png";
+import tourleaderSection2 from "../assets/projects/tourleader/section2.png";
+import tourleaderSection3 from "../assets/projects/tourleader/section3.png";
+import tourleaderSection4 from "../assets/projects/tourleader/section4.png";
+import tourleaderSection5 from "../assets/projects/tourleader/section5.png";
+import tourleaderReview from "../assets/projects/tourleader/review.png";
+
+// Import images for Kepasa Harmony
+import kepasaharmonySection1 from "../assets/projects/kepasaharmony/section1.png";
+import kepasaharmonySection2 from "../assets/projects/kepasaharmony/section2.png";
+import kepasaharmonySection3 from "../assets/projects/kepasaharmony/section3.png";
+import kepasaharmonySection4 from "../assets/projects/kepasaharmony/section4.png";
+import kepasaharmonySection5 from "../assets/projects/kepasaharmony/section5.png";
+import kepasaharmonyReview from "../assets/projects/kepasaharmony/review.png";
+
+// Import images for Check4You
+import check4youSection1 from "../assets/projects/check4you/section1.png";
+import check4youSection2 from "../assets/projects/check4you/section2.png";
+import check4youSection3 from "../assets/projects/check4you/section3.png";
+import check4youSection4 from "../assets/projects/check4you/section4.png";
+import check4youSection5 from "../assets/projects/check4you/section5.png";
+import check4youReview from "../assets/projects/check4you/review.png";
+
+// Import images for DayDone
+import daydoneSection1 from "../assets/projects/daydone/section1.png";
+import daydoneSection2 from "../assets/projects/daydone/section2.png";
+import daydoneSection3 from "../assets/projects/daydone/section3.png";
+import daydoneSection4 from "../assets/projects/daydone/section4.png";
+import daydoneSection5 from "../assets/projects/daydone/section5.png";
+import daydoneReview from "../assets/projects/daydone/review.png";
 
 export const projectsData = {
   "projects": [
@@ -114,7 +256,7 @@ export const projectsData = {
       "outcome": "The platform successfully connected 500+ artists with 1,000+ venues, generating 50,000+ bookings in the first year and establishing a thriving entertainment ecosystem.",
       "social": {
         "name": "Mindbulet",
-        "profile": "https://placehold.co/300x300/1a3c35/ffffff?text=Mindbulet",
+        "profile": stageConnectReview,
         "country": "United States",
         "heading": "Stage Connect completely transformed how we book artists.",
         "message": "Working with Abould was a truly exceptional experience. They clearly understood the challenges booking agents face and designed a platform that makes first discovery, comparison, and booking incredibly simple. The booking agent home screen, artist profiles, and availability flow are intuitive and well thought out, reducing manual coordination and saving us a lot of time. Communication throughout the project was clear, feedback was implemented quickly, and the final product exceeded our expectations. We now have a scalable platform that feels reliable, modern, and ready for growth."
@@ -191,7 +333,7 @@ export const projectsData = {
       "outcome": "Reduced average commute time by 25% and increased modal shift to sustainable transportation by 40% in pilot cities.",
       "social": {
         "name": "Alex Chen",
-        "profile": "https://placehold.co/300x300/1a3c35/ffffff?text=Alex+Chen",
+        "profile": swervemReview,
         "country": "Singapore",
         "heading": "MobiFlow revolutionized how our city thinks about urban transportation.",
         "message": "Abould's team created a solution that seamlessly integrates multiple transportation modes. The real-time route optimization and unified payment system eliminated the friction of using multiple apps. Our pilot cities saw significant improvements in commute times and a substantial shift toward sustainable transportation options. The platform's intuitive design makes adoption effortless, and the analytics provide valuable insights into transportation patterns."
@@ -268,7 +410,7 @@ export const projectsData = {
       "outcome": "Served 2 million trips with 98% user satisfaction, reducing trip planning time from 20 hours to 2 hours.",
       "social": {
         "name": "Sarah Mitchell",
-        "profile": "https://placehold.co/300x300/1a3c35/ffffff?text=Sarah+Mitchell",
+        "profile": linkedReview,
         "country": "Australia",
         "heading": "TravelMate made trip planning effortless and enjoyable.",
         "message": "The AI recommendations were spot-on, suggesting activities we never would have discovered on our own. The expense tracking made splitting costs among travel companions incredibly simple. What used to take weeks of planning and coordination now happens in hours. The platform handles everything from flights and accommodations to local experiences and budget management. Our trips are now better planned, more enjoyable, and stress-free."
@@ -345,7 +487,7 @@ export const projectsData = {
       "outcome": "Helped 500k+ users improve their health with 65% achieving their fitness goals and 40% maintaining long-term wellness habits.",
       "social": {
         "name": "Marcus Johnson",
-        "profile": "https://placehold.co/300x300/1a3c35/ffffff?text=Marcus+Johnson",
+        "profile": masterpcosReview,
         "country": "Canada",
         "heading": "WellHub transformed my entire approach to health and fitness.",
         "message": "The integration of fitness tracking, nutrition planning, and wellness coaching in one platform is game-changing. The community challenges kept me motivated when I wanted to quit. My coach provided personalized guidance that actually worked for my lifestyle. The progress visualizations made me realize just how far I'd come. I've maintained my fitness habits for longer than ever before, and I feel genuinely healthy."
@@ -423,7 +565,7 @@ export const projectsData = {
       "outcome": "Connected 1.5 million athletes globally, facilitating 100k+ weekly games and building an engaged sports community.",
       "social": {
         "name": "Raj Patel",
-        "profile": "https://placehold.co/300x300/1a3c35/ffffff?text=Raj+Patel",
+        "profile": conditionproReview,
         "country": "India",
         "heading": "SportConnect brought my local athletic community together.",
         "message": "Finding games and connecting with other athletes in my area was nearly impossible before. SportConnect made it simple. The automated team formation ensures balanced matches, and the performance analytics help me track my progress. The community feed celebrates achievements and fosters genuine connections. I've made lifelong friends through this platform and improved my athletic skills tremendously."
@@ -501,7 +643,7 @@ export const projectsData = {
       "outcome": "Improved vehicle maintenance compliance by 80% and reduced breakdowns by 60% across 300k+ connected vehicles.",
       "social": {
         "name": "Emma Rodriguez",
-        "profile": "https://placehold.co/300x300/1a3c35/ffffff?text=Emma+Rodriguez",
+        "profile": autopanelReview,
         "country": "Spain",
         "heading": "DriveSync keeps me worry-free on every journey.",
         "message": "The predictive maintenance alerts caught issues before they became serious problems, saving me thousands in repair costs. Real-time diagnostics give me confidence my vehicle is in perfect condition. The emergency assistance feature provides peace of mind, and the efficiency tracking helps me optimize fuel consumption. I've gone from anxious about breakdowns to completely confident in my vehicle's reliability."
@@ -509,7 +651,7 @@ export const projectsData = {
     },
     {
       "id": 7,
-      "title": "PayFlow",
+      "title": "BoulChans",
       "subtitle": "Financial Management Suite",
       "category": "Fintech",
       "industry": "Financial Technology",
@@ -523,7 +665,7 @@ export const projectsData = {
           "id": 1,
           "title": "Account Aggregation",
           "description": "View all financial accounts in one secure dashboard. Real-time balance updates and transaction history across all institutions.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=Accounts",
+          "image": boulchansSection1,
           "features": [
             "Multi-account support",
             "Real-time synchronization",
@@ -534,7 +676,7 @@ export const projectsData = {
           "id": 2,
           "title": "Smart Budgeting",
           "description": "AI-powered budgeting assistant categorizes expenses and provides spending insights. Automated alerts for budget overages.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=Budgeting",
+          "image": boulchansSection2,
           "features": [
             "Auto-categorization",
             "Budget recommendations",
@@ -545,7 +687,7 @@ export const projectsData = {
           "id": 3,
           "title": "Investment Dashboard",
           "description": "Simplified investment management with portfolio tracking, performance analytics, and expert recommendations.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=Investments",
+          "image": boulchansSection3,
           "features": [
             "Portfolio tracking",
             "Performance analytics",
@@ -556,7 +698,7 @@ export const projectsData = {
           "id": 4,
           "title": "Secure Transactions",
           "description": "Send and receive money instantly with bank-level security. Scheduled payments and recurring transaction automation.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=Transactions",
+          "image": boulchansSection4,
           "features": [
             "Instant transfers",
             "Scheduled payments",
@@ -567,7 +709,7 @@ export const projectsData = {
       "outcome": "Managed $2B+ in user assets with 99.99% security uptime and helping users save 15% on average through smart budgeting.",
       "social": {
         "name": "David Thompson",
-        "profile": "https://placehold.co/300x300/1a3c35/ffffff?text=David+Thompson",
+        "profile": boulchansReview,
         "country": "United Kingdom",
         "heading": "PayFlow gave me complete financial clarity and control.",
         "message": "Having all my accounts in one secure dashboard eliminated the chaos of managing money across multiple institutions. The AI budgeting assistant identified spending patterns I never noticed. Smart recommendations helped me save 15% of my income automatically. The investment portfolio tracking simplified something I always found intimidating. For the first time, I feel genuinely in control of my finances."
@@ -575,7 +717,7 @@ export const projectsData = {
     },
     {
       "id": 8,
-      "title": "EduLearn",
+      "title": "Ekwiti",
       "subtitle": "Digital Learning Platform",
       "category": "EdTech",
       "industry": "Education Technology",
@@ -589,7 +731,7 @@ export const projectsData = {
           "id": 1,
           "title": "Course Catalog",
           "description": "Browse thousands of courses from expert instructors across multiple disciplines. Detailed course previews and user reviews guide choices.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=Courses",
+          "image": ekwitiSection1,
           "features": [
             "Advanced course filtering",
             "Expert instructor matching",
@@ -600,7 +742,7 @@ export const projectsData = {
           "id": 2,
           "title": "Interactive Learning",
           "description": "Engage with multimedia content including videos, quizzes, and hands-on projects. Progress tracking ensures consistent advancement.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=Learning",
+          "image": ekwitiSection2,
           "features": [
             "Multimedia content",
             "Interactive quizzes",
@@ -611,7 +753,7 @@ export const projectsData = {
           "id": 3,
           "title": "Live Sessions & Mentoring",
           "description": "Attend live classes with instructors and peers. One-on-one mentoring sessions provide personalized guidance.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=Live+Sessions",
+          "image": ekwitiSection3,
           "features": [
             "Live classroom experience",
             "Mentor matching",
@@ -622,7 +764,7 @@ export const projectsData = {
           "id": 4,
           "title": "Certification & Credentials",
           "description": "Earn recognized certifications upon course completion. Shareable credentials help advance careers and professional growth.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=Certificates",
+          "image": ekwitiSection4,
           "features": [
             "Industry-recognized certificates",
             "Digital badges",
@@ -633,7 +775,7 @@ export const projectsData = {
       "outcome": "Educated 5 million learners with 95% course completion rate and 70% reported career advancement.",
       "social": {
         "name": "Lisa Wong",
-        "profile": "https://placehold.co/300x300/1a3c35/ffffff?text=Lisa+Wong",
+        "profile": ekwitiReview,
         "country": "Hong Kong",
         "heading": "EduLearn transformed my career trajectory completely.",
         "message": "The quality of instruction is exceptional, and the flexibility allowed me to learn while working full-time. Live sessions with instructors provided personalized guidance, while the community of learners offered motivation. The industry-recognized certificate opened doors to career opportunities I never thought possible. I went from feeling stuck to confidently pursuing a better position."
@@ -641,7 +783,7 @@ export const projectsData = {
     },
     {
       "id": 9,
-      "title": "MarketHub",
+      "title": "Ducklang",
       "subtitle": "E-Commerce Aggregator Platform",
       "category": "Marketplace",
       "industry": "E-Commerce",
@@ -655,7 +797,7 @@ export const projectsData = {
           "id": 1,
           "title": "Product Discovery",
           "description": "Powerful search and filtering system helps users find exactly what they need. AI-powered recommendations show relevant products.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=Discovery",
+          "image": ducklangSection1,
           "features": [
             "Smart search engine",
             "AI recommendations",
@@ -666,7 +808,7 @@ export const projectsData = {
           "id": 2,
           "title": "Seller Management",
           "description": "Sellers manage inventory, listings, and orders from a comprehensive dashboard. Performance metrics help optimize sales.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=Seller+Hub",
+          "image": ducklangSection2,
           "features": [
             "Inventory management",
             "Listing optimization",
@@ -677,7 +819,7 @@ export const projectsData = {
           "id": 3,
           "title": "Secure Checkout",
           "description": "Multiple payment options and secure processing ensure safe transactions. Buyer and seller protection policies build trust.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=Checkout",
+          "image": ducklangSection3,
           "features": [
             "Multiple payment gateways",
             "Buyer protection",
@@ -688,7 +830,7 @@ export const projectsData = {
           "id": 4,
           "title": "Logistics & Delivery",
           "description": "Integrated delivery network ensures timely order fulfillment. Real-time tracking keeps customers informed throughout delivery.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=Logistics",
+          "image": ducklangSection4,
           "features": [
             "Last-mile delivery",
             "Real-time tracking",
@@ -699,7 +841,7 @@ export const projectsData = {
       "outcome": "Connected 100k+ sellers and 20 million buyers, processing 5 million monthly transactions with 98% customer satisfaction.",
       "social": {
         "name": "James Park",
-        "profile": "https://placehold.co/300x300/1a3c35/ffffff?text=James+Park",
+        "profile": ducklangReview,
         "country": "South Korea",
         "heading": "MarketHub is my go-to platform for everything.",
         "message": "The massive selection of products, competitive pricing, and reliable delivery make shopping effortless. The smart recommendations surface exactly what I'm looking for. Buyer protection policies give me confidence every purchase is secure. Real-time tracking keeps me informed from order to doorstep. The seamless experience keeps me coming back."
@@ -707,7 +849,7 @@ export const projectsData = {
     },
     {
       "id": 10,
-      "title": "ConnectSocial",
+      "title": "Ufly",
       "subtitle": "Social Networking Platform",
       "category": "Social",
       "industry": "Social Media & Networking",
@@ -721,7 +863,7 @@ export const projectsData = {
           "id": 1,
           "title": "News Feed",
           "description": "Personalized feed showing relevant content from followed accounts. Smart algorithms prioritize engaging content.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=News+Feed",
+          "image": uflySection1,
           "features": [
             "Personalized algorithm",
             "Content prioritization",
@@ -732,7 +874,7 @@ export const projectsData = {
           "id": 2,
           "title": "Community Groups",
           "description": "Create and join communities around shared interests. Moderated discussions and exclusive group features.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=Groups",
+          "image": uflySection2,
           "features": [
             "Group creation tools",
             "Moderation system",
@@ -743,7 +885,7 @@ export const projectsData = {
           "id": 3,
           "title": "Live Streaming",
           "description": "Go live and connect with followers in real-time. Interactive features like comments and reactions enhance engagement.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=Live+Streaming",
+          "image": uflySection3,
           "features": [
             "HD streaming",
             "Real-time interactions",
@@ -754,7 +896,7 @@ export const projectsData = {
           "id": 4,
           "title": "Privacy & Safety",
           "description": "Advanced privacy controls ensure users control their data. Safety features protect against harassment and misinformation.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=Safety",
+          "image": uflySection4,
           "features": [
             "Privacy controls",
             "Content moderation",
@@ -765,7 +907,7 @@ export const projectsData = {
       "outcome": "Built a community of 50 million active users with 500 million daily interactions and industry-leading engagement rates.",
       "social": {
         "name": "Nina Silva",
-        "profile": "https://placehold.co/300x300/1a3c35/ffffff?text=Nina+Silva",
+        "profile": uflyReview,
         "country": "Brazil",
         "heading": "ConnectSocial helped me build meaningful connections.",
         "message": "The personalized feed feels genuinely relevant, not overwhelming. Community groups let me connect with people who share my interests. The privacy controls give me peace of mind about my data. Live streaming connected me with friends across the globe in real-time. This platform prioritizes genuine connection over endless scrolling."
@@ -773,7 +915,7 @@ export const projectsData = {
     },
     {
       "id": 11,
-      "title": "FreshFarm Direct",
+      "title": "Fuska",
       "subtitle": "Farm-to-Table Delivery Service",
       "category": "Marketplace",
       "industry": "Agriculture & Food",
@@ -787,7 +929,7 @@ export const projectsData = {
           "id": 1,
           "title": "Farm Marketplace",
           "description": "Browse products from multiple local farms. Detailed farm profiles and produce information build trust and transparency.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=Farm+Market",
+          "image": fuskaSection1,
           "features": [
             "Farm profiles with credentials",
             "Seasonal produce filtering",
@@ -798,7 +940,7 @@ export const projectsData = {
           "id": 2,
           "title": "Subscription Boxes",
           "description": "Flexible subscription service delivering seasonal, locally-sourced produce weekly or bi-weekly.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=Subscriptions",
+          "image": fuskaSection2,
           "features": [
             "Customizable boxes",
             "Recipe suggestions",
@@ -809,7 +951,7 @@ export const projectsData = {
           "id": 3,
           "title": "Farmer Connection",
           "description": "Direct messaging with farmers for questions about products, growing methods, and recipes.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=Connection",
+          "image": fuskaSection3,
           "features": [
             "Direct farmer messaging",
             "Growing practice transparency",
@@ -820,7 +962,7 @@ export const projectsData = {
           "id": 4,
           "title": "Delivery & Freshness",
           "description": "Guaranteed delivery within 24 hours of harvest. Temperature-controlled logistics ensure maximum freshness.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=Delivery",
+          "image": fuskaSection4,
           "features": [
             "Same-day delivery",
             "Freshness guarantee",
@@ -831,7 +973,7 @@ export const projectsData = {
       "outcome": "Connected 10,000 farmers with 500k consumers, generating $50M in direct farm sales and improving farmer income by 30%.",
       "social": {
         "name": "Giovanni Rossi",
-        "profile": "https://placehold.co/300x300/1a3c35/ffffff?text=Giovanni+Rossi",
+        "profile": fuskaReview,
         "country": "Italy",
         "heading": "FreshFarm Direct connects me directly to farms I trust.",
         "message": "The freshness is unmatched compared to supermarket produce. Direct farmer messaging lets me ask about growing practices and get recipe recommendations. Subscription boxes with customizable items eliminate decision fatigue. Supporting local farmers while getting premium quality feels good. The transparency about harvest dates and sourcing builds trust in every purchase."
@@ -839,7 +981,7 @@ export const projectsData = {
     },
     {
       "id": 12,
-      "title": "SkillShare Hub",
+      "title": "AllOut",
       "subtitle": "Peer-to-Peer Skill Exchange",
       "category": "Education",
       "industry": "Skill Development",
@@ -853,7 +995,7 @@ export const projectsData = {
           "id": 1,
           "title": "Skill Marketplace",
           "description": "Browse skills offered by community members. Detailed profiles showcase expertise, experience, and peer reviews.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=Skills+Market",
+          "image": alloutSection1,
           "features": [
             "Skill categorization",
             "Experience verification",
@@ -864,7 +1006,7 @@ export const projectsData = {
           "id": 2,
           "title": "Session Booking",
           "description": "Schedule one-on-one or group learning sessions. Video call, in-person, or hybrid options available.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=Booking",
+          "image": alloutSection2,
           "features": [
             "Flexible scheduling",
             "Multi-format sessions",
@@ -875,7 +1017,7 @@ export const projectsData = {
           "id": 3,
           "title": "Skill Verification",
           "description": "Earn badges and certificates as you complete sessions. Verified skills help build credibility in the community.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=Verification",
+          "image": alloutSection3,
           "features": [
             "Skill badges",
             "Progress tracking",
@@ -886,7 +1028,7 @@ export const projectsData = {
           "id": 4,
           "title": "Community Events",
           "description": "Participate in group workshops, meetups, and skill-sharing sessions. Learn alongside motivated community members.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=Events",
+          "image": alloutSection4,
           "features": [
             "Event discovery",
             "Group learning",
@@ -897,7 +1039,7 @@ export const projectsData = {
       "outcome": "Facilitated 1M+ skill exchanges with 500k active members and 95% skill acquisition success rate.",
       "social": {
         "name": "Amara Okafor",
-        "profile": "https://placehold.co/300x300/1a3c35/ffffff?text=Amara+Okafor",
+        "profile": alloutReview,
         "country": "Nigeria",
         "heading": "SkillShare Hub opened incredible learning and networking opportunities.",
         "message": "Learning directly from experienced practitioners in my community was transformative. The flexible scheduling made balancing learning with work easy. Earning skill badges built my confidence and credibility. The people I've met through this platform became genuine friends. This is peer-to-peer learning at its finest."
@@ -905,7 +1047,7 @@ export const projectsData = {
     },
     {
       "id": 13,
-      "title": "HomeReno",
+      "title": "Arogyai",
       "subtitle": "Home Renovation Project Manager",
       "category": "Home Services",
       "industry": "Home Renovation",
@@ -920,7 +1062,7 @@ export const projectsData = {
           "id": 1,
           "title": "Project Planning",
           "description": "Create detailed renovation plans with room-by-room organization. 3D visualization helps plan layouts and visualize changes.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=Planning",
+          "image": arogyaiSection1,
           "features": [
             "3D room visualization",
             "Material lists",
@@ -931,7 +1073,7 @@ export const projectsData = {
           "id": 2,
           "title": "Contractor Marketplace",
           "description": "Find vetted contractors with reviews and portfolios. Compare quotes and hire the right professional for your project.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=Contractors",
+          "image": arogyaiSection2,
           "features": [
             "Verified contractor network",
             "Portfolio showcase",
@@ -942,7 +1084,7 @@ export const projectsData = {
           "id": 3,
           "title": "Budget Management",
           "description": "Track expenses in real-time with automatic categorization. Alerts notify you of budget overages before they happen.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=Budget",
+          "image": arogyaiSection3,
           "features": [
             "Expense tracking",
             "Budget forecasting",
@@ -953,7 +1095,7 @@ export const projectsData = {
           "id": 4,
           "title": "Progress Tracking",
           "description": "Monitor project progress with photos, timelines, and milestone updates. Transparent communication with contractors.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=Progress",
+          "image": arogyaiSection4,
           "features": [
             "Photo documentation",
             "Milestone tracking",
@@ -964,7 +1106,7 @@ export const projectsData = {
       "outcome": "Helped 200k homeowners complete renovation projects on-time and within budget, saving an average of $5,000 per project.",
       "social": {
         "name": "Michael Chen",
-        "profile": "https://placehold.co/300x300/1a3c35/ffffff?text=Michael+Chen",
+        "profile": arogyaiReview,
         "country": "Canada",
         "heading": "HomeReno made our renovation stress-free and organized.",
         "message": "The 3D visualization helped us envision changes before work began. Comparing contractor quotes eliminated guesswork about who to hire. Real-time expense tracking prevented budget overruns. Milestone tracking and photo documentation kept everything transparent. What could have been chaotic was managed perfectly from start to finish."
@@ -972,7 +1114,7 @@ export const projectsData = {
     },
     {
       "id": 14,
-      "title": "PetCare Plus",
+      "title": "Airsafe 139",
       "subtitle": "Comprehensive Pet Care Platform",
       "category": "Pet Services",
       "industry": "Pet Care & Services",
@@ -987,7 +1129,7 @@ export const projectsData = {
           "id": 1,
           "title": "Vet Management",
           "description": "Schedule appointments with local veterinarians. Medical records automatically stored and accessible to vets.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=Vet+Services",
+          "image": airsafe139Section1,
           "features": [
             "Online appointment booking",
             "Medical record storage",
@@ -998,7 +1140,7 @@ export const projectsData = {
           "id": 2,
           "title": "Grooming Services",
           "description": "Book grooming sessions from trusted professionals. Mobile grooming options available for convenience.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=Grooming",
+          "image": airsafe139Section2,
           "features": [
             "Service provider directory",
             "Mobile grooming",
@@ -1009,7 +1151,7 @@ export const projectsData = {
           "id": 3,
           "title": "Training Programs",
           "description": "Access professional training for puppies and adult pets. Behavioral guidance from certified trainers.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=Training",
+          "image": airsafe139Section3,
           "features": [
             "Trainer marketplace",
             "Training videos",
@@ -1020,7 +1162,7 @@ export const projectsData = {
           "id": 4,
           "title": "Pet Community",
           "description": "Share photos, stories, and connect with other pet owners. Pet-specific tips and advice from experts.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=Community",
+          "image": airsafe139Section4,
           "features": [
             "Photo sharing",
             "Pet profiles",
@@ -1031,7 +1173,7 @@ export const projectsData = {
       "outcome": "Served 1M+ pet owners with 500k+ successful vet appointments and 98% pet owner satisfaction.",
       "social": {
         "name": "Sophie Lambert",
-        "profile": "https://placehold.co/300x300/1a3c35/ffffff?text=Sophie+Lambert",
+        "profile": airsafe139Review,
         "country": "France",
         "heading": "PetCare Plus keeps my pet's health organized and prioritized.",
         "message": "Having all my pet's medical records in one place and accessible to vets streamlined care. Scheduling appointments and mobile grooming options added convenience. The pet community shares helpful advice and genuine pet parent support. I feel more confident about my pet's health and wellbeing."
@@ -1039,7 +1181,7 @@ export const projectsData = {
     },
     {
       "id": 15,
-      "title": "GreenThumb",
+      "title": "Yes Gurl",
       "subtitle": "Urban Gardening Guide",
       "category": "Lifestyle",
       "industry": "Agriculture & Sustainability",
@@ -1054,7 +1196,7 @@ export const projectsData = {
           "id": 1,
           "title": "Garden Planning",
           "description": "Design your garden layout considering space and sunlight. AI suggests plants suited to your conditions.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=Garden+Design",
+          "image": yesgUrlSection1,
           "features": [
             "Space calculator",
             "Plant recommendations",
@@ -1065,7 +1207,7 @@ export const projectsData = {
           "id": 2,
           "title": "Plant Care Guide",
           "description": "Comprehensive care instructions for thousands of plant varieties. Watering reminders and seasonal tips.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=Plant+Care",
+          "image": yesgUrlSection2,
           "features": [
             "Care database",
             "Watering reminders",
@@ -1076,7 +1218,7 @@ export const projectsData = {
           "id": 3,
           "title": "Supply Marketplace",
           "description": "Shop for seeds, soil, tools, and supplies from trusted vendors. Curated collections and expert recommendations.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=Marketplace",
+          "image": yesgUrlSection3,
           "features": [
             "Curated products",
             "Expert reviews",
@@ -1087,7 +1229,7 @@ export const projectsData = {
           "id": 4,
           "title": "Community Garden",
           "description": "Share progress photos, get advice from experienced gardeners, and participate in seasonal challenges.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=Community",
+          "image": yesgUrlSection4,
           "features": [
             "Photo sharing",
             "Expert Q&A",
@@ -1098,7 +1240,7 @@ export const projectsData = {
       "outcome": "Inspired 300k urban gardeners to grow food locally, collectively producing 500 tons of produce annually.",
       "social": {
         "name": "Hassan Khalil",
-        "profile": "https://placehold.co/300x300/1a3c35/ffffff?text=Hassan+Khalil",
+        "profile": yesgUrlReview,
         "country": "Egypt",
         "heading": "GreenThumb turned my small apartment into an urban farm.",
         "message": "The AI recommendations considered my balcony's limited space and sunlight perfectly. Care guides with watering reminders took the guesswork out of plant care. The community celebrated successes and helped troubleshoot problems. I'm now growing fresh vegetables on my balcony and feeling connected to nature in the city."
@@ -1106,7 +1248,7 @@ export const projectsData = {
     },
     {
       "id": 16,
-      "title": "MusicStudio",
+      "title": "EPIFAM",
       "subtitle": "Home Music Production Platform",
       "category": "Creative",
       "industry": "Music & Audio Production",
@@ -1121,7 +1263,7 @@ export const projectsData = {
           "id": 1,
           "title": "DAW Integration",
           "description": "Seamlessly integrate with popular digital audio workstations. Cloud storage for projects and automatic backup.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=DAW",
+          "image": epifamSection1,
           "features": [
             "Multi-DAW support",
             "Cloud storage",
@@ -1132,7 +1274,7 @@ export const projectsData = {
           "id": 2,
           "title": "Sound Library",
           "description": "Access millions of royalty-free sounds, loops, and instruments. Searchable database with preview functionality.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=Sound+Library",
+          "image": epifamSection2,
           "features": [
             "Millions of sounds",
             "Genre filtering",
@@ -1143,7 +1285,7 @@ export const projectsData = {
           "id": 3,
           "title": "Learning Resources",
           "description": "Production tutorials from industry experts. Learn composition, mixing, and mastering techniques.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=Learning",
+          "image": epifamSection3,
           "features": [
             "Expert tutorials",
             "Live masterclasses",
@@ -1154,7 +1296,7 @@ export const projectsData = {
           "id": 4,
           "title": "Collaboration Hub",
           "description": "Collaborate with producers and musicians worldwide. Share projects and collect feedback in real-time.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=Collaboration",
+          "image": epifamSection4,
           "features": [
             "Real-time collaboration",
             "Feedback system",
@@ -1165,7 +1307,7 @@ export const projectsData = {
       "outcome": "Empowered 100k musicians to produce professional music with 50k+ tracks released across streaming platforms.",
       "social": {
         "name": "Klaus Mueller",
-        "profile": "https://placehold.co/300x300/1a3c35/ffffff?text=Klaus+Mueller",
+        "profile": epifamReview,
         "country": "Germany",
         "heading": "MusicStudio democratized music production for me.",
         "message": "Professional-grade tools are now accessible from my bedroom studio. The sound library is absolutely massive with everything I need. Learning resources from industry experts elevated my production skills dramatically. Real-time collaboration with producers worldwide expanded my creative possibilities. I went from hobbyist to professional producer."
@@ -1173,7 +1315,7 @@ export const projectsData = {
     },
     {
       "id": 17,
-      "title": "EventFlow",
+      "title": "Quickmod",
       "subtitle": "Event Management Platform",
       "category": "Events",
       "industry": "Event Management",
@@ -1188,7 +1330,7 @@ export const projectsData = {
           "id": 1,
           "title": "Event Planning",
           "description": "Comprehensive event planning tools with checklists, timelines, and vendor management.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=Planning",
+          "image": quickmodSection1,
           "features": [
             "Event timeline",
             "Task management",
@@ -1199,7 +1341,7 @@ export const projectsData = {
           "id": 2,
           "title": "Ticketing System",
           "description": "Create and sell tickets with flexible pricing options. Digital and physical ticket options available.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=Ticketing",
+          "image": quickmodSection2,
           "features": [
             "Flexible pricing tiers",
             "QR code scanning",
@@ -1210,7 +1352,7 @@ export const projectsData = {
           "id": 3,
           "title": "Guest Management",
           "description": "Track RSVPs, send invitations, and manage attendee information. Automated reminders reduce no-shows.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=Guests",
+          "image": quickmodSection3,
           "features": [
             "RSVP tracking",
             "Automated reminders",
@@ -1221,7 +1363,7 @@ export const projectsData = {
           "id": 4,
           "title": "Live Event Tools",
           "description": "Check-in management, live polling, and real-time analytics during the event.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=Live+Tools",
+          "image": quickmodSection4,
           "features": [
             "Mobile check-in",
             "Live polling",
@@ -1232,7 +1374,7 @@ export const projectsData = {
       "outcome": "Managed 50,000+ events with 100M+ attendees and 95% organizer satisfaction rating.",
       "social": {
         "name": "Victoria Santos",
-        "profile": "https://placehold.co/300x300/1a3c35/ffffff?text=Victoria+Santos",
+        "profile": quickmodReview,
         "country": "Mexico",
         "heading": "EventFlow made event planning professional and effortless.",
         "message": "From tiny intimate gatherings to large conferences, EventFlow handled every detail. Planning tools kept me organized, ticketing was flexible, and guest management eliminated no-shows. Real-time analytics during the event provided valuable insights. Events that used to stress me out are now executed flawlessly."
@@ -1240,7 +1382,7 @@ export const projectsData = {
     },
     {
       "id": 18,
-      "title": "CourierConnect",
+      "title": "Elaria",
       "subtitle": "Last-Mile Delivery Network",
       "category": "Logistics",
       "industry": "Logistics & Delivery",
@@ -1255,7 +1397,7 @@ export const projectsData = {
           "id": 1,
           "title": "Shipment Management",
           "description": "Easy shipment creation with address verification and weight estimation. Bulk upload for multiple shipments.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=Shipments",
+          "image": elariaSection1,
           "features": [
             "Address verification",
             "Rate calculation",
@@ -1266,7 +1408,7 @@ export const projectsData = {
           "id": 2,
           "title": "Courier Network",
           "description": "Access a network of local courier partners. Transparent pricing and reliable delivery performance.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=Couriers",
+          "image": elariaSection2,
           "features": [
             "Courier ratings",
             "Performance tracking",
@@ -1277,7 +1419,7 @@ export const projectsData = {
           "id": 3,
           "title": "Tracking & Updates",
           "description": "Real-time shipment tracking with automatic customer notifications. Live location updates.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=Tracking",
+          "image": elariaSection3,
           "features": [
             "Real-time tracking",
             "SMS updates",
@@ -1288,7 +1430,7 @@ export const projectsData = {
           "id": 4,
           "title": "Analytics Dashboard",
           "description": "Comprehensive analytics for shipments, costs, and courier performance. Optimize delivery routes.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=Analytics",
+          "image": elariaSection4,
           "features": [
             "Cost analytics",
             "Performance reports",
@@ -1299,7 +1441,7 @@ export const projectsData = {
       "outcome": "Delivered 10M+ packages with 98% on-time delivery and 40% lower costs compared to traditional couriers.",
       "social": {
         "name": "Ravi Kumar",
-        "profile": "https://placehold.co/300x300/1a3c35/ffffff?text=Ravi+Kumar",
+        "profile": elariaReview,
         "country": "India",
         "heading": "CourierConnect provides affordable and transparent delivery.",
         "message": "The local courier network reduced our delivery costs significantly while maintaining reliability. Transparent pricing eliminated surprises. Real-time tracking with customer notifications improved satisfaction. The analytics helped us optimize routes and reduce delivery times. This platform proved that affordable doesn't mean sacrificing quality."
@@ -1307,7 +1449,7 @@ export const projectsData = {
     },
     {
       "id": 19,
-      "title": "LanguagePro",
+      "title": "WriteOffGenie",
       "subtitle": "Interactive Language Learning",
       "category": "Education",
       "industry": "Language Learning",
@@ -1321,7 +1463,7 @@ export const projectsData = {
           "id": 1,
           "title": "Interactive Lessons",
           "description": "Gamified language lessons with interactive exercises. Adaptive learning adjusts difficulty based on progress.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=Lessons",
+          "image": writeoffgenieSection1,
           "features": [
             "Gamified exercises",
             "Adaptive difficulty",
@@ -1332,7 +1474,7 @@ export const projectsData = {
           "id": 2,
           "title": "Live Conversation",
           "description": "Practice real conversations with native speakers. Scheduled sessions and on-demand availability.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=Conversation",
+          "image": writeoffgenieSection2,
           "features": [
             "Native speaker matching",
             "Session recording",
@@ -1343,7 +1485,7 @@ export const projectsData = {
           "id": 3,
           "title": "Cultural Content",
           "description": "Learn through movies, music, and news in target language. Context-based learning improves retention.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=Culture",
+          "image": writeoffgenieSection3,
           "features": [
             "Authentic content",
             "Subtitles and translations",
@@ -1354,7 +1496,7 @@ export const projectsData = {
           "id": 4,
           "title": "Proficiency Tracking",
           "description": "Progress tracking with proficiency levels and certifications. Detailed analytics show strength areas.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=Progress",
+          "image": writeoffgenieSection4,
           "features": [
             "Proficiency assessments",
             "Certificates",
@@ -1365,7 +1507,7 @@ export const projectsData = {
       "outcome": "Helped 2M learners achieve proficiency with 80% reaching advanced levels and 60% using the language professionally.",
       "social": {
         "name": "Yuki Tanaka",
-        "profile": "https://placehold.co/300x300/1a3c35/ffffff?text=Yuki+Tanaka",
+        "profile": writeoffgenieReview,
         "country": "Japan",
         "heading": "LanguagePro made language learning fun and practical.",
         "message": "Gamified lessons kept me engaged and motivated. Live conversations with native speakers built genuine confidence. Cultural content made learning contextual and meaningful. I progressed faster than any traditional course. I'm now fluent and using the language professionally."
@@ -1373,7 +1515,7 @@ export const projectsData = {
     },
     {
       "id": 20,
-      "title": "EmployeeHub",
+      "title": "Tourleader",
       "subtitle": "Internal Communications Platform",
       "category": "Enterprise",
       "industry": "Internal Communications",
@@ -1388,7 +1530,7 @@ export const projectsData = {
           "id": 1,
           "title": "Team Communication",
           "description": "Channels, group messaging, and one-on-one chat. Organized conversations and searchable history.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=Communication",
+          "image": tourleaderSection1,
           "features": [
             "Channel organization",
             "Message search",
@@ -1399,7 +1541,7 @@ export const projectsData = {
           "id": 2,
           "title": "Company Updates",
           "description": "Broadcast company-wide announcements and news. Engagement tracking shows message reach.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=Updates",
+          "image": tourleaderSection2,
           "features": [
             "Announcement posting",
             "Read receipts",
@@ -1410,7 +1552,7 @@ export const projectsData = {
           "id": 3,
           "title": "Directory & Profiles",
           "description": "Employee directory with profiles, contact info, and team affiliations. Helps new employees find their team.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=Directory",
+          "image": tourleaderSection3,
           "features": [
             "Company directory",
             "Employee profiles",
@@ -1421,7 +1563,7 @@ export const projectsData = {
           "id": 4,
           "title": "Knowledge Base",
           "description": "Centralized documentation and resources. Reduces support requests through self-service.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=Knowledge",
+          "image": tourleaderSection4,
           "features": [
             "Document management",
             "Search functionality",
@@ -1432,7 +1574,7 @@ export const projectsData = {
       "outcome": "Improved internal communication efficiency for 100k+ employees and increased engagement by 45%.",
       "social": {
         "name": "Eleanor Thompson",
-        "profile": "https://placehold.co/300x300/1a3c35/ffffff?text=Eleanor+Thompson",
+        "profile": tourleaderReview,
         "country": "United Kingdom",
         "heading": "EmployeeHub unified our entire workplace communication.",
         "message": "Before, information was scattered across multiple platforms. Now everything is centralized and searchable. Company announcements reach everyone simultaneously with read receipts confirming engagement. The knowledge base reduces repetitive support requests. Our workplace feels more connected and informed."
@@ -1440,7 +1582,7 @@ export const projectsData = {
     },
     {
       "id": 21,
-      "title": "ClinicFlow",
+      "title": "Kepasa Harmony",
       "subtitle": "Healthcare Practice Management",
       "category": "Healthcare",
       "industry": "Healthcare Management",
@@ -1455,7 +1597,7 @@ export const projectsData = {
           "id": 1,
           "title": "Patient Management",
           "description": "Secure patient records with complete medical history. HIPAA-compliant storage and access control.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=Patients",
+          "image": kepasaharmonySection1,
           "features": [
             "Digital medical records",
             "Patient demographics",
@@ -1466,7 +1608,7 @@ export const projectsData = {
           "id": 2,
           "title": "Appointment Scheduling",
           "description": "Intelligent scheduling system prevents double-booking. Automated reminders reduce no-shows.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=Appointments",
+          "image": kepasaharmonySection2,
           "features": [
             "Smart scheduling",
             "Automated reminders",
@@ -1477,7 +1619,7 @@ export const projectsData = {
           "id": 3,
           "title": "Billing & Payments",
           "description": "Automated billing with insurance integration. Multiple payment options and invoice management.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=Billing",
+          "image": kepasaharmonySection3,
           "features": [
             "Insurance billing",
             "Payment processing",
@@ -1488,7 +1630,7 @@ export const projectsData = {
           "id": 4,
           "title": "Reporting & Analytics",
           "description": "Comprehensive reports for clinic performance, patient outcomes, and revenue tracking.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=Reports",
+          "image": kepasaharmonySection4,
           "features": [
             "Performance analytics",
             "Revenue reports",
@@ -1499,7 +1641,7 @@ export const projectsData = {
       "outcome": "Streamlined operations for 5,000+ healthcare practices, reducing administrative time by 40% and improving patient satisfaction.",
       "social": {
         "name": "Dr. Priya Sharma",
-        "profile": "https://placehold.co/300x300/1a3c35/ffffff?text=Priya+Sharma",
+        "profile": kepasaharmonyReview,
         "country": "India",
         "heading": "ClinicFlow revolutionized our practice management.",
         "message": "Digital patient records eliminated paper chaos and improved care coordination. Intelligent scheduling reduced appointment errors and no-shows. Automated billing with insurance integration simplified revenue management. The platform handles compliance automatically, giving us peace of mind. We now focus on patient care, not administration."
@@ -1507,7 +1649,7 @@ export const projectsData = {
     },
     {
       "id": 22,
-      "title": "GoalTracker",
+      "title": "Check4You",
       "subtitle": "Personal Goal Management",
       "category": "Productivity",
       "industry": "Personal Development",
@@ -1522,7 +1664,7 @@ export const projectsData = {
           "id": 1,
           "title": "Goal Setting",
           "description": "Set SMART goals with clear objectives and milestones. Breaking down complex goals into actionable steps.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=Goals",
+          "image": check4youSection1,
           "features": [
             "SMART goal framework",
             "Milestone tracking",
@@ -1533,7 +1675,7 @@ export const projectsData = {
           "id": 2,
           "title": "Progress Visualization",
           "description": "Beautiful progress charts and dashboards showing advancement. Visual motivation through achievements.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=Progress",
+          "image": check4youSection2,
           "features": [
             "Progress charts",
             "Achievement badges",
@@ -1544,7 +1686,7 @@ export const projectsData = {
           "id": 3,
           "title": "Accountability Partners",
           "description": "Share goals with friends for mutual accountability. Get encouragement and support from others.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=Partners",
+          "image": check4youSection3,
           "features": [
             "Goal sharing",
             "Progress sharing",
@@ -1555,7 +1697,7 @@ export const projectsData = {
           "id": 4,
           "title": "Insights & Analytics",
           "description": "Understand your goal-achieving patterns. Get recommendations for improvement based on data.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=Insights",
+          "image": check4youSection4,
           "features": [
             "Performance analytics",
             "Pattern recognition",
@@ -1566,7 +1708,7 @@ export const projectsData = {
       "outcome": "Helped 1M+ users achieve their goals with 70% success rate and increased motivation through community support.",
       "social": {
         "name": "Chris Anderson",
-        "profile": "https://placehold.co/300x300/1a3c35/ffffff?text=Chris+Anderson",
+        "profile": check4youReview,
         "country": "USA",
         "heading": "GoalTracker transformed my goal-achieving process.",
         "message": "Setting SMART goals with the framework provided clarity. Visual progress tracking kept me motivated. Accountability partners provided genuine support when motivation waned. The analytics revealed patterns in my success and failure. I achieved more this year than the previous five combined."
@@ -1574,7 +1716,7 @@ export const projectsData = {
     },
     {
       "id": 23,
-      "title": "ArtisanHub",
+      "title": "DayDone",
       "subtitle": "Handmade Crafts Marketplace",
       "category": "Marketplace",
       "industry": "Handmade & Crafts",
@@ -1588,7 +1730,7 @@ export const projectsData = {
           "id": 1,
           "title": "Artisan Profiles",
           "description": "Showcase your craft with detailed profiles, portfolio galleries, and artist stories. Build your brand.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=Profiles",
+          "image": daydoneSection1,
           "features": [
             "Portfolio galleries",
             "Artist statements",
@@ -1599,7 +1741,7 @@ export const projectsData = {
           "id": 2,
           "title": "Product Listings",
           "description": "Create beautiful product listings with multiple photos, detailed descriptions, and custom pricing.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=Listings",
+          "image": daydoneSection2,
           "features": [
             "Multi-image uploads",
             "Detailed descriptions",
@@ -1610,7 +1752,7 @@ export const projectsData = {
           "id": 3,
           "title": "Custom Orders",
           "description": "Accept custom orders and commissions. Communicate directly with buyers about specifications.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=Custom+Orders",
+          "image": daydoneSection3,
           "features": [
             "Commission requests",
             "Custom messaging",
@@ -1621,7 +1763,7 @@ export const projectsData = {
           "id": 4,
           "title": "Sales Analytics",
           "description": "Track sales performance, bestselling items, and customer demographics. Grow your artisan business.",
-          "image": "https://placehold.co/400x500/1a3c35/ffffff?text=Analytics",
+          "image": daydoneSection4,
           "features": [
             "Sales tracking",
             "Bestseller analysis",
@@ -1632,7 +1774,7 @@ export const projectsData = {
       "outcome": "Connected 50k+ artisans with 500k collectors, generating $100M in annual sales and supporting sustainable livelihoods.",
       "social": {
         "name": "Isabella Moretti",
-        "profile": "https://placehold.co/300x300/1a3c35/ffffff?text=Isabella+Moretti",
+        "profile": daydoneReview,
         "country": "Italy",
         "heading": "ArtisanHub gave my craft the platform it deserved.",
         "message": "Showcasing my work with beautiful galleries and artist stories attracted genuine collectors who appreciate craftsmanship. Custom order capabilities let me take meaningful commissions. Sales analytics helped me understand market demand. I transitioned from hobbyist to full-time artisan thanks to this platform."

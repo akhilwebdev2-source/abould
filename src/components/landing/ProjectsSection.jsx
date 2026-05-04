@@ -56,7 +56,7 @@ const ProjectsSection = () => {
         {/* View All Button */}
         <div className="flex justify-center mt-10">
           <Link to="/work">
-            <button className="group bg-linear-to-b from-primary-hover to-primary text-white px-8 py-3 rounded-xl text-base font-medium transition-all shadow-md hover:shadow-xl flex items-center gap-2 cursor-pointer">
+            <button className="group bg-linear-to-b from-primary-hover to-primary border-2 hover:border-neutral-300 border-primary text-white py-3 px-8 rounded-xl text-sm font-medium transition-all flex items-center gap-2 cursor-pointer">
               View all
               <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
             </button>
