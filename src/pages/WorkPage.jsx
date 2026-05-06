@@ -15,7 +15,7 @@ const WorkPage = () => {
     title: project.title,
     category: project.category,
     description: project.heroDescription,
-    image: `https://placehold.co/600x400/f3f4f6/1a3c35?text=${project.title}`,
+    image: project.cover,
     bgColor: 'bg-gray-100'
   }));
 
@@ -28,7 +28,7 @@ const WorkPage = () => {
       <div className="container mx-auto px-4">
         
         {/* Header */}
-        <div className="flex flex-col items-center mb-16 max-w-3xl mx-auto">
+        <div className="flex flex-col items-center mb-30 max-w-3xl mx-auto">
           <div className='max-w-md flex flex-col items-center justify-center'>
             <h1 className="text-3xl md:text-5xl font-bold text-primary mb-10">
             Our Work
@@ -40,9 +40,10 @@ const WorkPage = () => {
               Each project reflects our focus on clarity, usability, and impact.
             </div>
           </div>
-          
-          {/* Filters */}
-          <div className="flex flex-wrap justify-center gap-4 mt-20 w-screen px-10">
+        </div>
+
+        {/* Filters */}
+          <div className="flex flex-wrap w-full justify-center gap-4 my-20 px-10">
              {categories.map(f => (
                <button
                  key={f}
@@ -57,10 +58,9 @@ const WorkPage = () => {
                </button>
              ))}
           </div>
-        </div>
 
         {/* Projects Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-16 max-w-7xl mx-auto mb-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-16 max-w-7xl mx-auto mb-10">
           {filteredProjects.map((project) => (
             <ProjectCard key={project.id} {...project} />
           ))}

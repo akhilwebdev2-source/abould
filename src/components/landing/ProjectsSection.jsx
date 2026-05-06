@@ -2,6 +2,7 @@ import React from 'react';
 import { ArrowUpRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import ProjectCard from '../common/ProjectCard';
+import { projectsData } from '../../data/projectsData';
 
 const ProjectsSection = () => {
   const projects = [
@@ -9,28 +10,28 @@ const ProjectsSection = () => {
       title: "Stage Connect",
       category: "Events & Entertainment",
       description: "Artist booking platform connecting performers and booking agents.",
-      image: "https://placehold.co/600x400/f3f4f6/1a3c35?text=Stage+Connect",
+      image: projectsData.projects[0].cover,
       bgColor: "bg-[#F3F4F6]" 
     },
     {
       title: "Swervem",
       category: "Mobility & Transportation",
       description: "Car rental and rent-to-own mobility platform with host mode.",
-      image: "https://placehold.co/600x400/f8fafc/1a3c35?text=Swervem",
+      image: projectsData.projects[1].cover,
       bgColor: "bg-[#F8FAFC]"
     },
     {
       title: "MasterPCOS",
       category: "Health & Wellness",
       description: "Women's health app for PCOS management through diet and fitness.",
-      image: "https://placehold.co/600x400/fff7ed/1a3c35?text=MasterPCOS",
+      image: projectsData.projects[3].cover,
       bgColor: "bg-[#FFF7ED]"
     },
     {
       title: "Linked",
       category: "Travel & Connectivity",
       description: "Global eSIM connectivity app with premium liquid glass UI.",
-      image: "https://placehold.co/600x400/ecfdf5/1a3c35?text=Linked",
+      image: projectsData.projects[2].cover,
       bgColor: "bg-[#ECFDF5]"
     }
   ];

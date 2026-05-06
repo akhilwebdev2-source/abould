@@ -1,4 +1,5 @@
 import React from 'react';
+import ImageWithShimmer from '../common/ImageWithShimmer';
 
 import card1 from '../../assets/home/hero/card1.png'
 import card2 from '../../assets/home/hero/card2.png'
@@ -63,7 +64,7 @@ const Hero = () => {
               <div className="flex -space-x-3 mb-3">
                  {[1,2,3].map(i => (
                    <div key={i} className="w-10 h-10 rounded-full border-2 border-white bg-gray-200 flex items-center justify-center text-xs overflow-hidden">
-                      <img src={`https://i.pravatar.cc/100?img=${i+10}`} alt="User" className="w-full h-full object-cover" />
+                      <ImageWithShimmer src={`https://i.pravatar.cc/100?img=${i+10}`} alt="User" className="w-full h-full" />
                    </div>
                  ))}
               </div>
@@ -80,7 +81,7 @@ const Hero = () => {
             {cards.map((card, i) => (
               <div key={i} className="w-56 md:w-80 h-full shrink-0 bg-white rounded-4xl overflow-hidden transform transition-all hover:scale-105 duration-300">
                 <Link to={"/"}>
-                  <img 
+                  <ImageWithShimmer 
                     src={card} 
                     alt={`Carousel Item ${i + 1}`}
                     className="w-full h-full"

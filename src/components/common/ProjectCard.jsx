@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import ImageWithShimmer from './ImageWithShimmer';
 
 const ProjectCard = ({ id, title, category, description, image, bgColor }) => {
   const slug = title.toLowerCase().replace(/\s+/g, '');
@@ -7,11 +8,11 @@ const ProjectCard = ({ id, title, category, description, image, bgColor }) => {
     <Link to={`/work/${slug}`} className="no-underline">
       <div className="group shadow-xs rounded-3xl transition-all duration-300 border border-gray-100/50 hover:border-gray-100 bg-white hover:scale-[1.02] overflow-hidden cursor-pointer">
         {/* Image Container */}
-        <div className={`rounded-t-2xl overflow-hidden mb-8 relative aspect-7/4 ${bgColor} flex items-center justify-center transition-transform duration-500 overflow-hidden mask-down-fade`}>
-           <img 
+        <div className={`rounded-t-2xl mb-8 relative aspect-7/4 flex items-center justify-center transition-transform duration-500 overflow-hidden mask-down-fade`}>
+           <ImageWithShimmer 
              src={image} 
              alt={title}
-             className="w-full h-full object-cover opacity-90 mix-blend-multiply transition-opacity group-hover:opacity-100"
+             className="h-260 pb-10 mix-blend-multiply"
            />
         </div>
 

@@ -182,6 +182,31 @@ import daydoneSection4 from "../assets/projects/daydone/section4.png";
 import daydoneSection5 from "../assets/projects/daydone/section5.png";
 import daydoneReview from "../assets/projects/daydone/review.png";
 
+// Import cover images for all projects
+import stageConnectCover from "../assets/projects/stageconnect/cover.png";
+import swervemCover from "../assets/projects/swervem/cover.png";
+import linkedCover from "../assets/projects/linked/cover.png";
+import masterpcosCover from "../assets/projects/masterpcos/cover.png";
+import conditionproCover from "../assets/projects/conditionpro/cover.png";
+import autopanelCover from "../assets/projects/autopanelpro/cover.png";
+import boulchansCover from "../assets/projects/boulchans/cover.png";
+import ekwitiCover from "../assets/projects/ekwiti/cover.png";
+import ducklangCover from "../assets/projects/ducklang/cover.png";
+import uflyCover from "../assets/projects/ufly/cover.png";
+import fuskaCover from "../assets/projects/fuska/cover.png";
+import alloutCover from "../assets/projects/allout/cover.png";
+import arogyaiCover from "../assets/projects/arogyai/cover.png";
+import airsafe139Cover from "../assets/projects/airsafe139/cover.png";
+import yesgUrlCover from "../assets/projects/yesgurl/cover.png";
+import epifamCover from "../assets/projects/epifam/cover.png";
+import quickmodCover from "../assets/projects/quickmod/cover.png";
+import elariaCover from "../assets/projects/elaria/cover.png";
+import writeoffgenieCover from "../assets/projects/writeoffgenie/cover.png";
+import tourleaderCover from "../assets/projects/tourleader/cover.png";
+import kepasaharmonyCover from "../assets/projects/kepasaharmony/cover.png";
+import check4youCover from "../assets/projects/check4you/cover.png";
+import daydoneCover from "../assets/projects/daydone/cover.png";
+
 export const projectsData = {
   "projects": [
     {
@@ -191,6 +216,7 @@ export const projectsData = {
       "category": "Entertainment",
       "industry": "Events & Entertainment",
       "platform": "Mobile App",
+      "cover": stageConnectCover,
       "roles": ["Artist", "Booking Agent", "Admin"],
       "status": "Launched",
       "heroDescription": "A complete artist booking ecosystem designed to connect artists, booking agents, and administrators through a seamless digital experience.",
@@ -269,6 +295,7 @@ export const projectsData = {
       "category": "Mobility",
       "industry": "Mobility & Transportation",
       "platform": "Mobile App",
+      "cover": swervemCover,
       "roles": ["Renter", "Host", "Admin"],
       "status": "Launched",
       "heroDescription": "A dual-mode mobility platform designed to let users rent cars seamlessly — and even own them over time - while enabling car owners to earn through hosting.",
@@ -302,7 +329,7 @@ export const projectsData = {
           "description": "Users track active journeys, review trip history, and manage bookings efficiently. Clear status updates keep users informed throughout their journey.",
           "image": swervemSection3,
           "features": [
-            "Live location tracking",
+            "Launched location tracking",
             "Trip receipts and analytics",
             "Booking history archive"
           ]
@@ -346,6 +373,7 @@ export const projectsData = {
       "category": "Travel",
       "industry": "Travel & Connectivity",
       "platform": "Mobile App",
+      "cover": linkedCover,
       "roles": ["Traveller"],
       "status": "Launched",
       "heroDescription": "A modern eSIM platform designed to help travelers stay connected worldwide through local, regional, and global data plans - all managed through a seamless, secure mobile experience.",
@@ -423,6 +451,7 @@ export const projectsData = {
       "category": "Health & Wellness",
       "industry": "Women's Health & Wellness",
       "platform": "Mobile App",
+      "cover": masterpcosCover,
       "roles": ["User", "Admin"],
       "status": "Launched",
       "heroDescription": "A comprehensive health platform designed to help women manage PCOS through personalized nutrition, guided workouts, AI-powered meal scanning, and daily progress tracking.",
@@ -457,7 +486,7 @@ export const projectsData = {
           "image": masterpcosSection3,
           "features": [
             "Expert coach matching",
-            "Live coaching sessions",
+            "Launched coaching sessions",
             "Progress check-ins"
           ]
         },
@@ -500,6 +529,7 @@ export const projectsData = {
       "category": "Sports",
       "industry": "Fitness & Sports Performance",
       "platform": "Mobile App",
+      "cover": conditionproCover,
       "roles": ["User", "Admin"],
       "status": "Launched",
       "heroDescription": "A high-performance fitness app designed to help users train smarter using MAS (Max Aerobic Speed), data-driven workouts, and real-time performance tracking.",
@@ -578,6 +608,7 @@ export const projectsData = {
       "category": "Mobility",
       "industry": "Fitness & Sports Performance",
       "platform": "Mobile App",
+      "cover": autopanelCover,
       "roles": ["User", "Admin"],
       "status": "Launched",
       "heroDescription": "A mobile app designed to help users scan vehicle damage, evaluate repair costs, and make informed decisions before repair or purchase — powered by guided assessments and expert-backed insights.",
@@ -652,14 +683,16 @@ export const projectsData = {
     {
       "id": 7,
       "title": "BoulChans",
-      "subtitle": "Financial Management Suite",
+      "subtitle": "Real-Time Sports Betting Experience",
       "category": "Fintech",
-      "industry": "Financial Technology",
-      "platform": "Web & Mobile",
-      "roles": ["Full-Stack Developer", "Security Engineer", "Financial Analyst", "Product Manager"],
-      "status": "Live",
-      "heroDescription": "Complete financial management platform for individuals and small businesses. Seamlessly manage accounts, investments, and transactions.",
-      "projectOverview": "PayFlow democratizes financial management by aggregating all banking and investment accounts into one secure platform. Smart AI-powered budgeting provides spending insights and personalized recommendations, while simplified investment management demystifies portfolio tracking. Advanced security protocols protect user assets, and instant transfer capabilities combined with scheduled payment automation help users take control of their finances and achieve their financial goals.",
+      "industry": "Sports Betting & Fintech",
+      "platform": "Mobile App",
+      "cover": boulchansCover,
+      "roles": ["Users"],
+      "status": "Launched",
+      "heroDescription": "A high-performance betting platform designed for live match tracking, fast slips, and secure wallet management — built for modern sports enthusiasts.",
+      "projectOverview1": "BoulChans was designed to simplify live sports betting by combining real-time match updates, intuitive odds browsing, and secure financial transactions into one streamlined experience.",
+      "projectOverview2": "Traditional betting apps often overwhelm users with cluttered dashboards and complex flows. Our goal was to create a fast, focused, and visually structured interface that makes betting decisions feel confident and effortless.",
       "sections": [
         {
           "id": 1,
@@ -718,14 +751,16 @@ export const projectsData = {
     {
       "id": 8,
       "title": "Ekwiti",
-      "subtitle": "Digital Learning Platform",
-      "category": "EdTech",
-      "industry": "Education Technology",
-      "platform": "Web & Mobile",
-      "roles": ["Full-Stack Developer", "Content Manager", "UI/UX Designer", "Learning Specialist"],
-      "status": "Live",
-      "heroDescription": "Comprehensive online learning platform making quality education accessible to everyone. Interactive courses, live sessions, and personalized learning paths.",
-      "projectOverview": "EduLearn democratizes quality education by offering thousands of expert-led courses accessible to everyone. The platform combines self-paced learning through multimedia content with interactive live sessions and personalized mentoring. Progress tracking and industry-recognized certifications motivate learners and demonstrate competency to employers. By making education flexible, affordable, and outcome-focused, EduLearn empowers individuals to upskill, reskill, and advance their careers.",
+      "subtitle": "Smart Trading Signals Platform",
+      "category": "Fintech",
+      "industry": "Fintech",
+      "platform": "Mobile App",
+      "cover": ekwitiCover,
+      "roles": ["Users"],
+      "status": "Launched",
+      "heroDescription": "A structured signal-based trading platform delivering actionable insights across stocks, futures, and options — built for clarity and confidence.",
+      "projectOverview1": "Ekwiti was designed to simplify signal-based trading by presenting structured buy/sell recommendations with clear strategy context and risk visibility. Many trading platforms overwhelm users with raw data and complex dashboards.",
+      "projectOverview2": "Our goal was to create a clean, decision-focused interface where traders can quickly understand strategy logic, monitor positions, and execute trades with confidence.",
       "sections": [
         {
           "id": 1,
@@ -751,11 +786,11 @@ export const projectsData = {
         },
         {
           "id": 3,
-          "title": "Live Sessions & Mentoring",
-          "description": "Attend live classes with instructors and peers. One-on-one mentoring sessions provide personalized guidance.",
+          "title": "Launched Sessions & Mentoring",
+          "description": "Attend Launched classes with instructors and peers. One-on-one mentoring sessions provide personalized guidance.",
           "image": ekwitiSection3,
           "features": [
-            "Live classroom experience",
+            "Launched classroom experience",
             "Mentor matching",
             "Q&A sessions"
           ]
@@ -778,20 +813,22 @@ export const projectsData = {
         "profile": ekwitiReview,
         "country": "Hong Kong",
         "heading": "EduLearn transformed my career trajectory completely.",
-        "message": "The quality of instruction is exceptional, and the flexibility allowed me to learn while working full-time. Live sessions with instructors provided personalized guidance, while the community of learners offered motivation. The industry-recognized certificate opened doors to career opportunities I never thought possible. I went from feeling stuck to confidently pursuing a better position."
+        "message": "The quality of instruction is exceptional, and the flexibility allowed me to learn while working full-time. Launched sessions with instructors provided personalized guidance, while the community of learners offered motivation. The industry-recognized certificate opened doors to career opportunities I never thought possible. I went from feeling stuck to confidently pursuing a better position."
       }
     },
     {
       "id": 9,
       "title": "Ducklang",
-      "subtitle": "E-Commerce Aggregator Platform",
-      "category": "Marketplace",
-      "industry": "E-Commerce",
-      "platform": "Web & Mobile",
-      "roles": ["Full-Stack Developer", "Backend Engineer", "UI/UX Designer", "Operations Manager"],
-      "status": "Live",
-      "heroDescription": "Unified marketplace connecting buyers with sellers across multiple categories. Secure transactions, transparent pricing, and reliable delivery.",
-      "projectOverview": "MarketHub creates a thriving e-commerce ecosystem connecting diverse sellers with millions of buyers through a unified marketplace. Powerful search and AI recommendations help buyers discover products easily, while comprehensive seller tools optimize inventory management and sales performance. Integrated logistics, secure payment processing, and buyer protection policies build trust and ensure smooth transactions across the entire marketplace experience.",
+      "subtitle": "Gamified Language Learning Experience",
+      "category": "EdTech",
+      "industry": "EdTech",
+      "platform": "Mobile App",
+      "cover": ducklangCover,
+      "roles": ["Users"],
+      "status": "Launched",
+      "heroDescription": "A structured and engaging language learning platform designed to make vocabulary mastery simple, interactive, and rewarding.",
+      "projectOverview1": "Ducklang was built to transform traditional language learning into a focused, gamified mobile experience. Many language apps either overwhelm users with dense content or lack structured progression.",
+      "projectOverview2": "Our goal was to design a clear, motivational learning journey where users can select their preferred language, progress through lessons, and unlock advanced levels through consistent practice.",
       "sections": [
         {
           "id": 1,
@@ -850,14 +887,16 @@ export const projectsData = {
     {
       "id": 10,
       "title": "Ufly",
-      "subtitle": "Social Networking Platform",
-      "category": "Social",
-      "industry": "Social Media & Networking",
-      "platform": "Web & Mobile",
-      "roles": ["Full-Stack Developer", "Mobile Developer", "Community Manager", "Product Manager"],
-      "status": "Live",
-      "heroDescription": "Modern social platform bringing communities together. Share moments, connect with friends, and discover new interests.",
-      "projectOverview": "ConnectSocial reimagines social networking by prioritizing meaningful connections and community building. The personalized feed algorithm surfaces relevant content from followed accounts, while community groups enable users to connect around shared interests. Live streaming capabilities and robust privacy controls empower users to share authentically while maintaining control over their experience and data security.",
+      "subtitle": "On-Demand Flight Training Platform",
+      "category": "Travel",
+      "industry": "Aviation / Travel Tech",
+      "platform": "Mobile App",
+      "cover": uflyCover,
+      "roles": ["Instructor", "Learner"],
+      "status": "Launched",
+      "heroDescription": "A modern aviation training platform connecting student pilots with instructors and aircraft through seamless scheduling and booking.",
+      "projectOverview1": "Ufly was designed to simplify flight training management by connecting students, instructors, and aircraft into one unified booking system. Traditional aviation scheduling is often fragmented across calls, manual logs, and outdated systems.",
+      "projectOverview2": "Our goal was to build a clean, role-based mobile experience that allows users to discover nearby planes, select instructors, manage availability, and track flight sessions effortlessly.",
       "sections": [
         {
           "id": 1,
@@ -883,8 +922,8 @@ export const projectsData = {
         },
         {
           "id": 3,
-          "title": "Live Streaming",
-          "description": "Go live and connect with followers in real-time. Interactive features like comments and reactions enhance engagement.",
+          "title": "Launched Streaming",
+          "description": "Go Launched and connect with followers in real-time. Interactive features like comments and reactions enhance engagement.",
           "image": uflySection3,
           "features": [
             "HD streaming",
@@ -910,20 +949,22 @@ export const projectsData = {
         "profile": uflyReview,
         "country": "Brazil",
         "heading": "ConnectSocial helped me build meaningful connections.",
-        "message": "The personalized feed feels genuinely relevant, not overwhelming. Community groups let me connect with people who share my interests. The privacy controls give me peace of mind about my data. Live streaming connected me with friends across the globe in real-time. This platform prioritizes genuine connection over endless scrolling."
+        "message": "The personalized feed feels genuinely relevant, not overwhelming. Community groups let me connect with people who share my interests. The privacy controls give me peace of mind about my data. Launched streaming connected me with friends across the globe in real-time. This platform prioritizes genuine connection over endless scrolling."
       }
     },
     {
       "id": 11,
       "title": "Fuska",
-      "subtitle": "Farm-to-Table Delivery Service",
+      "subtitle": "Local Jobs & Hiring Marketplace",
       "category": "Marketplace",
-      "industry": "Agriculture & Food",
-      "platform": "Web & Mobile",
-      "roles": ["Full-Stack Developer", "Supply Chain Manager", "UI/UX Designer", "Logistics Coordinator"],
-      "status": "Live",
-      "heroDescription": "Connect directly with local farmers for fresh, organic produce delivered to your door. Support local agriculture while enjoying premium quality.",
-      "projectOverview": "FreshFarm Direct bridges the gap between consumers and local farmers by enabling direct sales of fresh, organic produce. The platform features transparent farm profiles, customizable subscription boxes, and direct farmer communication for product questions and recipe sharing. Same-day delivery with temperature control ensures maximum freshness while supporting local agriculture and sustainable food systems that benefit both consumers and farming communities.",
+      "industry": "Marketplace / Local Services",
+      "platform": "Mobile App",
+      "cover": fuskaCover,
+      "roles": ["User", "Recruiter"],
+      "status": "Launched",
+      "heroDescription": "A streamlined hiring platform connecting businesses with skilled professionals through structured job posting and real-time communication.",
+      "projectOverview1": "Fuska was built to simplify local hiring by providing a structured platform where businesses can post jobs and professionals can apply seamlessly. Traditional hiring processes are often fragmented across calls, messages, and manual screening.",
+      "projectOverview2": "Our goal was to design a clean, role-based hiring experience that reduces friction — from job discovery and application to communication and final selection.",
       "sections": [
         {
           "id": 1,
@@ -982,14 +1023,16 @@ export const projectsData = {
     {
       "id": 12,
       "title": "AllOut",
-      "subtitle": "Peer-to-Peer Skill Exchange",
-      "category": "Education",
-      "industry": "Skill Development",
-      "platform": "Web & Mobile",
-      "roles": ["Full-Stack Developer", "Community Manager", "UI/UX Designer", "Content Curator"],
-      "status": "Live",
-      "heroDescription": "Learn from others and share your expertise. Connect with people around you to exchange skills, knowledge, and experiences.",
-      "projectOverview": "SkillShare Hub creates a peer-to-peer learning marketplace where community members teach and learn from each other. The platform features flexible session scheduling across multiple formats (video, in-person, hybrid), verified credentials to build trust, and skill badges to recognize achievements. Community events and networking opportunities foster a collaborative learning environment where knowledge flows freely and skills are exchanged based on genuine expertise and mutual interest.",
+      "subtitle": "Personal Growth & AI Companion App",
+      "category": "Health & Wellness",
+      "industry": "Health & Wellness",
+      "platform": "Mobile App",
+      "cover": alloutCover,
+      "roles": ["Users"],
+      "status": "Launched",
+      "heroDescription": "A structured self-development platform combining AI guidance, daily tracking, journaling, and curated content to support holistic personal growth.",
+      "projectOverview1": "AllOut was designed to help users build meaningful daily habits through structured tracking, AI-powered conversations, and curated educational content. Many personal growth apps lack structure or feel overwhelming.",
+      "projectOverview2": "Our goal was to create a focused, supportive experience that encourages consistency — blending daily reflection, habit tracking, and AI guidance into one cohesive platform.",
       "sections": [
         {
           "id": 1,
@@ -1048,15 +1091,16 @@ export const projectsData = {
     {
       "id": 13,
       "title": "Arogyai",
-      "subtitle": "Home Renovation Project Manager",
-      "category": "Home Services",
-      "industry": "Home Renovation",
-      "platform": "Web & Mobile",
-      "roles": ["Full-Stack Developer", "Project Manager", "UI/UX Designer", "Contractor Network Manager"],
-      "status": "Live",
-      "heroDescription": "Simplify home renovation projects from planning to completion. Connect with vetted contractors, manage budgets, and track progress.",
-      "heroImage": "https://placehold.co/800x600/1a3c35/ffffff?text=HomeReno+Hero",
-      "projectOverview": "HomeReno simplifies home renovation projects by providing comprehensive tools for planning, budgeting, contractor management, and progress tracking. 3D visualization helps homeowners envision changes before work begins, while vetted contractor networks and transparent quote comparison reduce decision-making stress. Real-time expense tracking and milestone monitoring ensure projects stay on schedule and within budget, transforming renovation from overwhelming to organized and enjoyable.",
+      "subtitle": "Remote Health Monitoring Companion",
+      "category": "Health & Wellness",
+      "industry": "HealthTech",
+      "platform": "Mobile App",
+      "cover": arogyaiCover,
+      "roles": ["Parents", "Children"],
+      "status": "Launched",
+      "heroDescription": "A structured health monitoring platform designed to help families track vitals, manage medications, and stay connected with loved ones.",
+      "projectOverview1": "Arogyai was built to simplify remote health monitoring for families. Managing medications, tracking vital signs, and staying informed about loved ones’ health often requires multiple disconnected tools.",
+      "projectOverview2": "Our goal was to create a clean, role-based experience that allows parents, caregivers, and children to monitor health metrics, manage prescriptions, and receive timely alerts — all within one unified mobile platform.",
       "sections": [
         {
           "id": 1,
@@ -1115,15 +1159,16 @@ export const projectsData = {
     {
       "id": 14,
       "title": "Airsafe 139",
-      "subtitle": "Comprehensive Pet Care Platform",
-      "category": "Pet Services",
-      "industry": "Pet Care & Services",
-      "platform": "Web & Mobile",
-      "roles": ["Full-Stack Developer", "Veterinary Consultant", "UI/UX Designer", "Community Manager"],
-      "status": "Live",
-      "heroDescription": "Complete pet care solution including vet appointments, grooming, training, and pet community. Keep your pets healthy and happy.",
-      "heroImage": "https://placehold.co/800x600/1a3c35/ffffff?text=PetCare+Hero",
-      "projectOverview": "PetCare Plus provides comprehensive pet care management by centralizing veterinary appointments, grooming services, training programs, and community features. Digital medical records accessible to veterinarians streamline care coordination, while mobile grooming options add convenience. The community aspect enables pet owners to share experiences and access expert advice, creating a supportive ecosystem where pet wellness is prioritized and easily managed.",
+      "subtitle": "Aviation Compliance & Operational Safety Platform",
+      "category": "Automotive",
+      "industry": "Aviation / Safety Tech",
+      "platform": "Mobile App",
+      "cover": airsafe139Cover,
+      "roles": ["Users"],
+      "status": "Launched",
+      "heroDescription": "A structured aviation safety platform designed to provide aircraft operators with regulatory guidance, operational references, and compliance tools in one centralized system.",
+      "projectOverview1": "Airsafe 139 was built to simplify access to critical aviation compliance and operational guidelines. Aviation professionals often rely on fragmented documentation, printed manuals, and complex regulatory references.",
+      "projectOverview2": "Our goal was to create a structured, mobile-first reference system that centralizes safety regulations, aircraft limitations, and operational tools — making compliance faster, clearer, and more accessible.",
       "sections": [
         {
           "id": 1,
@@ -1182,15 +1227,16 @@ export const projectsData = {
     {
       "id": 15,
       "title": "Yes Gurl",
-      "subtitle": "Urban Gardening Guide",
-      "category": "Lifestyle",
-      "industry": "Agriculture & Sustainability",
-      "platform": "Web & Mobile",
-      "roles": ["Full-Stack Developer", "Horticulturist", "UI/UX Designer", "Community Manager"],
-      "status": "Live",
-      "heroDescription": "Transform your urban space into a thriving garden. Get personalized gardening advice, plant care guides, and connect with gardening community.",
-      "heroImage": "https://placehold.co/800x600/1a3c35/ffffff?text=GreenThumb+Hero",
-      "projectOverview": "GreenThumb empowers urban gardeners to transform limited spaces into thriving green areas through intelligent planning and expert guidance. AI-powered recommendations consider space, sunlight, and conditions to suggest suitable plants, while comprehensive care guides with watering reminders ensure success. An integrated marketplace provides quality supplies, and an engaged community shares knowledge and celebrates collective sustainability achievements.",
+      "subtitle": "Social Platform for Meaningful Women Connections",
+      "category": "Social",
+      "industry": "Community",
+      "platform": "Mobile App",
+      "cover": yesgUrlCover,
+      "roles": ["Users"],
+      "status": "Launched",
+      "heroDescription": "A women-first social platform designed to help users build authentic connections through events, conversations, and community engagement.",
+      "projectOverview1": "Yes Gurl was created to provide a safe, structured space where women can connect meaningfully — both online and offline. Traditional social platforms often lack intimacy and focus.",
+      "projectOverview2": "Our goal was to design a clean, emotionally warm interface that supports event discovery, real conversations, and authentic networking within a women-centered environment.",
       "sections": [
         {
           "id": 1,
@@ -1249,15 +1295,16 @@ export const projectsData = {
     {
       "id": 16,
       "title": "EPIFAM",
-      "subtitle": "Home Music Production Platform",
-      "category": "Creative",
-      "industry": "Music & Audio Production",
-      "platform": "Web & Desktop",
-      "roles": ["Full-Stack Developer", "Audio Engineer", "UI/UX Designer", "Product Manager"],
-      "status": "Live",
-      "heroDescription": "Create professional music from home. Access production tools, learning resources, and collaborate with other musicians.",
-      "heroImage": "https://placehold.co/800x600/1a3c35/ffffff?text=MusicStudio+Hero",
-      "projectOverview": "MusicStudio democratizes music production by providing professional-grade tools, extensive sound libraries, and learning resources accessible from home. Multi-DAW support ensures compatibility with any workflow, while cloud storage and version control protect creative work. Expert tutorials and live masterclasses elevate production skills, and real-time collaboration tools enable producers and musicians worldwide to create together, breaking geographic barriers.",
+      "subtitle": "Epilepsy Monitoring & Family Health Support App",
+      "category": "Health & Wellness",
+      "industry": "Health & Wellness",
+      "platform": "Mobile App",
+      "cover": epifamCover,
+      "roles": ["Users"],
+      "status": "Launched",
+      "heroDescription": "A health-focused mobile platform designed to help families monitor seizures, track symptoms, and manage daily well-being with clarity and structure.",
+      "projectOverview1": "EPIFAM was designed to support families managing epilepsy by simplifying seizure tracking, mood monitoring, and medication reminders.",
+      "projectOverview2": "Caregivers often rely on memory, scattered notes, or inconsistent logs. Our goal was to create a structured and emotionally considerate interface that helps parents monitor patterns, record symptoms, and gain actionable health insights.",
       "sections": [
         {
           "id": 1,
@@ -1288,7 +1335,7 @@ export const projectsData = {
           "image": epifamSection3,
           "features": [
             "Expert tutorials",
-            "Live masterclasses",
+            "Launched masterclasses",
             "Certification courses"
           ]
         },
@@ -1316,15 +1363,16 @@ export const projectsData = {
     {
       "id": 17,
       "title": "Quickmod",
-      "subtitle": "Event Management Platform",
-      "category": "Events",
-      "industry": "Event Management",
-      "platform": "Web & Mobile",
-      "roles": ["Full-Stack Developer", "Event Coordinator", "UI/UX Designer", "Analytics Specialist"],
-      "status": "Live",
-      "heroDescription": "Plan and manage events effortlessly. From tiny gatherings to large conferences, EventFlow handles every detail.",
-      "heroImage": "https://placehold.co/800x600/1a3c35/ffffff?text=EventFlow+Hero",
-      "projectOverview": "EventFlow streamlines event management from conception to execution with comprehensive planning tools, flexible ticketing systems, and intelligent guest management. Real-time analytics provide insights into attendance and engagement, while automated reminders reduce no-shows. From intimate gatherings to large conferences, the platform's adaptability and professional features ensure every event runs smoothly and successfully.",
+      "subtitle": "AI-Powered Student Work Moderation Platform",
+      "category": "EdTech",
+      "industry": "EdTech",
+      "platform": "Mobile App",
+      "cover": quickmodCover,
+      "roles": ["Users"],
+      "status": "Launched",
+      "heroDescription": "An intelligent moderation platform designed to help educators upload, analyze, and assess student work efficiently using structured criteria and AI support.",
+      "projectOverview1": "Quickmod was created to simplify student work moderation for educators and institutions. Traditional moderation processes are time-consuming, manual, and inconsistent.",
+      "projectOverview2": "Our goal was to design a structured digital workflow that allows teachers to upload student work, apply grading criteria, and receive organized, AI-assisted feedback — all within a clean and intuitive interface.",
       "sections": [
         {
           "id": 1,
@@ -1361,12 +1409,12 @@ export const projectsData = {
         },
         {
           "id": 4,
-          "title": "Live Event Tools",
-          "description": "Check-in management, live polling, and real-time analytics during the event.",
+          "title": "Launched Event Tools",
+          "description": "Check-in management, Launched polling, and real-time analytics during the event.",
           "image": quickmodSection4,
           "features": [
             "Mobile check-in",
-            "Live polling",
+            "Launched polling",
             "Attendee engagement tools"
           ]
         }
@@ -1383,15 +1431,16 @@ export const projectsData = {
     {
       "id": 18,
       "title": "Elaria",
-      "subtitle": "Last-Mile Delivery Network",
-      "category": "Logistics",
-      "industry": "Logistics & Delivery",
-      "platform": "Web & Mobile",
-      "roles": ["Full-Stack Developer", "Logistics Engineer", "Map Integration Specialist", "Product Manager"],
-      "status": "Live",
-      "heroDescription": "Fast, reliable, and affordable last-mile delivery service. Connect local couriers with shipments for efficient neighborhood delivery.",
-      "heroImage": "https://placehold.co/800x600/1a3c35/ffffff?text=CourierConnect+Hero",
-      "projectOverview": "CourierConnect revolutionizes last-mile delivery by connecting local courier networks with shippers for fast, affordable, and reliable neighborhood delivery. Easy shipment creation, transparent pricing, and real-time tracking build customer confidence, while courier performance analytics and route optimization benefit delivery partners. The platform creates a win-win ecosystem that reduces delivery costs while improving service quality.",
+      "subtitle": "AI-Powered Smart Wardrobe & Styling App",
+      "category": "Entertainment",
+      "industry": "Fashion Tech",
+      "platform": "Mobile App",
+      "cover": elariaCover,
+      "roles": ["Users"],
+      "status": "Launched",
+      "heroDescription": "A personalized fashion assistant that helps users organize their wardrobe, generate AI-based outfit suggestions, and explore nearby lifestyle activities.",
+      "projectOverview1": "Elaria was designed to simplify everyday styling decisions by combining wardrobe organization with AI-driven outfit generation. Many users struggle with choosing outfits despite having a full closet.",
+      "projectOverview2": "Our goal was to create a clean, lifestyle-oriented interface that allows users to manage their wardrobe digitally, generate occasion-based outfit suggestions, and visualize clothing before wearing it.",
       "sections": [
         {
           "id": 1,
@@ -1418,7 +1467,7 @@ export const projectsData = {
         {
           "id": 3,
           "title": "Tracking & Updates",
-          "description": "Real-time shipment tracking with automatic customer notifications. Live location updates.",
+          "description": "Real-time shipment tracking with automatic customer notifications. Launched location updates.",
           "image": elariaSection3,
           "features": [
             "Real-time tracking",
@@ -1450,14 +1499,16 @@ export const projectsData = {
     {
       "id": 19,
       "title": "WriteOffGenie",
-      "subtitle": "Interactive Language Learning",
-      "category": "Education",
-      "industry": "Language Learning",
-      "platform": "Web & Mobile",
-      "roles": ["Full-Stack Developer", "Linguist", "Mobile Developer", "Content Manager"],
-      "status": "Live",
-      "heroDescription": "Master new languages through immersive learning. Interactive lessons, live conversations, and cultural insights.",
-      "projectOverview": "LanguagePro makes language learning immersive and practical through gamified lessons, live conversations with native speakers, and authentic cultural content. Adaptive difficulty adjusts to learner progress, while proficiency assessments and certifications track advancement. The platform transforms language learning from rote memorization into natural acquisition, enabling learners to communicate confidently and engage with cultures authentically.",
+      "subtitle": "AI-Powered Tax Deduction & Expense Optimization Platform",
+      "category": "Fintech",
+      "industry": "Fintech",
+      "platform": "Mobile App",
+      "cover": writeoffgenieCover,
+      "roles": ["Users", "CPA", "Admin"],
+      "status": "Launched",
+      "heroDescription": "An intelligent financial assistant that analyzes transactions, identifies eligible tax deductions, and helps users maximize savings with structured financial clarity.",
+      "projectOverview1": "WriteOffGenie was designed to eliminate the confusion around tax deductions and expense categorization. Many individuals and small business owners miss legitimate write-offs due to disorganized financial tracking.",
+      "projectOverview2": "The goal was to create a smart, AI-driven platform that reviews transactions automatically, identifies deduction opportunities, and provides clear savings visibility — all within a structured and easy-to-understand interface.",
       "sections": [
         {
           "id": 1,
@@ -1472,7 +1523,7 @@ export const projectsData = {
         },
         {
           "id": 2,
-          "title": "Live Conversation",
+          "title": "Launched Conversation",
           "description": "Practice real conversations with native speakers. Scheduled sessions and on-demand availability.",
           "image": writeoffgenieSection2,
           "features": [
@@ -1510,21 +1561,22 @@ export const projectsData = {
         "profile": writeoffgenieReview,
         "country": "Japan",
         "heading": "LanguagePro made language learning fun and practical.",
-        "message": "Gamified lessons kept me engaged and motivated. Live conversations with native speakers built genuine confidence. Cultural content made learning contextual and meaningful. I progressed faster than any traditional course. I'm now fluent and using the language professionally."
+        "message": "Gamified lessons kept me engaged and motivated. Launched conversations with native speakers built genuine confidence. Cultural content made learning contextual and meaningful. I progressed faster than any traditional course. I'm now fluent and using the language professionally."
       }
     },
     {
       "id": 20,
       "title": "Tourleader",
-      "subtitle": "Internal Communications Platform",
-      "category": "Enterprise",
-      "industry": "Internal Communications",
-      "platform": "Web & Mobile",
-      "roles": ["Full-Stack Developer", "HR Specialist", "UI/UX Designer", "Security Engineer"],
-      "status": "Live",
-      "heroDescription": "Centralized employee communication platform. Connect team members, share company updates, and build a collaborative culture.",
-      "heroImage": "https://placehold.co/800x600/1a3c35/ffffff?text=EmployeeHub+Hero",
-      "projectOverview": "EmployeeHub centralizes employee communication, company updates, and organizational knowledge into a unified platform. Organized channels and searchable history eliminate communication silos, while company-wide announcements ensure everyone stays informed. An integrated employee directory and knowledge base reduce onboarding time and empower self-service, creating a more connected, informed, and collaborative workplace culture.",
+      "subtitle": "Smart Travel Itinerary & Tour Management Platform",
+      "category": "Travel",
+      "industry": "Travel & Tourism",
+      "platform": "Mobile App",
+      "cover": tourleaderCover,
+      "roles": ["Travelers"],
+      "status": "Launched",
+      "heroDescription": "A structured travel management app designed to help tour operators organize itineraries, manage bookings, and centralize trip documentation in one seamless system.",
+      "projectOverview1": "Tourleader was created to simplify itinerary management for travel organizers and tour operators. Traditional trip coordination often involves scattered documents, manual notes, and fragmented communication.",
+      "projectOverview2": "The goal was to design a centralized travel management system that provides structured day-by-day itineraries, confirmation records, contact details, and payment information — all accessible within a clean and intuitive mobile interface.",
       "sections": [
         {
           "id": 1,
@@ -1583,15 +1635,16 @@ export const projectsData = {
     {
       "id": 21,
       "title": "Kepasa Harmony",
-      "subtitle": "Healthcare Practice Management",
-      "category": "Healthcare",
-      "industry": "Healthcare Management",
-      "platform": "Web & Mobile",
-      "roles": ["Full-Stack Developer", "Healthcare IT Specialist", "UI/UX Designer", "Compliance Officer"],
-      "status": "Live",
-      "heroDescription": "Comprehensive clinic management system. Handle patient records, appointments, and billing all in one platform.",
-      "heroImage": "https://placehold.co/800x600/1a3c35/ffffff?text=ClinicFlow+Hero",
-      "projectOverview": "ClinicFlow digitizes healthcare practice management with secure patient records, intelligent appointment scheduling, and integrated billing systems. HIPAA-compliant storage protects sensitive medical information while automated reminders reduce no-shows. Comprehensive analytics provide insights into practice performance and patient outcomes, enabling healthcare providers to deliver better care while streamlining administrative operations.",
+      "subtitle": "Digital Wellbeing & Mindfulness Companion",
+      "category": "Health & Wellness",
+      "industry": "Health & Wellness",
+      "platform": "Mobile App",
+      "cover": kepasaharmonyCover,
+      "roles": ["Users"],
+      "status": "Launched",
+      "heroDescription": "A holistic wellness platform designed to help users build healthy habits, practice mindfulness, and track personal growth through guided meditations, journaling, and wellbeing content.",
+      "projectOverview1": "Kepasa Harmony was created to support mental wellness through daily mindfulness practices and emotional self-reflection. Many users struggle to maintain consistent self-care routines due to fragmented wellness tools.",
+      "projectOverview2": "The goal was to design a calming and structured platform that combines meditation guidance, journaling, goal tracking, and positive content into one unified experience that encourages daily wellbeing habits.",
       "sections": [
         {
           "id": 1,
@@ -1650,15 +1703,16 @@ export const projectsData = {
     {
       "id": 22,
       "title": "Check4You",
-      "subtitle": "Personal Goal Management",
-      "category": "Productivity",
-      "industry": "Personal Development",
-      "platform": "Web & Mobile",
-      "roles": ["Full-Stack Developer", "Behavioral Psychologist", "UI/UX Designer", "Analytics Specialist"],
-      "status": "Live",
-      "heroDescription": "Achieve your goals with our comprehensive tracking system. Set objectives, track progress, and stay motivated.",
-      "heroImage": "https://placehold.co/800x600/1a3c35/ffffff?text=GoalTracker+Hero",
-      "projectOverview": "GoalTracker empowers users to achieve ambitious goals through the SMART framework, visual progress tracking, and community accountability. Beautiful dashboards and achievement badges provide motivation, while detailed analytics reveal patterns and suggest improvements. By combining personalized goal setting with social support and data-driven insights, the platform transforms aspirations into achievements.",
+      "subtitle": "Secure Document Management & Verification Platform",
+      "category": "Other",
+      "industry": "Document Management",
+      "platform": "Mobile App",
+      "cover": check4youCover,
+      "roles": ["Users"],
+      "status": "Launched",
+      "heroDescription": "A professional document management platform designed to help businesses securely store, organize, and manage important files through structured folders and easy uploads.",
+      "projectOverview1": "Check4You was designed to simplify document organization for businesses and professionals. Many companies rely on scattered storage systems and email threads to manage important documents, which creates inefficiencies and security risks.",
+      "projectOverview2": "The goal was to build a structured mobile platform where users can securely upload, categorize, and access documents through an organized folder system while maintaining clear communication and company-level account management.",
       "sections": [
         {
           "id": 1,
@@ -1717,14 +1771,16 @@ export const projectsData = {
     {
       "id": 23,
       "title": "DayDone",
-      "subtitle": "Handmade Crafts Marketplace",
+      "subtitle": "Smart Business Operations & Job Management Platform",
       "category": "Marketplace",
-      "industry": "Handmade & Crafts",
-      "platform": "Web & Mobile",
-      "roles": ["Full-Stack Developer", "Marketplace Manager", "UI/UX Designer", "Artisan Relations"],
-      "status": "Live",
-      "heroDescription": "Celebrate handmade craftsmanship. Connect artisans with collectors who appreciate unique, handcrafted items.",
-      "projectOverview": "ArtisanHub celebrates handmade craftsmanship by connecting artisans with collectors who appreciate unique, authentic creations. Rich artist profiles showcase creative vision and process, while flexible custom order capabilities enable personalized commissions. Sales analytics help artisans understand market trends and grow their businesses sustainably, creating a thriving community that values quality craftsmanship and supports artisan livelihoods.",
+      "industry": "Business Management",
+      "platform": "Mobile App",
+      "cover": daydoneCover,
+      "roles": ["Owner", "Employees"],
+      "status": "Launched",
+      "heroDescription": "A modern business management platform designed to help service professionals organize jobs, manage customers, track payments, and monitor daily operations in one streamlined system.",
+      "projectOverview1": "DayDone was created to simplify daily business operations for service-based businesses such as contractors, repair services, and maintenance professionals. Managing jobs, customers, payments, and schedules across multiple tools often leads to inefficiencies and missed tasks.",
+      "projectOverview2": "The goal was to design a centralized platform where business owners can track their operations, manage customer relationships, and monitor revenue through a clear and structured mobile interface.",
       "sections": [
         {
           "id": 1,

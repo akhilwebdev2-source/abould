@@ -1,4 +1,5 @@
 import React from 'react';
+import ImageWithShimmer from '../common/ImageWithShimmer';
 import one from "../../assets/home/testimonials/one.png"
 import two from "../../assets/home/testimonials/two.png"
 import three from "../../assets/home/testimonials/three.png"
@@ -74,8 +75,8 @@ const TestimonialsSection = () => {
               }}
             >
               <div className="flex items-center mb-2">
-                 <div className="w-20 overflow-hidden">
-                    <img src={testimonial.avatar} alt={testimonial.name} />
+                 <div className="w-20 overflow-hidden rounded-full">
+                    <ImageWithShimmer src={testimonial.avatar} alt={testimonial.name} className="w-full h-full" />
                  </div>
                  <div className='mb-4'>
                     <h4 className="font-bold text-primary-dark">{testimonial.name}</h4>

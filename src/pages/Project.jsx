@@ -1,6 +1,7 @@
 import { useParams, Link } from 'react-router-dom';
 import { projectsData } from '../data/projectsData';
 import ContactSection from '../components/landing/ContactSection';
+import ImageWithShimmer from '../components/common/ImageWithShimmer';
 
 const Project = () => {
   const { slug } = useParams();
@@ -65,7 +66,7 @@ const Project = () => {
             >
               <div style={index % 2 === 1 ? { direction: 'ltr' } : {}}>
                 <div className="flex justify-center items-center">
-                  <img
+                  <ImageWithShimmer
                     src={section.image}
                     alt={section.title}
                     className="w-full max-w-sm rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
@@ -113,11 +114,13 @@ const Project = () => {
             </h2>
             <div className="bg-white rounded-2xl shadow-lg p-8 md:p-12">
               <div className="flex items-center gap-4 md:gap-6 mb-8">
-                <img
-                  src={social.profile}
-                  alt={social.name}
-                  className="w-16 md:w-20 rounded-full object-covershrink-0"
-                />
+                <div className="w-16 md:w-20 rounded-full overflow-hidden shrink-0">
+                  <ImageWithShimmer
+                    src={social.profile}
+                    alt={social.name}
+                    className="w-full h-full"
+                  />
+                </div>
                 <div>
                   <h4 className="text-lg md:text-xl font-bold text-primary-dark">
                     {social.name}

@@ -1,4 +1,5 @@
 import React from 'react';
+import ImageWithShimmer from '../common/ImageWithShimmer';
 import processOne from "../../assets/home/process/one.png"
 import processTwo from "../../assets/home/process/two.png"
 
@@ -49,10 +50,10 @@ const ProcessSection = () => {
               <div className="md:p-6 p-4 rounded-[2.5rem]">
                 <div className="flex gap-4">
                     <div className="w-1/2 aspect-4/7 rounded-2xl overflow-hidden">
-                        <img src={processOne} alt="Process 1" className="w-full h-full object-cover" />
+                        <ImageWithShimmer src={processOne} alt="Process 1" className="w-full h-full" />
                     </div>
                     <div className="w-1/2 aspect-4/7 rounded-2xl overflow-hidden">
-                        <img src={processTwo} alt="Process 2" className="w-full h-full object-cover" />
+                        <ImageWithShimmer src={processTwo} alt="Process 2" className="w-full h-full" />
                     </div>
                 </div>
              </div>
@@ -94,7 +95,7 @@ const ProcessSection = () => {
           <div className="grid grid-cols-1 md:grid-cols-11 md:gap-8 gap-6 md:px-20">
              <div className="bg-white rounded-[2.5rem] p-4 shadow-sm border border-white hover:border-gray-100 transition-all flex flex-col items-center text-center md:col-span-5">
                 <div className="w-70 rounded-3xl overflow-hidden mb-6 flex items-center justify-center mt-2">
-                    <img src={strengthOne} alt="Intelligent Development" className="w-full h-full object-cover opacity-90 mix-blend-multiply" />
+                    <ImageWithShimmer src={strengthOne} alt="Intelligent Development" className="w-full h-full opacity-90 mix-blend-multiply" />
                 </div>
                 <h3 className="text-xl font-bold text-primary-dark mb-2">Intelligent Development</h3>
                 <p className="text-gray-500 text-sm leading-relaxed max-w-sm">
@@ -103,7 +104,7 @@ const ProcessSection = () => {
              </div>
              <div className="bg-white rounded-[2.5rem] px-4 pb-4 shadow-sm border border-white hover:border-gray-100 transition-all flex flex-col items-center text-center md:col-span-6">
                 <div className="w-120 rounded-3xl overflow-hidden mb-6 flex items-center justify-center">
-                    <img src={strengthTwo} alt="Future-Ready Solutions" className="w-full h-full object-cover opacity-90 mix-blend-multiply" />
+                    <ImageWithShimmer src={strengthTwo} alt="Future-Ready Solutions" className="w-full h-full opacity-90 mix-blend-multiply" />
                 </div>
                 <h3 className="text-xl font-bold text-primary-dark mb-2">Future-Ready Solutions</h3>
                 <p className="text-gray-500 text-sm leading-relaxed max-w-xl">
@@ -112,7 +113,7 @@ const ProcessSection = () => {
              </div>
              <div className="bg-white rounded-[2.5rem] p-4 shadow-sm border border-white hover:border-gray-100 transition-all flex flex-col items-center text-center md:col-span-6">
                 <div className="w-90 rounded-3xl overflow-hidden mb-2 flex items-center justify-center">
-                    <img src={strengthThree} alt="Collaborative Partnership" className="w-full h-full object-cover opacity-90 mix-blend-multiply" />
+                    <ImageWithShimmer src={strengthThree} alt="Collaborative Partnership" className="w-full h-full opacity-90 mix-blend-multiply" />
                 </div>
                 <h3 className="text-xl font-bold text-primary-dark mb-2">Collaborative Partnership</h3>
                 <p className="text-gray-500 text-sm leading-relaxed max-w-xl">
@@ -121,7 +122,7 @@ const ProcessSection = () => {
              </div>
              <div className="bg-white rounded-[2.5rem] p-4 shadow-sm border border-white hover:border-gray-100 transition-all flex flex-col items-center text-center md:col-span-5">
                 <div className="w-100 rounded-3xl overflow-hidden flex items-center justify-center mb-2">
-                    <img src={strengthFour} alt="Creative Engineering" className="w-full h-full object-cover opacity-90 mix-blend-multiply" />
+                    <ImageWithShimmer src={strengthFour} alt="Creative Engineering" className="w-full h-full opacity-90 mix-blend-multiply" />
                 </div>
                 <h3 className="text-xl font-bold text-primary-dark mb-2">Creative Engineering</h3>
                 <p className="text-gray-500 text-sm leading-relaxed max-w-sm">
