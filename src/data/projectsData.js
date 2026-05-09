@@ -221,7 +221,7 @@ export const projectsData = {
       "status": "Launched",
       "heroDescription": "A complete artist booking ecosystem designed to connect artists, booking agents, and administrators through a seamless digital experience.",
       "projectOverview1": "Stage Connect was created to solve a fragmented and manual artist booking process. Artists struggled to showcae their work professionally, booking agents lacked reliable discovery tool,s and admins has limited control over operations.",
-      "projectsOverview2": "Our goal was to design and develop a unified platform that simplifies discovery, booking, management, and collaboration - all in one place.",
+      "projectOverview2": "Our goal was to design and develop a unified platform that simplifies discovery, booking, management, and collaboration - all in one place.",
       "sections": [
         {
           "id": 1,

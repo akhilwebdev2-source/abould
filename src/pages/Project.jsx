@@ -12,8 +12,8 @@ const Project = () => {
     return (
       <div className="py-20 px-4 text-center mx-auto">
         <div className='w-full flex md:px-20 px-4'>
-          <Link to="/work" className="inline-block text-left text-primary font-semibold mb-8 hover:text-primary-dark duration-300 text-sm md:text-base bg-linear-to-b from-gray-100/80 to-white px-4 py-2 rounded-xl border-2 border-white shadow-[0_1px_1px_rgba(9,30,66,0.12),0_0_1px_1px_rgba(9,30,66,0.06)] transition-all">
-            <ArrowLeft className="inline-block mr-2 size-4" />
+          <Link to="/work" className="inline-block text-left text-primary font-semibold mb-8 hover:text-primary-dark duration-300 text-xs md:text-base bg-linear-to-b from-gray-100/80 to-white px-4 py-2 rounded-xl border-2 border-white shadow-[0_1px_1px_rgba(9,30,66,0.12),0_0_1px_1px_rgba(9,30,66,0.06)] transition-all">
+            <ArrowLeft className="inline-block mr-2 md:size-4 size-3" />
             Back to Projects
           </Link>
         </div>
@@ -25,12 +25,12 @@ const Project = () => {
   const { id, title, subtitle, category, industry, platform, cover, roles, status, sections, outcome, social, heroDescription, projectOverview1, projectOverview2 } = project;
 
   return (
-    <div className="w-full overflow-x-hidden md:px-16 px-4">
+    <div className="w-full overflow-x-hidden md:px-40 px-8">
       {/* Hero Section */}
       <section className="py-10 text-center mb-8 md:mb-16 -z-10" style={{ background: 'radial-gradient(ellipse at center, #f4fdf5 30%, #ffffff 80%)'}}>
-        <div className='w-full flex md:px-20 px-4'>
-          <Link to="/work" className="inline-block text-left text-primary font-semibold mb-8 hover:text-primary-dark duration-300 text-sm md:text-base bg-linear-to-b from-gray-100/80 to-white px-4 py-2 rounded-xl border-2 border-white shadow-[0_1px_1px_rgba(9,30,66,0.12),0_0_1px_1px_rgba(9,30,66,0.06)] transition-all">
-            <ArrowLeft className="inline-block mr-2 size-4" />
+        <div className='w-full flex'>
+          <Link to="/work" className="inline-block text-left text-primary font-semibold mb-8 hover:text-primary-dark duration-300 text-xs md:text-base bg-linear-to-b from-gray-100/80 to-white px-4 py-2 rounded-xl border-2 border-white shadow-[0_1px_1px_rgba(9,30,66,0.12),0_0_1px_1px_rgba(9,30,66,0.06)] transition-all">
+            <ArrowLeft className="inline-block mr-2 md:size-4 size-3" />
             Back to Projects
           </Link>
         </div>
@@ -45,14 +45,14 @@ const Project = () => {
             {heroDescription}
           </p>
         </div>
-        <div className='flex justify-center mt-20 gap-4'>
-          <div className='bg-white rounded-2xl flex justify-center items-center gap-4 p-4 shadow-xs'>
+        <div className='flex md:flex-row flex-col items-center justify-center mt-20 gap-4'>
+          <div className='bg-white rounded-2xl flex justify-center items-center md:gap-4 gap-2 md:p-4 p-3 shadow-xs'>
             <div className='p-2.5 bg-primary-light text-primary rounded-lg'>
               <Component size={18} />
             </div>
             <div className='flex flex-col justify-center items-start'>
-              <span className='text-sm text-gray-600'>Industry</span>
-              <span className='font-semibold'>{industry}</span>
+              <span className='md:text-sm text-xs text-gray-600'>Industry</span>
+              <span className='font-semibold text-sm md:text-base'>{industry}</span>
             </div>
           </div>
           <div className='bg-white rounded-2xl flex justify-center items-center gap-4 p-4 shadow-xs'>
@@ -60,8 +60,8 @@ const Project = () => {
               <Smartphone size={18} />
             </div>
             <div className='flex flex-col justify-center items-start'>
-              <span className='text-sm text-gray-600'>Platform</span>
-              <span className='font-semibold'>{platform}</span>
+              <span className='md:text-sm text-xs text-gray-600'>Platform</span>
+              <span className='font-semibold text-sm md:text-base'>{platform}</span>
             </div>
           </div>
           <div className='bg-white rounded-2xl flex justify-center items-center gap-4 p-4 shadow-xs'>
@@ -69,8 +69,8 @@ const Project = () => {
               <Globe size={18} />
             </div>
             <div className='flex flex-col justify-center items-start'>
-              <span className='text-sm text-gray-600'>Roles</span>
-              <span className='font-semibold'>{roles.join(' · ')}</span>
+              <span className='md:text-sm text-xs text-gray-600'>Roles</span>
+              <span className='font-semibold text-sm md:text-base flex flex-wrap'>{roles.join(' · ')}</span>
             </div>
           </div>
           <div className='bg-white rounded-2xl flex justify-center items-center gap-4 p-4 shadow-xs'>
@@ -78,8 +78,8 @@ const Project = () => {
               <Zap size={18} />
             </div>
             <div className='flex flex-col justify-center items-start'>
-              <span className='text-sm text-gray-600'>Status</span>
-              <span className='font-semibold'>{status}</span>
+              <span className='md:text-sm text-xs text-gray-600'>Status</span>
+              <span className='font-semibold text-sm md:text-base'>{status}</span>
             </div>
           </div>
         </div>
@@ -87,26 +87,24 @@ const Project = () => {
 
       {/* Project Overview */}
       <section className="py-8 md:py-16 bg-white">
-        <div className="md:mx-40 mx-4">
-          <h2 className="text-4xl font-semibold text-primary-dark text mb-6">
+          <h2 className="md:text-4xl text-3xl font-semibold text-primary-dark text mb-4">
             Project Overview
           </h2>
-          <p className="text-gray-600 leading-relaxed mb-2 text-justify">
+          <p className="text-gray-600 md:text-base text-sm leading-relaxed mb-2 text-justify">
             {projectOverview1}
           </p>
-          <p className="text-gray-600 leading-relaxed text-justify">
+          <p className="text-gray-600 md:text-base text-sm leading-relaxed text-justify">
             {projectOverview2}
           </p>
-        </div>
       </section>
 
       {/* Project Sections */}
-      <section className="py-16">
+      <section className="md:py-16 py-8">
         <div className="max-w-5xl mx-auto">
           {sections.map((section, index) => (
             <div
               key={section.id}
-              className="grid grid-cols-1 md:grid-cols-2 items-center justify-between"
+              className="grid grid-cols-1 md:grid-cols-2 md:my-0 my-16 gap-6 md:gap-0 items-center justify-between"
               style={index % 2 === 1 ? { direction: 'rtl' } : {}}
             >
               <div style={index % 2 === 1 ? { direction: 'ltr' } : {}}>
@@ -141,19 +139,19 @@ const Project = () => {
       </section>
 
       {/* Outcome Section */}
-      <section className="py-16 bg-white">
-        <div className="md:px-3 mx-auto">
-          <h2 className="text-4xl font-medium text-primary-dark mb-6">
+      <section className="md:py-16 bg-white">
+        <div className="mx-auto">
+          <h2 className="md:text-4xl text-3xl font-medium text-primary-dark mb-4">
             Outcome
           </h2>
-          <p className="text-base md:text-lg text-gray-600 leading-relaxed text-justify">
+          <p className="md:text-base text-sm text-gray-600 leading-relaxed text-justify">
             {outcome}
           </p>
         </div>
       </section>
 
       {/* Testimonial Section */}
-        <section className="py-16 md:px-20">
+        <section className="py-16">
           <div
               className="bg-white p-4 rounded-3xl duration-300 border border-gray-100/70 hover:border-gray-200/70 hover:shadow-xs transition-all flex flex-col h-full"
               style={{
