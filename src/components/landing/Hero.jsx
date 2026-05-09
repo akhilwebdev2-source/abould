@@ -17,7 +17,20 @@ import { Link } from 'react-router-dom';
 
 const Hero = () => {
 
-  const cards = [card1, card2, card3, card4, card5, card6, card7, card8, card9, card10, card11, card12];
+  const cards = [
+    { image: card1, link: "/work/masterpcos" },
+    { image: card2, link: "/work/stageconnect" },
+    { image: card3, link: "/work/swervem" },
+    { image: card4, link: "/work/conditionpro" },
+    { image: card5, link: "/work/ducklang" },
+    { image: card6, link: "/work/ekwiti" },
+    { image: card7, link: "/work/ufly" },
+    { image: card8, link: "/work/boulchans" },
+    { image: card9, link: "/work/linked" },
+    { image: card10, link: "/work/fuska" },
+    { image: card11, link: "/work/autopanelpro" },
+    { image: card12, link: "/work/allout" },
+  ];
 
   return (
     <section className="relative w-full overflow-hidden bg-surface-alt py-12">
@@ -32,7 +45,7 @@ const Hero = () => {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
             </span> */}
-            Trusted by 1,000+ Companies Worldwide
+            Trusted by 200+ Companies Worldwide
           </div>
 
           {/* Headline */}
@@ -80,9 +93,9 @@ const Hero = () => {
             {/* Double the items to create seamless loop */}
             {cards.map((card, i) => (
               <div key={i} className="w-56 md:w-80 h-full shrink-0 bg-white rounded-4xl overflow-hidden transform transition-all hover:scale-105 duration-300">
-                <Link to={"/"}>
+                <Link to={card.link}>
                   <ImageWithShimmer 
-                    src={card} 
+                    src={card.image} 
                     alt={`Carousel Item ${i + 1}`}
                     className="w-full h-full"
                   />

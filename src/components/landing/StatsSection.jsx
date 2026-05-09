@@ -4,13 +4,19 @@ import { Smile, Building2, Star, CalendarDays } from 'lucide-react';
 const StatsSection = () => {
   const stats = [
     {
-      number: "100+",
+      number: "200+",
       label: "Happy Clients",
       icon: <Smile className="w-12 h-12 fill-gray-400 group-hover:fill-white group-hover:text-primary-hover" strokeWidth={2} />,
       description: "Trusted by businesses across 20+ countries"
     },
     {
-      number: "70+",
+      number: "5+",
+      label: "Years of Experience",
+      icon: <CalendarDays className="w-12 h-12 fill-gray-400 group-hover:fill-white group-hover:text-primary-hover" />,
+      description: "Designing, building, and growing digital experiences"
+    },
+    {
+      number: "250+",
       label: "Projects Delivered",
       icon: <Building2 className="w-12 h-12 text-gray-400 group-hover:text-white" strokeWidth="1.5px" />,
       description: "From start-ups to global brands"
@@ -20,12 +26,6 @@ const StatsSection = () => {
       label: "Satisfaction Rate",
       icon: <Star className="w-12 h-12 fill-gray-400 group-hover:fill-white group-hover:text-primary-hover" />,
       description: "Our clients love what we create"
-    },
-    {
-      number: "5+",
-      label: "Years of Experience",
-      icon: <CalendarDays className="w-12 h-12 fill-gray-400 group-hover:fill-white group-hover:text-primary-hover" />,
-      description: "Designing, building, and growing digital experiences"
     }
   ];
 

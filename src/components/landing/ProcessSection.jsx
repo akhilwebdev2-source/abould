@@ -93,7 +93,7 @@ const ProcessSection = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-11 md:gap-8 gap-6 md:px-20">
-             <div className="bg-white rounded-[2.5rem] p-4 shadow-sm border border-white hover:border-gray-100 transition-all flex flex-col items-center text-center md:col-span-5">
+             <div className="bg-white rounded-[2.5rem] p-4 shadow-xs border border-white hover:border-gray-200 hover:shadow-none transition-all flex flex-col items-center text-center md:col-span-5">
                 <div className="w-70 rounded-3xl overflow-hidden mb-6 flex items-center justify-center mt-2">
                     <ImageWithShimmer src={strengthOne} alt="Intelligent Development" className="w-full h-full opacity-90 mix-blend-multiply" />
                 </div>
@@ -102,7 +102,7 @@ const ProcessSection = () => {
                     From websites to mobile apps, every line of code is optimized for performance, speed, and long-term scalability.
                 </p>
              </div>
-             <div className="bg-white rounded-[2.5rem] px-4 pb-4 shadow-sm border border-white hover:border-gray-100 transition-all flex flex-col items-center text-center md:col-span-6">
+             <div className="bg-white rounded-[2.5rem] px-4 pb-4 shadow-xs border border-white hover:border-gray-200 transition-all flex flex-col items-center text-center md:col-span-6">
                 <div className="w-120 rounded-3xl overflow-hidden mb-6 flex items-center justify-center">
                     <ImageWithShimmer src={strengthTwo} alt="Future-Ready Solutions" className="w-full h-full opacity-90 mix-blend-multiply" />
                 </div>
@@ -111,7 +111,7 @@ const ProcessSection = () => {
                     Our approach is built to evolve — using the latest tools, trends, and technologies to keep your business one step ahead.
                 </p>
              </div>
-             <div className="bg-white rounded-[2.5rem] p-4 shadow-sm border border-white hover:border-gray-100 transition-all flex flex-col items-center text-center md:col-span-6">
+             <div className="bg-white rounded-[2.5rem] p-4 shadow-xs border border-white hover:border-gray-200 transition-all flex flex-col items-center text-center md:col-span-6">
                 <div className="w-90 rounded-3xl overflow-hidden mb-2 flex items-center justify-center">
                     <ImageWithShimmer src={strengthThree} alt="Collaborative Partnership" className="w-full h-full opacity-90 mix-blend-multiply" />
                 </div>
@@ -120,7 +120,7 @@ const ProcessSection = () => {
                     We don't just deliver projects — we build lasting partnerships. Every step is transparent, aligned, and driven by shared goals.
                 </p>
              </div>
-             <div className="bg-white rounded-[2.5rem] p-4 shadow-sm border border-white hover:border-gray-100 transition-all flex flex-col items-center text-center md:col-span-5">
+             <div className="bg-white rounded-[2.5rem] p-4 shadow-xs border border-white hover:border-gray-200 transition-all flex flex-col items-center text-center md:col-span-5">
                 <div className="w-100 rounded-3xl overflow-hidden flex items-center justify-center mb-2">
                     <ImageWithShimmer src={strengthFour} alt="Creative Engineering" className="w-full h-full opacity-90 mix-blend-multiply" />
                 </div>

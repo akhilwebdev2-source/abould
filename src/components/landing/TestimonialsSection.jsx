@@ -69,7 +69,7 @@ const TestimonialsSection = () => {
           {testimonials.map((testimonial, index) => (
             <div 
               key={index} 
-              className="bg-white p-4 rounded-3xl duration-300 border border-transparent hover:border-gray-100 flex flex-col h-full"
+              className="bg-white p-4 rounded-3xl duration-300 border border-white hover:border-gray-200/70 transition-all flex flex-col h-full"
               style={{
                 background: 'radial-gradient(circle at top right, #E6F7F1 0%, #ffffff 50%)'
               }}

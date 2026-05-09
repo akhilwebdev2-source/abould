@@ -2,6 +2,7 @@ import { useParams, Link } from 'react-router-dom';
 import { projectsData } from '../data/projectsData';
 import ContactSection from '../components/landing/ContactSection';
 import ImageWithShimmer from '../components/common/ImageWithShimmer';
+import { ArrowLeft, Component, Smartphone, Globe, Zap } from 'lucide-react';
 
 const Project = () => {
   const { slug } = useParams();
@@ -9,82 +10,127 @@ const Project = () => {
 
   if (!project) {
     return (
-      <div className="py-24 px-4 text-center max-w-2xl mx-auto">
-        <h1 className="text-4xl font-bold text-primary-dark mb-8">Project not found</h1>
-        <Link to="/work" className="inline-block text-primary font-semibold hover:text-primary-dark transition-colors duration-300">
-          ← Back to Projects
-        </Link>
+      <div className="py-20 px-4 text-center mx-auto">
+        <div className='w-full flex md:px-20 px-4'>
+          <Link to="/work" className="inline-block text-left text-primary font-semibold mb-8 hover:text-primary-dark duration-300 text-sm md:text-base bg-linear-to-b from-gray-100/80 to-white px-4 py-2 rounded-xl border-2 border-white shadow-[0_1px_1px_rgba(9,30,66,0.12),0_0_1px_1px_rgba(9,30,66,0.06)] transition-all">
+            <ArrowLeft className="inline-block mr-2 size-4" />
+            Back to Projects
+          </Link>
+        </div>
+        <h1 className="text-4xl font-semibold text-primary-dark my-8">Project not found</h1>
       </div>
     );
   }
 
-  const { title, subtitle, sections, outcome, social, heroDescription, projectOverview1, projectsOverview2 } = project;
+  const { id, title, subtitle, category, industry, platform, cover, roles, status, sections, outcome, social, heroDescription, projectOverview1, projectOverview2 } = project;
 
   return (
-    <div className="w-full overflow-x-hidden">
+    <div className="w-full overflow-x-hidden md:px-16 px-4">
       {/* Hero Section */}
-      <section className="bg-linear-to-b from-white via-green-50 to-white py-10 text-center mb-8 md:mb-16 px-4">
-        <Link to="/work" className="inline-block text-left w-full text-primary font-semibold mb-8 hover:text-primary-dark transition-colors duration-300 text-sm md:text-base md:px-30 px-6">
-            ← Back to Projects
-        </Link>
+      <section className="py-10 text-center mb-8 md:mb-16 -z-10" style={{ background: 'radial-gradient(ellipse at center, #f4fdf5 30%, #ffffff 80%)'}}>
+        <div className='w-full flex md:px-20 px-4'>
+          <Link to="/work" className="inline-block text-left text-primary font-semibold mb-8 hover:text-primary-dark duration-300 text-sm md:text-base bg-linear-to-b from-gray-100/80 to-white px-4 py-2 rounded-xl border-2 border-white shadow-[0_1px_1px_rgba(9,30,66,0.12),0_0_1px_1px_rgba(9,30,66,0.06)] transition-all">
+            <ArrowLeft className="inline-block mr-2 size-4" />
+            Back to Projects
+          </Link>
+        </div>
         <div className="max-w-3xl mx-auto">
-          <h1 className="text-4xl md:text-6xl font-bold text-primary-dark mb-4 leading-tight">
+          <h1 className="text-4xl md:text-5xl font-semibold text-primary mb-4 leading-tight">
             {title}
           </h1>
-          <p className="text-xl md:text-3xl text-primary font-semibold mb-8">
+          <p className="text-xl md:text-2xl text-primary-dark font-semibold mb-8">
             {subtitle}
           </p>
           <p className="text-base md:text-lg text-gray-600 leading-relaxed max-w-2xl mx-auto">
             {heroDescription}
           </p>
         </div>
+        <div className='flex justify-center mt-20 gap-4'>
+          <div className='bg-white rounded-2xl flex justify-center items-center gap-4 p-4 shadow-xs'>
+            <div className='p-2.5 bg-primary-light text-primary rounded-lg'>
+              <Component size={18} />
+            </div>
+            <div className='flex flex-col justify-center items-start'>
+              <span className='text-sm text-gray-600'>Industry</span>
+              <span className='font-semibold'>{industry}</span>
+            </div>
+          </div>
+          <div className='bg-white rounded-2xl flex justify-center items-center gap-4 p-4 shadow-xs'>
+            <div className='p-2.5 bg-primary-light text-primary rounded-lg'>
+              <Smartphone size={18} />
+            </div>
+            <div className='flex flex-col justify-center items-start'>
+              <span className='text-sm text-gray-600'>Platform</span>
+              <span className='font-semibold'>{platform}</span>
+            </div>
+          </div>
+          <div className='bg-white rounded-2xl flex justify-center items-center gap-4 p-4 shadow-xs'>
+            <div className='p-2.5 bg-primary-light text-primary rounded-lg'>
+              <Globe size={18} />
+            </div>
+            <div className='flex flex-col justify-center items-start'>
+              <span className='text-sm text-gray-600'>Roles</span>
+              <span className='font-semibold'>{roles.join(' · ')}</span>
+            </div>
+          </div>
+          <div className='bg-white rounded-2xl flex justify-center items-center gap-4 p-4 shadow-xs'>
+            <div className='p-2.5 bg-primary-light text-primary rounded-lg'>
+              <Zap size={18} />
+            </div>
+            <div className='flex flex-col justify-center items-start'>
+              <span className='text-sm text-gray-600'>Status</span>
+              <span className='font-semibold'>{status}</span>
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* Project Overview */}
-      <section className="py-8 md:py-16 px-4 bg-white">
-        <div className="max-w-3xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-primary-dark text-center mb-10">
+      <section className="py-8 md:py-16 bg-white">
+        <div className="md:mx-40 mx-4">
+          <h2 className="text-4xl font-semibold text-primary-dark text mb-6">
             Project Overview
           </h2>
-          <p className="text-base md:text-lg text-gray-600 leading-relaxed mb-6 text-justify">
+          <p className="text-gray-600 leading-relaxed mb-2 text-justify">
             {projectOverview1}
           </p>
-          <p className="text-base md:text-lg text-gray-600 leading-relaxed text-justify">
-            {projectsOverview2}
+          <p className="text-gray-600 leading-relaxed text-justify">
+            {projectOverview2}
           </p>
         </div>
       </section>
 
       {/* Project Sections */}
-      <section className="py-16 md:py-24 px-4 mb-16 md:mb-24">
+      <section className="py-16">
         <div className="max-w-5xl mx-auto">
           {sections.map((section, index) => (
             <div
               key={section.id}
-              className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center mb-20 md:mb-32"
+              className="grid grid-cols-1 md:grid-cols-2 items-center justify-between"
               style={index % 2 === 1 ? { direction: 'rtl' } : {}}
             >
               <div style={index % 2 === 1 ? { direction: 'ltr' } : {}}>
-                <div className="flex justify-center items-center">
+                <div className={`flex ${index % 2 === 0 ? 'justify-start' : 'justify-end'} items-center`}>
                   <ImageWithShimmer
                     src={section.image}
                     alt={section.title}
-                    className="w-full max-w-sm rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
+                    className="w-full max-w-100 rounded-3xl hover:shadow-sm transition-all duration-300 hover:-translate-y-2"
                   />
                 </div>
               </div>
               <div style={index % 2 === 1 ? { direction: 'ltr' } : {}}>
-                <h3 className="text-2xl md:text-4xl font-bold text-primary-dark mb-6">
+                <h3 className="text-2xl md:text-4xl font-semibold text-primary-dark mb-4">
                   {section.title}
                 </h3>
-                <p className="text-base md:text-lg text-gray-600 leading-relaxed mb-8">
+                <p className="text-gray-600 leading-relaxed mb-4">
                   {section.description}
                 </p>
-                <ul className="space-y-3">
+                <div className="mb-4 font-medium text-gray-500">Focus:</div>
+                <ul className="ml-2 text-primary">
                   {section.features.map((feature, idx) => (
                     <li key={idx} className="flex items-center gap-3">
-                      <span className="text-primary font-bold text-xl shrink-0">✓</span>
-                      <span className="text-base text-gray-600">{feature}</span>
+                      <span className="font-bold shrink-0">•</span>
+                      <span className="text-sm font-medium">{feature}</span>
                     </li>
                   ))}
                 </ul>
@@ -95,9 +141,9 @@ const Project = () => {
       </section>
 
       {/* Outcome Section */}
-      <section className="py-16 md:py-24 px-4 bg-white mb-16 md:mb-24">
-        <div className="max-w-3xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-primary-dark text-center mb-10">
+      <section className="py-16 bg-white">
+        <div className="md:px-3 mx-auto">
+          <h2 className="text-4xl font-medium text-primary-dark mb-6">
             Outcome
           </h2>
           <p className="text-base md:text-lg text-gray-600 leading-relaxed text-justify">
@@ -107,40 +153,44 @@ const Project = () => {
       </section>
 
       {/* Testimonial Section */}
-        <section className="py-16 md:py-24 px-4 mb-16 md:mb-24">
-          <div className="max-w-3xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-bold text-primary-dark text-center mb-16">
-              What Our Client Says
-            </h2>
-            <div className="bg-white rounded-2xl shadow-lg p-8 md:p-12">
-              <div className="flex items-center gap-4 md:gap-6 mb-8">
-                <div className="w-16 md:w-20 rounded-full overflow-hidden shrink-0">
-                  <ImageWithShimmer
-                    src={social.profile}
-                    alt={social.name}
-                    className="w-full h-full"
-                  />
-                </div>
-                <div>
-                  <h4 className="text-lg md:text-xl font-bold text-primary-dark">
-                    {social.name}
-                  </h4>
-                  <p className="text-sm md:text-base text-gray-500">
-                    {social.country}
-                  </p>
-                </div>
+        <section className="py-16 md:px-20">
+          <div
+              className="bg-white p-4 rounded-3xl duration-300 border border-gray-100/70 hover:border-gray-200/70 hover:shadow-xs transition-all flex flex-col h-full"
+              style={{
+                background: 'radial-gradient(circle at top right, #E6F7F1 0%, #ffffff 20%)'
+              }}
+            >
+              <div className="flex items-center mb-2">
+                 <div className="w-25 overflow-hidden rounded-full">
+                    <ImageWithShimmer src={social.profile} alt={social.name} className="w-full h-full" />
+                 </div>
+                 <div className='mb-4 flex flex-col gap-1.5'>
+                    <h4 className="font-semibold text-primary-dark">{social.name}</h4>
+                    <p className="text-xs text-gray-500">{social.country}</p>
+                 </div>
               </div>
-              <blockquote className="border-l-4 border-primary pl-6 md:pl-8">
-                <p className="text-base md:text-lg font-semibold text-primary-dark mb-6 leading-relaxed">
-                  "{social.heading}"
-                </p>
-                <p className="text-sm md:text-base text-gray-600 leading-relaxed">
-                  {social.message}
-                </p>
-              </blockquote>
+
+              <h3 className="text-lg font-bold text-primary-dark mb-4 leading-tight">
+                 {social.heading}
+              </h3>
+              
+              <p className="text-sm text-gray-500 leading-relaxed grow mb-3">
+                 {social.message1}
+              </p>
+              <p className="text-sm text-gray-500 leading-relaxed grow mb-3">
+                 {social.message2}
+              </p>
+              <p className="text-sm text-gray-500 leading-relaxed grow">
+                 {social.message3}
+              </p>
             </div>
-          </div>
         </section>
+        <div className='w-full flex justify-center'>
+          <Link to="/work" className="inline-block text-left text-primary font-semibold mb-8 hover:text-primary-dark duration-300 text-sm md:text-base bg-linear-to-b from-gray-100/80 to-white px-4 py-2 rounded-xl border-2 border-white shadow-[0_1px_1px_rgba(9,30,66,0.12),0_0_1px_1px_rgba(9,30,66,0.06)] transition-all">
+            <ArrowLeft className="inline-block mr-2 size-4" />
+            Back to Projects
+          </Link>
+        </div>
         <ContactSection />
     </div>
   );

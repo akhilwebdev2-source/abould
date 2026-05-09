@@ -33,10 +33,10 @@ const Header = () => {
     };
   }, [isMenuOpen, isMenuClosing]);
 
-  const navItems = ['Home', 'Services', 'Work', 'About', 'Contact'];
+  const navItems = ['Home', 'Services', 'Work', 'Contact'];
 
   return (
-    <header className="sticky top-0 z-50 w-full flex justify-center bg-linear-to-b from-surface-alt via-surface-alt/70 to-surface-alt/0">
+    <header className="sticky top-0 z-50 w-full flex justify-center bg-linear-to-b from-surface-alt via-surface-alt/50 to-surface-alt/1">
       <div className="container md:px-4 px-10 md:h-20 h-14 flex items-center md:justify-around justify-between z-10">
         
         {/* Logo */}
@@ -45,7 +45,7 @@ const Header = () => {
         </Link>
 
         {/* Navigation - Desktop */}
-        <nav className="hidden md:flex items-center bg-linear-to-b from-neutral-50/40 via-neutral-400/15 to-neutral-50/40 backdrop-blur-xl border border-gray-200 rounded-4xl p-2 gap-2 shadow-[0_1px_2px_0_rgba(0,0,0,0.05),inset_0_2px_4px_0_rgb(115_115_115/0.1)]">
+        <nav className="hidden md:flex items-center bg-linear-to-b from-neutral-50/40 via-neutral-400/20 to-neutral-50/40 backdrop-blur-xl border border-gray-200 rounded-4xl p-2 gap-2 shadow-[0_1px_2px_0_rgba(0,0,0,0.05),inset_0_2px_4px_0_rgb(115_115_115/0.1)]">
           {navItems.map((item) => {
             const path = item === 'Home' ? '/' : `/${item.toLowerCase()}`;
             const isActive = location.pathname === path || (path !== '/' && location.pathname.startsWith(path));
@@ -57,7 +57,7 @@ const Header = () => {
                 className={`px-4 py-1.5 rounded-3xl text-md font-medium transition-shadow duration-200 ${
                   isActive
                   ? 'bg-white backdrop-blur-xl border border-neutral-500/40 shadow-[0_1px_2px_0_rgba(0,0,0,0.05),inset_0_2px_4px_0_rgb(115_115_115/0.1)] text-primary-hover' 
-                  : 'bg-linear-to-b from-white/40 via-neutral-100/20 to-white/40 backdrop-blur-xl hover:border hover:border-gray-300 transition-all'
+                  : 'hover:border hover:border-gray-300 transition-all'
                 }`}
               >
                 {item}
@@ -126,7 +126,7 @@ const Header = () => {
       )}
 
       <div className={`absolute top-0 left-0 w-full h-full pointer-events-none -z-10 overflow-hidden ${location.pathname=='/' ? "block" : "hidden"} `}>
-          <div className="absolute top-[20%] left-1/2 -translate-x-1/2 w-[30%] h-[200%] bg-primary/12 rounded-full blur-[60px]"></div>
+          <div className="absolute top-[20%] left-1/2 -translate-x-1/2 w-[35%] h-[200%] bg-primary/12 rounded-full blur-[60px]"></div>
       </div>
     </header>
   );

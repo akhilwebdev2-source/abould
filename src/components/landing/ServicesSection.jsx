@@ -46,7 +46,7 @@ const ServicesSection = () => {
           {services.map((service, index) => (
             <div 
               key={index}
-              className="group bg-white rounded-3xl p-4 transition-all border hover:border-gray-100 border-white"
+              className="group bg-white rounded-3xl p-4 border hover:border-gray-200/70 border-white transition-all"
             >
               {/* Card Header */}
               <div className="flex justify-between items-center mb-10 rounded-xl">
